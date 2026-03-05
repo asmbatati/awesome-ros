@@ -49,6 +49,26 @@ Gazebo,simulation,https://github.com/gazebosim/gz-sim,Robot simulation environme
 
 ---
 
+## repo structure
+
+```
+awesome-ros-ecosystem
+│
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+│
+├── data
+│   ├── packages.csv
+│   ├── simulations.csv
+│   ├── datasets.csv
+│   ├── surveys.csv
+│
+└── schema
+    └── schema.md
+```
+---
+
 ## Citation
 
 If you use this dataset in your research, please cite:
