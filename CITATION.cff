@@ -1,10 +1,31 @@
-```yaml
 cff-version: 1.2.0
-title: ROS Ecosystem Dataset
-message: If you use this dataset, please cite the associated paper.
+title: "Awesome ROS: A Curated Dataset of ROS Research"
+message: "If you use this dataset, please cite the associated paper."
+type: dataset
 authors:
-  - family-names: YourLastName
-    given-names: YourFirstName
-year: 2025
+  - family-names: Al-Batati
+    given-names: Abdulrahman
+    orcid: ""
+    affiliation: "Prince Sultan University"
+  - family-names: Koubaa
+    given-names: Anis
+    affiliation: "Alfaisal University"
+  - family-names: Abdelkader
+    given-names: Mohamed
+    affiliation: "Prince Sultan University"
+  - family-names: Gabr
+    given-names: Khaled
+    affiliation: "Prince Sultan University"
+  - family-names: Aloqaily
+    given-names: Hamad
+    affiliation: "Prince Sultan University"
+repository-code: "https://github.com/asmbatati/awesome-ros"
+url: "https://www.preprints.org/manuscript/202410.1204"
+keywords:
+  - ROS
+  - ROS 2
+  - robotics
+  - survey
+  - dataset
 license: CC-BY-4.0
-```
+date-released: "2025-03-05"

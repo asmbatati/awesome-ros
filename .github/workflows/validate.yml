@@ -1,0 +1,113 @@
+name: Validate CSVs
+
+on:
+  push:
+    paths: ['data/**']
+  pull_request:
+    paths: ['data/**']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install csvkit jsonschema
+
+      - name: Validate CSV format (papers)
+        run: |
+          echo "=== Checking papers.csv format ==="
+          csvstat data/papers.csv --count
+          echo "Row count OK"
+
+      - name: Validate CSV format (frameworks)
+        run: |
+          echo "=== Checking frameworks.csv format ==="
+          csvstat data/frameworks.csv --count
+          echo "Row count OK"
+
+      - name: Validate headers and schema
+        run: |
+          python - <<'PYEOF'
+          import csv, json, sys
+
+          def check_file(csv_path, schema_path):
+              with open(schema_path) as f:
+                  schema = json.load(f)
+              required = schema.get("required", [])
+              props = schema.get("properties", {})
+
+              with open(csv_path, encoding="utf-8") as f:
+                  reader = csv.DictReader(f)
+                  headers = reader.fieldnames
+
+                  # Check required columns exist
+                  missing = [r for r in required if r not in headers]
+                  if missing:
+                      print(f"FAIL: {csv_path} missing required columns: {missing}")
+                      return False
+
+                  # Check enum values
+                  enum_cols = {k: v["enum"] for k, v in props.items() if "enum" in v}
+                  errors = []
+                  for i, row in enumerate(reader, start=2):
+                      for col, allowed in enum_cols.items():
+                          val = row.get(col, "").strip()
+                          if val and val not in allowed:
+                              errors.append(f"  Row {i}: '{col}' = '{val}' not in allowed values")
+                              if len(errors) > 20:
+                                  errors.append("  ... (truncated)")
+                                  break
+                      if len(errors) > 20:
+                          break
+
+                  if errors:
+                      print(f"FAIL: {csv_path} has enum violations:")
+                      for e in errors:
+                          print(e)
+                      return False
+
+              print(f"OK: {csv_path}")
+              return True
+
+          ok = True
+          ok = check_file("data/papers.csv", "schema/papers.schema.json") and ok
+          ok = check_file("data/frameworks.csv", "schema/frameworks.schema.json") and ok
+          if not ok:
+              sys.exit(1)
+          PYEOF
+
+      - name: Check duplicate DOIs
+        run: |
+          python - <<'PYEOF'
+          import csv, sys
+
+          with open("data/papers.csv", encoding="utf-8") as f:
+              reader = csv.DictReader(f)
+              dois = []
+              for row in reader:
+                  doi = row.get("DOI", "").strip()
+                  if doi:
+                      dois.append(doi)
+
+          seen = {}
+          dupes = []
+          for doi in dois:
+              key = doi.lower()
+              if key in seen:
+                  dupes.append(doi)
+              seen[key] = True
+
+          if dupes:
+              print(f"FAIL: {len(dupes)} duplicate DOI(s) found:")
+              for d in dupes[:10]:
+                  print(f"  {d}")
+              sys.exit(1)
+          else:
+              print(f"OK: {len(dois)} unique DOIs, no duplicates")
+          PYEOF

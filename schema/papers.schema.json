@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ROS Papers Dataset Schema",
+  "description": "Schema for papers.csv in the awesome-ros repository",
+  "type": "object",
+  "required": ["Paper Title", "DOI", "Year", "ROS Version", "Contribution_Type", "Research_Domain"],
+  "properties": {
+    "Paper Title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full title of the paper"
+    },
+    "DOI": {
+      "type": "string",
+      "pattern": "^10\\..+/.+$",
+      "description": "Digital Object Identifier (e.g. 10.1109/...)"
+    },
+    "Authors": {
+      "type": "string",
+      "description": "Semicolon-separated list of authors"
+    },
+    "Abstract": {
+      "type": "string",
+      "description": "Paper abstract text"
+    },
+    "Year": {
+      "type": ["string", "integer"],
+      "description": "Year of publication (e.g. 2024)"
+    },
+    "Date of Publication": {
+      "type": "string",
+      "description": "Full publication date (ISO 8601 preferred)"
+    },
+    "Venue of Publication": {
+      "type": "string",
+      "description": "Journal or conference name"
+    },
+    "Publisher": {
+      "type": "string",
+      "description": "Publisher name (e.g. IEEE, Springer, Elsevier)"
+    },
+    "Type of Manuscript": {
+      "type": "string",
+      "enum": ["Article", "Conference", "Preprint", "Book Chapter", "Thesis", ""],
+      "description": "Manuscript type"
+    },
+    "ROS Version": {
+      "type": "string",
+      "enum": ["ROS1", "ROS2", "Both", ""],
+      "description": "Which ROS version the paper addresses"
+    },
+    "Contribution_Type": {
+      "type": "string",
+      "enum": ["APP", "CORE", "ECO", ""],
+      "description": "Primary contribution type: Application, Core ROS, or Ecosystem"
+    },
+    "Core_type": {
+      "type": "string",
+      "enum": ["Middleware", "Distributed ROS Infrastructure", "Real-Time & Hardware Integration", "Security & Safety Mechanisms", ""],
+      "description": "CORE subtype (only for CORE papers)"
+    },
+    "Eco_type": {
+      "type": "string",
+      "enum": ["Datasets", "Frameworks", "Open-Source Packages", "Benchmarks", "Simulation Frameworks", "Surveys & Meta-Analyses", ""],
+      "description": "ECO subtype (only for ECO papers)"
+    },
+    "App_field": {
+      "type": "string",
+      "enum": [
+        "Industrial Automation", "Transportation & Mobility Robotics",
+        "Medical Robotics", "Marine Robotics", "Agricultural Robotics",
+        "Human-Robot Interaction", "Educational Robotics", "Service Robotics",
+        "Public Safety & Emergency Response Robotics", "Space Robotics",
+        "Environmental Robotics", "Construction & Infrastructure Robotics",
+        "Military & Defense Robotics", "Logistics & Warehouse Robotics", ""
+      ],
+      "description": "Application field (only for APP papers)"
+    },
+    "App_platform": {
+      "type": "string",
+      "enum": [
+        "UGVs", "UAVs", "Manipulators", "Self-Driving Cars",
+        "Medical Robots", "Humanoid Robots", "Service Robots",
+        "Underwater Robots", "Multi-Robot Systems",
+        "Quadrupedal Robots", "Soft Robots", ""
+      ],
+      "description": "Robot platform type (only for APP papers)"
+    },
+    "Research_Domain": {
+      "type": "string",
+      "enum": [
+        "Perception & World Modeling", "Planning & Control",
+        "Human & System Interaction", "Systems & Infrastructure", ""
+      ],
+      "description": "Primary robotics research domain"
+    },
+    "Research_Subdomain": {
+      "type": "string",
+      "enum": [
+        "State Estimation", "Spatial Perception & Mapping",
+        "Semantic Understanding", "Shared World Models",
+        "Motion Planning & Navigation", "Task & Mission Planning",
+        "Real-Time Control", "Multi-Robot Coordination",
+        "Human-Robot Interaction (HRI)", "Teleoperation",
+        "Shared Autonomy", "Human-System Interfaces",
+        "Software Architecture & Middleware", "Communication & QoS",
+        "Cloud & Edge Robotics", "Hardware Integration",
+        "Supervisory, Safety & Reliability Systems", ""
+      ],
+      "description": "Research subdomain within the primary domain"
+    },
+    "Keyword_Labels": {
+      "type": "string",
+      "description": "Semicolon-separated fine-grained keyword tags"
+    },
+    "Github Repo": {
+      "type": "string",
+      "description": "Associated GitHub repository URL (if any)"
+    },
+    "URL": {
+      "type": "string",
+      "description": "Paper URL (publisher or open access)"
+    }
+  },
+  "additionalProperties": true
+}

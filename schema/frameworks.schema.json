@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ROS Frameworks Dataset Schema",
+  "description": "Schema for frameworks.csv in the awesome-ros repository",
+  "type": "object",
+  "required": ["file name", "package url"],
+  "properties": {
+    "file name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Name of the ROS package or framework"
+    },
+    "package url": {
+      "type": "string",
+      "description": "URL to the package repository or homepage"
+    },
+    "robot platforms": {
+      "type": "string",
+      "description": "Target robot platforms (e.g. UGV, UAV, Manipulator)"
+    },
+    "robot stack": {
+      "type": "string",
+      "description": "Robot stack layer (e.g. Perception, Planning, Control, Simulation)"
+    },
+    "infrastructure": {
+      "type": "string",
+      "description": "Infrastructure category (e.g. Middleware, Driver, Tool)"
+    }
+  },
+  "additionalProperties": false
+}

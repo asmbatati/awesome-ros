@@ -1,0 +1,125 @@
+name: Enrich Papers via CrossRef
+
+on:
+  workflow_dispatch:
+    inputs:
+      dois:
+        description: 'Comma-separated DOIs to enrich (e.g. 10.1109/ICRA.2025.123,10.1007/s00000)'
+        required: true
+        type: string
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Enrich and append papers
+        env:
+          INPUT_DOIS: ${{ github.event.inputs.dois }}
+        run: |
+          python - <<'PYEOF'
+          import csv, json, os, requests, sys, time
+
+          CROSSREF_API = "https://api.crossref.org/works/"
+          PAPERS_CSV = "data/papers.csv"
+          MAILTO = "aalbatati@psu.edu.sa"
+
+          dois = [d.strip() for d in os.environ["INPUT_DOIS"].split(",") if d.strip()]
+          if not dois:
+              print("No DOIs provided")
+              sys.exit(0)
+
+          # Load existing DOIs for dedup
+          existing_dois = set()
+          with open(PAPERS_CSV, encoding="utf-8") as f:
+              reader = csv.DictReader(f)
+              headers = reader.fieldnames
+              for row in reader:
+                  existing_dois.add(row.get("DOI", "").strip().lower())
+
+          new_rows = []
+          for doi in dois:
+              if doi.lower() in existing_dois:
+                  print(f"SKIP (duplicate): {doi}")
+                  continue
+
+              url = f"{CROSSREF_API}{doi}?mailto={MAILTO}"
+              try:
+                  resp = requests.get(url, timeout=30)
+                  if resp.status_code != 200:
+                      print(f"FAIL ({resp.status_code}): {doi}")
+                      continue
+                  data = resp.json().get("message", {})
+              except Exception as e:
+                  print(f"ERROR: {doi} — {e}")
+                  continue
+
+              title = " ".join(data.get("title", ["Unknown"]))
+              authors_list = data.get("author", [])
+              authors = "; ".join(
+                  f"{a.get('given', '')} {a.get('family', '')}".strip()
+                  for a in authors_list
+              )
+              year = ""
+              date_parts = data.get("published-print", data.get("published-online", {})).get("date-parts", [[]])
+              if date_parts and date_parts[0]:
+                  year = str(date_parts[0][0])
+              date_pub = "-".join(str(p) for p in date_parts[0]) if date_parts and date_parts[0] else ""
+              venue = " ".join(data.get("container-title", [""]))
+              publisher = data.get("publisher", "")
+              manuscript_type = data.get("type", "").replace("journal-article", "Article").replace("proceedings-article", "Conference")
+              abstract = data.get("abstract", "").replace("<jats:p>", "").replace("</jats:p>", "").replace("<jats:title>Abstract</jats:title>", "").strip()
+              paper_url = data.get("URL", "")
+
+              row = {h: "" for h in headers}
+              row.update({
+                  "Paper Title": title,
+                  "DOI": doi,
+                  "Authors": authors,
+                  "Abstract": abstract,
+                  "Year": year,
+                  "Date of Publication": date_pub,
+                  "Venue of Publication": venue,
+                  "Publisher": publisher,
+                  "Type of Manuscript": manuscript_type,
+                  "URL": paper_url,
+              })
+              new_rows.append(row)
+              print(f"OK: {doi} — {title[:60]}...")
+              time.sleep(1)  # polite rate limit
+
+          if new_rows:
+              with open(PAPERS_CSV, "a", encoding="utf-8", newline="") as f:
+                  writer = csv.DictWriter(f, fieldnames=headers)
+                  for row in new_rows:
+                      writer.writerow(row)
+              print(f"\nAppended {len(new_rows)} new paper(s) to {PAPERS_CSV}")
+          else:
+              print("\nNo new papers to append")
+          PYEOF
+
+      - name: Create Pull Request
+        if: success()
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "data: enrich papers via CrossRef"
+          title: "[Auto] Enriched papers from CrossRef"
+          body: |
+            Automatically enriched papers using the CrossRef API.
+            DOIs: `${{ github.event.inputs.dois }}`
+
+            **Note:** Taxonomy columns (`Contribution_Type`, `Research_Domain`, etc.) are empty and need manual or LLM classification.
+          branch: auto/enrich-papers
+          delete-branch: true

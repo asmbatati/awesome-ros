@@ -1,0 +1,49 @@
+name: "Data Correction"
+description: "Report an error in the dataset (wrong metadata, duplicate, etc.)"
+title: "[Fix] "
+labels: ["data-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found an error in the dataset? Let us know so we can fix it.
+
+  - type: dropdown
+    id: file
+    attributes:
+      label: Which file?
+      options:
+        - data/papers.csv
+        - data/frameworks.csv
+    validations:
+      required: true
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI or row identifier
+      description: "DOI of the affected paper, or name of the framework"
+      placeholder: "10.xxxx/xxxxx"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Type of error
+      options:
+        - Wrong metadata (title, authors, year, venue, etc.)
+        - Wrong classification (Contribution_Type, Research_Domain, etc.)
+        - Duplicate entry
+        - Entry should be removed (not ROS-related)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "What is wrong and what should the correct value be?"
+    validations:
+      required: true

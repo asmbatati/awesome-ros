@@ -1,0 +1,54 @@
+name: "Add Paper"
+description: "Suggest a ROS/ROS 2 paper to add to the database"
+title: "[Paper] "
+labels: ["new-paper"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a paper! Provide the DOI and we'll handle enrichment and classification.
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      description: "Digital Object Identifier (e.g. 10.1109/ICRA.2025.1234567)"
+      placeholder: "10.xxxx/xxxxx"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Paper Title
+      description: "Full title of the paper"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ros_version
+    attributes:
+      label: ROS Version
+      options:
+        - ROS1
+        - ROS2
+        - Both
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year of Publication
+      placeholder: "2025"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: "Any context about why this paper should be included"
+    validations:
+      required: false
