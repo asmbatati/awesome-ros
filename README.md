@@ -53,9 +53,11 @@ Gazebo,simulation,https://github.com/gazebosim/gz-sim,Robot simulation environme
 
 If you use this dataset in your research, please cite:
 
+```bib
 @article{ros_ecosystem_dataset_2025,
   title={A Structured Dataset of the ROS Ecosystem},
   author={Your Name},
   journal={},
   year={2025}
 }
+```
