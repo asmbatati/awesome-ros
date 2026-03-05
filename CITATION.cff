@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: ROS Ecosystem Dataset
+message: If you use this dataset, please cite the associated paper.
+authors:
+  - family-names: YourLastName
+    given-names: YourFirstName
+year: 2025
+license: CC-BY-4.0
