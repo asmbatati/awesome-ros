@@ -175,3 +175,29 @@ X-CAR,https://github.com/VT-ASIM-LAB/carma-platform,"Autonomous Vehicles (cars, 
 XTENTH-CAR,https://github.com/Shathushan-Sivashangaran/XTENTH-CAR,"Autonomous Vehicles (cars, trucks, delivery robots); Robots for Education & Research",,Hardware Drivers & Interfaces
 YASMIN,https://github.com/uleroboticsgroup/yasmin,,Task-Level Planning & Reasoning,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 YOLOX,https://github.com/Megvii-BaseDetection/YOLOX,,Object Detection & Semantic Understanding,"Embedded Systems & Accelerators; Interfacing & Interoperability (bridges, wrappers, APIs)"
+PX4-Autopilot,https://github.com/PX4/PX4-Autopilot,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.)","Hardware Drivers & Interfaces; Interfacing & Interoperability (bridges, wrappers, APIs)"
+zenoh,https://github.com/eclipse-zenoh/zenoh,,,Middleware & Communication
+Fast-DDS,https://github.com/eProsima/Fast-DDS,,,Middleware & Communication
+iceoryx,https://github.com/eclipse-iceoryx/iceoryx,,,Middleware & Communication
+ros2_rust,https://github.com/ros2-rust/ros2_rust,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+OM1,https://github.com/OpenMind/OM1,"Consumer, Service & Entertainment Robotics",Task-Level Planning & Reasoning,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+openarm,https://github.com/enactic/openarm,Industrial Robots; Healthcare & Assistive Robotics,,Hardware Drivers & Interfaces
+isaac_ros_visual_slam,https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",Embedded Systems & Accelerators
+yolo_ros,https://github.com/mgonzs13/yolo_ros,,Object Detection & Semantic Understanding,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+CarlaAir,https://github.com/louiszengCN/CarlaAir,"Aerial Robots (UAVs); Autonomous Vehicles (cars, trucks, delivery robots)",,Simulators & Playgrounds
+go2_ros2_sdk,https://github.com/abizovnuralem/go2_ros2_sdk,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
+linorobot2,https://github.com/linorobot/linorobot2,Ground Robots (UGVs legged wheeled); Robots for Education & Research,"Motion Planning & Navigation (global, local, path following)",Hardware Drivers & Interfaces
+lidar_slam_ros2,https://github.com/rsasaki0109/lidar_slam_ros2,"Autonomous Vehicles (cars, trucks, delivery robots); Ground Robots (UGVs legged wheeled)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+Universal_Robots_ROS2_Driver,https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver,Industrial Robots,,Hardware Drivers & Interfaces
+ros2_controllers,https://github.com/ros-controls/ros2_controllers,,"Classical Control (PID, MPC, etc.)",Hardware Drivers & Interfaces
+livox_ros_driver2,https://github.com/Livox-SDK/livox_ros_driver2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+eagleye,https://github.com/MapIV/eagleye,"Autonomous Vehicles (cars, trucks, delivery robots)",State Estimation,
+cyberdog_ros2,https://github.com/MiRoboticsLab/cyberdog_ros2,"Ground Robots (UGVs legged wheeled); Consumer, Service & Entertainment Robotics",,Hardware Drivers & Interfaces
+AWSIM,https://github.com/autowarefoundation/AWSIM,"Autonomous Vehicles (cars, trucks, delivery robots)",,Simulators & Playgrounds
+genz-icp,https://github.com/cocel-postech/genz-icp,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+ros2-for-unity,https://github.com/RobotecAI/ros2-for-unity,,,"Simulators & Playgrounds; Interfacing & Interoperability (bridges, wrappers, APIs)"
+rko_lio,https://github.com/PRBonn/rko_lio,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+ogma,https://github.com/nasa/ogma,Aerospace & Space Robotics,,"Security, Safety & Verification"
+rai,https://github.com/RobotecAI/rai,,"Task-Level Planning & Reasoning; HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+lidar_localization_ros2,https://github.com/rsasaki0109/lidar_localization_ros2,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+robot_calibration,https://github.com/mikeferguson/robot_calibration,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
