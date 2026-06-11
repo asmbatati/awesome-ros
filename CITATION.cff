@@ -20,7 +20,7 @@ authors:
     given-names: Hamad
     affiliation: "Prince Sultan University"
 repository-code: "https://github.com/asmbatati/awesome-ros"
-url: "https://www.preprints.org/manuscript/202410.1204"
+url: "https://ros-database.vercel.app/"
 keywords:
   - ROS
   - ROS 2
@@ -28,4 +28,25 @@ keywords:
   - survey
   - dataset
 license: CC-BY-4.0
-date-released: "2025-03-05"
+preferred-citation:
+  type: article
+  title: "ROS 2 in a Nutshell: A Survey"
+  authors:
+    - family-names: Al-Batati
+      given-names: Abdulrahman
+    - family-names: Koubaa
+      given-names: Anis
+    - family-names: Gabr
+      given-names: Khaled
+    - family-names: Abdelkader
+      given-names: Mohamed
+    - family-names: Aloqaily
+      given-names: Hamad
+  journal: "ACM Computing Surveys"
+  publisher:
+    name: "Association for Computing Machinery"
+  year: 2026
+  month: 5
+  doi: "10.1145/3815113"
+  url: "https://doi.org/10.1145/3815113"
+date-released: "2026-06-11"
