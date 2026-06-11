@@ -1,0 +1,52 @@
+name: Scrape New Papers
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      since:
+        description: 'Scrape papers published after this date (YYYY-MM-DD). Default: 45 days ago.'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run scraper
+        run: |
+          SINCE="${{ github.event.inputs.since }}"
+          if [ -z "$SINCE" ]; then SINCE=$(date -d '45 days ago' +%Y-%m-%d); fi
+          echo "Scraping papers published since $SINCE"
+          python scripts/scrape_papers.py --since "$SINCE"
+
+      # PRs opened with GITHUB_TOKEN do not trigger the validate workflow,
+      # so validate here before opening the PR.
+      - name: Validate result
+        run: python scripts/validate_data.py
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'data: weekly paper scrape from OpenAlex'
+          title: '[Auto] New papers from OpenAlex'
+          body: |
+            Automated weekly scrape of new ROS / ROS 2 papers from OpenAlex.
+
+            Papers are deduplicated by DOI and normalized title, filtered for
+            relevance, and heuristically classified into the v26 taxonomy.
+            Please review classifications before merging — they are best-effort.
+          branch: auto/scrape-papers
+          add-paths: data/
