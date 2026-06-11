@@ -3,7 +3,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Validate CSVs](https://github.com/asmbatati/awesome-ros/actions/workflows/validate.yml/badge.svg)](https://github.com/asmbatati/awesome-ros/actions/workflows/validate.yml)
 
-A curated, community-maintained dataset of **8,000+ ROS & ROS 2 research papers** and **176 community packages**, powering the [ROS Database](https://ric.psu.edu.sa/riotu/ros/) companion website for the ACM Computing Surveys paper *"ROS 2 in a Nutshell: A Survey"*.
+A curated, community-maintained dataset of **8,500+ ROS & ROS 2 research papers** and **176 community packages**, powering the [ROS Database](https://ros-database.vercel.app/) companion website for the ACM Computing Surveys paper *"ROS 2 in a Nutshell: A Survey"*.
 
 ---
 
@@ -11,7 +11,7 @@ A curated, community-maintained dataset of **8,000+ ROS & ROS 2 research papers*
 
 | File | Records | Description |
 |------|---------|-------------|
-| [`data/papers.csv`](data/papers.csv) | 8,033 | Research papers with full metadata, multi-dimensional taxonomy, and 139 boolean keyword labels |
+| [`data/papers.csv`](data/papers.csv) | 8,566 | Research papers with full metadata, multi-dimensional taxonomy, and 139 boolean keyword labels |
 | [`data/frameworks.csv`](data/frameworks.csv) | 176 | Curated ROS 2 packages, tools, and frameworks |
 
 ### Papers Schema (key columns)
@@ -50,7 +50,7 @@ See [`docs/taxonomy.md`](https://github.com/asmbatati/ros_survey_revision/blob/m
 ```
 awesome-ros/
 ├── data/
-│   ├── papers.csv          # 8,033 research papers
+│   ├── papers.csv          # 8,566 research papers
 │   └── frameworks.csv      # 176 curated packages
 ├── schema/
 │   ├── papers.schema.json  # JSON Schema for papers
@@ -103,17 +103,34 @@ print(papers["Contribution_Type"].value_counts())
 
 ---
 
+## Automation
+
+| Workflow | Trigger | What it does |
+|----------|---------|--------------|
+| `validate.yml` | push / PR touching `data/` | Runs `scripts/validate_data.py` (schema enums, field counts, duplicate DOIs); on success notifies the website repo via `repository_dispatch` (optional `WEBSITE_DISPATCH_TOKEN` secret) |
+| `scrape.yml` | weekly (Mon 06:00 UTC) + manual | Runs `scripts/scrape_papers.py` — scrapes new ROS/ROS 2 papers from OpenAlex, dedupes, heuristically classifies into the taxonomy, and opens a PR for review |
+| `enrich.yml` | manual | Adds specific papers by DOI via CrossRef |
+
+The [ROS Database website](https://ros-database.vercel.app/) regenerates its static
+JSON from this repo daily (and instantly on dispatch), so merged data changes appear
+on the site automatically.
+
+---
+
 ## Citation
 
 If you use this dataset in your research, please cite:
 
 ```bibtex
-@article{albatati2025ros2survey,
-  author    = {Al-Batati, Abdulrahman and Koubaa, Anis and Abdelkader, Mohamed and Gabr, Khaled and Aloqaily, Hamad},
+@article{AlBatati2026ROS2,
+  author    = {Al-Batati, Abdulrahman and Koubaa, Anis and Gabr, Khaled and Abdelkader, Mohamed and Aloqaily, Hamad},
   title     = {ROS 2 in a Nutshell: A Survey},
   journal   = {ACM Computing Surveys},
-  year      = {2025},
-  note      = {Under review. Preprint: \url{https://www.preprints.org/manuscript/202410.1204}}
+  publisher = {Association for Computing Machinery},
+  year      = {2026},
+  month     = {may},
+  doi       = {10.1145/3815113},
+  url       = {https://doi.org/10.1145/3815113}
 }
 ```
 
