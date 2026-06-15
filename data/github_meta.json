@@ -8,9 +8,9 @@
  },
  "Aerostack2": {
   "repo": "aerostack2/aerostack2",
-  "stars": 353,
+  "stars": 355,
   "description": "Aerostack2 is a ROS 2 framework developed to create autonomous multi-aerial-robots systems in an easy and powerful way.",
-  "pushed_at": "2026-06-10",
+  "pushed_at": "2026-06-14",
   "archived": false
  },
  "airsim_ros2": {
@@ -50,9 +50,9 @@
  },
  "Autoware": {
   "repo": "autowarefoundation/autoware",
-  "stars": 11700,
+  "stars": 11710,
   "description": "Autoware - the world's leading open-source software project for autonomous driving",
-  "pushed_at": "2026-06-10",
+  "pushed_at": "2026-06-12",
   "archived": false
  },
  "auv_controllers": {
@@ -71,7 +71,7 @@
  },
  "aws-robomaker-hospital-world": {
   "repo": "aws-robotics/aws-robomaker-hospital-world",
-  "stars": 260,
+  "stars": 262,
   "description": "This Gazebo world is well suited for organizations who are building and testing robot applications in hospitals.",
   "pushed_at": "2024-05-13",
   "archived": false
@@ -99,9 +99,9 @@
  },
  "CARET": {
   "repo": "tier4/caret",
-  "stars": 103,
+  "stars": 104,
   "description": "CARET (Chain-Aware ROS Evaluation Tool) is one of performance analysis tools dedicated with ROS 2 applications",
-  "pushed_at": "2026-06-09",
+  "pushed_at": "2026-06-14",
   "archived": false
  },
  "CARLA": {
@@ -155,7 +155,7 @@
  },
  "direct_visual_lidar_calibration": {
   "repo": "koide3/direct_visual_lidar_calibration",
-  "stars": 1444,
+  "stars": 1447,
   "description": "A toolbox for target-less LiDAR-camera calibration [ROS1/ROS2]",
   "pushed_at": "2026-01-02",
   "archived": false
@@ -183,7 +183,7 @@
  },
  "evo": {
   "repo": "MichaelGrupp/evo",
-  "stars": 4251,
+  "stars": 4252,
   "description": "Python package for the evaluation of odometry and SLAM",
   "pushed_at": "2026-06-02",
   "archived": false
@@ -204,14 +204,14 @@
  },
  "Fast-LIO2": {
   "repo": "hku-mars/FAST_LIO",
-  "stars": 4776,
+  "stars": 4793,
   "description": "A computationally efficient and robust LiDAR-inertial odometry (LIO) package",
   "pushed_at": "2025-01-15",
   "archived": false
  },
  "Fast-LIVO2": {
   "repo": "integralrobotics/FAST-LIVO2",
-  "stars": 107,
+  "stars": 108,
   "description": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
   "pushed_at": "2025-04-08",
   "archived": false
@@ -274,16 +274,16 @@
  },
  "Genesis": {
   "repo": "Genesis-Embodied-AI/genesis-world",
-  "stars": 29307,
+  "stars": 29348,
   "description": "Simulation platform for general-purpose robotics & embodied AI learning.",
-  "pushed_at": "2026-06-09",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "GLIM": {
   "repo": "koide3/glim",
-  "stars": 1627,
+  "stars": 1635,
   "description": "GLIM: versatile and extensible point cloud-based 3D localization and mapping framework",
-  "pushed_at": "2026-05-07",
+  "pushed_at": "2026-06-12",
   "archived": false
  },
  "gym-gazebo-px4": {
@@ -302,7 +302,7 @@
  },
  "gym-pybullet-drones": {
   "repo": "learnsyslab/gym-pybullet-drones",
-  "stars": 2045,
+  "stars": 2050,
   "description": "PyBullet Gymnasium environments for single and multi-agent reinforcement learning of quadcopter control",
   "pushed_at": "2026-05-31",
   "archived": false
@@ -351,14 +351,14 @@
  },
  "KISS-ICP": {
   "repo": "PRBonn/kiss-icp",
-  "stars": 2212,
+  "stars": 2219,
   "description": "A LiDAR odometry pipeline that just works",
   "pushed_at": "2026-06-09",
   "archived": false
  },
  "KISS-Matcher": {
   "repo": "MIT-SPARK/KISS-Matcher",
-  "stars": 703,
+  "stars": 706,
   "description": "KISS-Matcher: Fast, Robust, and Scalable Registration + ROS2 SLAM examples",
   "pushed_at": "2026-05-19",
   "archived": false
@@ -393,7 +393,7 @@
  },
  "lerobot-ros": {
   "repo": "ycheng517/lerobot-ros",
-  "stars": 198,
+  "stars": 199,
   "description": "Lightweight interface for controlling ROS-based robotic arms using LeRobot",
   "pushed_at": "2025-11-06",
   "archived": false
@@ -421,14 +421,14 @@
  },
  "LiDAR-UAV-Autonomy": {
   "repo": "hku-mars/LiDAR-UAV-Autonomy",
-  "stars": 116,
+  "stars": 119,
   "description": "",
   "pushed_at": "2025-09-21",
   "archived": false
  },
  "LIO-SAM": {
   "repo": "TixiaoShan/LIO-SAM",
-  "stars": 4782,
+  "stars": 4790,
   "description": "LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping",
   "pushed_at": "2025-02-14",
   "archived": false
@@ -458,12 +458,12 @@
   "repo": "mavlink/mavros",
   "stars": 1181,
   "description": "MAVLink to ROS gateway with proxy for Ground Control Station",
-  "pushed_at": "2026-06-05",
+  "pushed_at": "2026-06-12",
   "archived": false
  },
  "mc_mros_reasoner": {
   "repo": "meta-control/mc_mros_reasoner",
-  "stars": 6,
+  "stars": 7,
   "description": "library for metacontrol-based self-adaptation using ontological reasoning, with wrappers for robotic systems based on ROS1 and ROS2",
   "pushed_at": "2024-06-04",
   "archived": false
@@ -505,14 +505,14 @@
  },
  "mola": {
   "repo": "MOLAorg/mola",
-  "stars": 945,
+  "stars": 946,
   "description": "A Modular Optimization framework for Localization and mApping (MOLA)",
   "pushed_at": "2026-06-10",
   "archived": false
  },
  "moveit_task_constructor": {
   "repo": "moveit/moveit_task_constructor",
-  "stars": 271,
+  "stars": 272,
   "description": "A hierarchical multi-stage manipulation planner",
   "pushed_at": "2026-06-09",
   "archived": false
@@ -547,9 +547,9 @@
  },
  "MVSim": {
   "repo": "MRPT/mvsim",
-  "stars": 401,
+  "stars": 404,
   "description": "Vehicle and mobile robotics simulator. C++ & Python API. Use it as a standalone application or via ROS 1 or ROS 2",
-  "pushed_at": "2026-06-05",
+  "pushed_at": "2026-06-11",
   "archived": false
  },
  "NanoMap": {
@@ -575,28 +575,28 @@
  },
  "Navigation2": {
   "repo": "ros-navigation/navigation2",
-  "stars": 4335,
+  "stars": 4347,
   "description": "ROS 2 Navigation Framework and System",
   "pushed_at": "2026-06-08",
   "archived": false
  },
  "Open-RMF": {
   "repo": "open-rmf/rmf",
-  "stars": 410,
+  "stars": 411,
   "description": "Root repository for the RMF software",
-  "pushed_at": "2026-06-08",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "Open-VINS": {
   "repo": "rpng/open_vins",
-  "stars": 2933,
+  "stars": 2936,
   "description": "An open source platform for visual-inertial navigation research.",
   "pushed_at": "2025-11-30",
   "archived": false
  },
  "opendr": {
   "repo": "opendr-eu/opendr",
-  "stars": 726,
+  "stars": 727,
   "description": "A modular, open and non-proprietary toolkit for core robotic functionalities by harnessing deep learning",
   "pushed_at": "2026-05-11",
   "archived": false
@@ -610,7 +610,7 @@
  },
  "ORB-SLAM3": {
   "repo": "suchetanrs/ORB-SLAM3-ROS2-Docker",
-  "stars": 405,
+  "stars": 404,
   "description": "This repository contains everything needed to run ORB-SLAM3 on a docker container with ROS2 Humble with Ubuntu 22.04.",
   "pushed_at": "2026-05-30",
   "archived": false
@@ -631,7 +631,7 @@
  },
  "PegasusSimulator": {
   "repo": "PegasusSimulator/PegasusSimulator",
-  "stars": 809,
+  "stars": 815,
   "description": "A framework built on top of NVIDIA Isaac Sim for simulating drones with PX4 support and much more",
   "pushed_at": "2026-04-28",
   "archived": false
@@ -659,7 +659,7 @@
  },
  "PyCuVSLAM": {
   "repo": "nvidia-isaac/cuVSLAM",
-  "stars": 1562,
+  "stars": 1564,
   "description": "cuVSLAM: CUDA-Accelerated Visual Odometry and Mapping",
   "pushed_at": "2026-06-02",
   "archived": false
@@ -668,7 +668,7 @@
   "repo": "StefanFabian/qml_ros2_plugin",
   "stars": 64,
   "description": "Connects QML and ROS2 enabling the simple creation of great looking Graphical User Interfaces for robotics applications. ",
-  "pushed_at": "2026-05-31",
+  "pushed_at": "2026-06-13",
   "archived": false
  },
  "RCLAda": {
@@ -715,7 +715,7 @@
  },
  "rl-tools": {
   "repo": "rl-tools/rl-tools",
-  "stars": 987,
+  "stars": 989,
   "description": "The Fastest Deep Reinforcement Learning Library",
   "pushed_at": "2026-03-23",
   "archived": false
@@ -729,7 +729,7 @@
  },
  "robot_localization": {
   "repo": "cra-ros-pkg/robot_localization",
-  "stars": 1905,
+  "stars": 1910,
   "description": "robot_localization is a package of nonlinear state estimation nodes. The package was developed by Charles River Analytics, Inc. Please ask questions on answers.ros.org.",
   "pushed_at": "2026-04-30",
   "archived": false
@@ -764,7 +764,7 @@
  },
  "ros_gz": {
   "repo": "gazebosim/ros_gz",
-  "stars": 519,
+  "stars": 522,
   "description": "Integration between ROS (1 and 2) and Gazebo simulation",
   "pushed_at": "2026-06-08",
   "archived": false
@@ -785,9 +785,9 @@
  },
  "ros-mcp-server": {
   "repo": "robotmcp/ros-mcp-server",
-  "stars": 1274,
+  "stars": 1284,
   "description": "Connect AI models like Claude & GPT with robots using MCP and ROS.",
-  "pushed_at": "2026-06-11",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "ROS-Phys-MC": {
@@ -799,9 +799,9 @@
  },
  "ros2_control": {
   "repo": "ros-controls/ros2_control",
-  "stars": 914,
+  "stars": 916,
   "description": "Generic and simple controls framework for ROS 2",
-  "pushed_at": "2026-06-09",
+  "pushed_at": "2026-06-13",
   "archived": false
  },
  "ros2_executor_evaluations": {
@@ -911,21 +911,21 @@
  },
  "ROS2SWARM": {
   "repo": "ROS2swarm/ROS2swarm",
-  "stars": 118,
+  "stars": 119,
   "description": "A ROS 2 package providing an easy-to-extend framework for and library of swarm behaviors.",
   "pushed_at": "2024-05-08",
   "archived": false
  },
  "ROSA": {
   "repo": "nasa-jpl/rosa",
-  "stars": 1544,
+  "stars": 1546,
   "description": "ROSA 🤖 is an AI Agent designed to interact with ROS1- and ROS2-based robotics systems using natural language queries. ROSA helps robot developers inspect, diagnose, understand, and operate robots.",
   "pushed_at": "2026-03-17",
   "archived": false
  },
  "ROSGPT": {
   "repo": "aniskoubaa/rosgpt",
-  "stars": 450,
+  "stars": 449,
   "description": "ROSGPT is a pioneering approach that combines the power of ChatGPT and ROS (Robot Operating System) to redefine human-robot interaction. By leveraging large language models like ChatGPT, ROSGPT enables the conversion of ",
   "pushed_at": "2025-04-24",
   "archived": false
@@ -939,9 +939,9 @@
  },
  "rtabmap": {
   "repo": "introlab/rtabmap_ros",
-  "stars": 1446,
+  "stars": 1448,
   "description": "RTAB-Map's ROS package.",
-  "pushed_at": "2026-05-26",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "rvd": {
@@ -967,7 +967,7 @@
  },
  "SkiROS2": {
   "repo": "RobotLabLTH/SkiROS2",
-  "stars": 225,
+  "stars": 226,
   "description": "A skill-based platform for ROS v.2 with knowledge representating, planning and reasoning",
   "pushed_at": "2025-06-09",
   "archived": false
@@ -983,7 +983,7 @@
   "repo": "rosmed/slicer_ros2_module",
   "stars": 46,
   "description": "Slicer module that can interface directly with ROS 2 using ROS parameters, topics, tf...",
-  "pushed_at": "2026-06-11",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "SMART-TRACK": {
@@ -1011,7 +1011,7 @@
   "repo": "ros2/sros2",
   "stars": 111,
   "description": "tools to generate and distribute keys for SROS 2",
-  "pushed_at": "2026-06-08",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "StereoSA": {
@@ -1030,14 +1030,14 @@
  },
  "SUPER": {
   "repo": "hku-mars/SUPER",
-  "stars": 931,
+  "stars": 938,
   "description": "",
   "pushed_at": "2025-06-04",
   "archived": false
  },
  "Swarm-SLAM": {
   "repo": "MISTLab/Swarm-SLAM",
-  "stars": 652,
+  "stars": 653,
   "description": "Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
   "pushed_at": "2025-04-10",
   "archived": false
@@ -1072,7 +1072,7 @@
  },
  "Unity-Robotics-Hub": {
   "repo": "Unity-Technologies/Unity-Robotics-Hub",
-  "stars": 2529,
+  "stars": 2530,
   "description": "Central repository for tools, tutorials, resources, and documentation for robotics simulation in Unity.",
   "pushed_at": "2024-11-26",
   "archived": false
@@ -1086,7 +1086,7 @@
  },
  "UUV_simulator": {
   "repo": "uuvsimulator/uuv_simulator",
-  "stars": 879,
+  "stars": 880,
   "description": "Gazebo/ROS packages for underwater robotics simulation",
   "pushed_at": "2023-08-08",
   "archived": true
@@ -1149,126 +1149,126 @@
  },
  "YOLOX": {
   "repo": "Megvii-BaseDetection/YOLOX",
-  "stars": 10493,
+  "stars": 10494,
   "description": "YOLOX is a high-performance anchor-free YOLO, exceeding yolov3~v5 with MegEngine, ONNX, TensorRT, ncnn, and OpenVINO supported. Documentation: https://yolox.readthedocs.io/",
   "pushed_at": "2025-06-08",
   "archived": false
  },
  "PX4-Autopilot": {
   "repo": "PX4/PX4-Autopilot",
-  "stars": 11926,
+  "stars": 11956,
   "description": "PX4 Autopilot Software",
-  "pushed_at": "2026-06-11",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "zenoh": {
   "repo": "eclipse-zenoh/zenoh",
-  "stars": 2857,
+  "stars": 2863,
   "description": "zenoh unifies data in motion, data in-use, data at rest and computations. It carefully blends traditional pub/sub with geo-distributed storages, queries and computations, while retaining a level of time and space efficie",
-  "pushed_at": "2026-06-11",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "Fast-DDS": {
   "repo": "eProsima/Fast-DDS",
-  "stars": 2822,
+  "stars": 2824,
   "description": "The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com",
-  "pushed_at": "2026-06-11",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "iceoryx": {
   "repo": "eclipse-iceoryx/iceoryx",
-  "stars": 2097,
+  "stars": 2103,
   "description": "Eclipse iceoryx™ - true zero-copy inter-process-communication",
   "pushed_at": "2026-05-19",
   "archived": false
  },
  "ros2_rust": {
   "repo": "ros2-rust/ros2_rust",
-  "stars": 1479,
+  "stars": 1480,
   "description": "Rust bindings for ROS 2 ",
-  "pushed_at": "2026-05-17",
+  "pushed_at": "2026-06-14",
   "archived": false
  },
  "OM1": {
   "repo": "OpenMind/OM1",
   "stars": 2809,
-  "description": "Modular AI runtime for robots",
-  "pushed_at": "2026-06-11",
+  "description": "Modular AI HAL (Hardware Abstraction Layer) for Robots",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "openarm": {
   "repo": "enactic/openarm",
-  "stars": 2567,
+  "stars": 2593,
   "description": "A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments.",
-  "pushed_at": "2026-06-10",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "isaac_ros_visual_slam": {
   "repo": "NVIDIA-ISAAC-ROS/isaac_ros_visual_slam",
-  "stars": 1382,
+  "stars": 1386,
   "description": "Visual SLAM/odometry package based on NVIDIA-accelerated cuVSLAM",
   "pushed_at": "2026-05-01",
   "archived": false
  },
  "yolo_ros": {
   "repo": "mgonzs13/yolo_ros",
-  "stars": 1066,
+  "stars": 1070,
   "description": "Ultralytics YOLOv8, YOLOv9, YOLOv10, YOLOv11, YOLOv12 for ROS 2",
   "pushed_at": "2026-05-29",
   "archived": false
  },
  "CarlaAir": {
   "repo": "louiszengCN/CarlaAir",
-  "stars": 986,
+  "stars": 992,
   "description": "CarlaAir: Fly Drones Inside a CARLA World!! A Unified Infrastructure for Air-Ground Embodied Intelligence",
   "pushed_at": "2026-05-07",
   "archived": false
  },
  "go2_ros2_sdk": {
   "repo": "abizovnuralem/go2_ros2_sdk",
-  "stars": 950,
+  "stars": 956,
   "description": "Unofficial ROS2 SDK support for Unitree GO2 AIR/PRO/EDU",
   "pushed_at": "2026-01-13",
   "archived": false
  },
  "linorobot2": {
   "repo": "linorobot/linorobot2",
-  "stars": 908,
+  "stars": 916,
   "description": "Autonomous mobile robots (2WD, 4WD, Mecanum Drive)",
   "pushed_at": "2026-04-15",
   "archived": false
  },
  "lidar_slam_ros2": {
   "repo": "rsasaki0109/lidar_slam_ros2",
-  "stars": 820,
+  "stars": 823,
   "description": "ROS 2 LiDAR SLAM for pointcloud-map authoring, benchmarking, and Autoware-compatible map workflows.",
-  "pushed_at": "2026-06-11",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "Universal_Robots_ROS2_Driver": {
   "repo": "UniversalRobots/Universal_Robots_ROS2_Driver",
   "stars": 783,
   "description": "Universal Robots ROS2 driver supporting CB3 and e-Series",
-  "pushed_at": "2026-06-10",
+  "pushed_at": "2026-06-14",
   "archived": false
  },
  "ros2_controllers": {
   "repo": "ros-controls/ros2_controllers",
-  "stars": 775,
+  "stars": 778,
   "description": "Generic robotic controllers to accompany ros2_control",
-  "pushed_at": "2026-06-10",
+  "pushed_at": "2026-06-13",
   "archived": false
  },
  "livox_ros_driver2": {
   "repo": "Livox-SDK/livox_ros_driver2",
-  "stars": 767,
+  "stars": 769,
   "description": "Livox device driver under Ros(Compatible with ros and ros2), support Lidar HAP and Mid-360.",
   "pushed_at": "2026-04-14",
   "archived": false
  },
  "eagleye": {
   "repo": "MapIV/eagleye",
-  "stars": 755,
+  "stars": 761,
   "description": "Precise localization based on GNSS and IMU.",
   "pushed_at": "2026-04-06",
   "archived": false
@@ -1282,14 +1282,14 @@
  },
  "AWSIM": {
   "repo": "autowarefoundation/AWSIM",
-  "stars": 714,
+  "stars": 715,
   "description": "Open sourced digital twin simulator for Autoware",
   "pushed_at": "2026-05-13",
   "archived": false
  },
  "genz-icp": {
   "repo": "cocel-postech/genz-icp",
-  "stars": 663,
+  "stars": 668,
   "description": "GenZ-ICP: SOTA robust LiDAR odometry (IEEE RA-L 2025)",
   "pushed_at": "2026-05-19",
   "archived": false
@@ -1303,16 +1303,16 @@
  },
  "rko_lio": {
   "repo": "PRBonn/rko_lio",
-  "stars": 578,
+  "stars": 579,
   "description": "A Robust Approach for LiDAR-Inertial Odometry Without Sensor-Specific Modelling",
   "pushed_at": "2026-06-03",
   "archived": false
  },
  "ogma": {
   "repo": "nasa/ogma",
-  "stars": 565,
+  "stars": 566,
   "description": "Generator of runtime monitors for flight and robotics applications.",
-  "pushed_at": "2026-06-07",
+  "pushed_at": "2026-06-14",
   "archived": false
  },
  "rai": {
@@ -1324,14 +1324,14 @@
  },
  "lidar_localization_ros2": {
   "repo": "rsasaki0109/lidar_localization_ros2",
-  "stars": 516,
+  "stars": 521,
   "description": "3D LIDAR Localization using NDT/GICP and pointcloud map in ROS 2 (Not SLAM)",
-  "pushed_at": "2026-06-11",
+  "pushed_at": "2026-06-15",
   "archived": false
  },
  "robot_calibration": {
   "repo": "mikeferguson/robot_calibration",
-  "stars": 477,
+  "stars": 480,
   "description": "Generic calibration for robots",
   "pushed_at": "2026-01-26",
   "archived": false
