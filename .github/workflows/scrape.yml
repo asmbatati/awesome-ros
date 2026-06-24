@@ -50,3 +50,4 @@ jobs:
             Please review classifications before merging — they are best-effort.
           branch: auto/scrape-papers
           add-paths: data/
+          delete-branch: true
