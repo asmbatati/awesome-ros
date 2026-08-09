@@ -27,6 +27,7 @@ blue,https://github.com/Robotic-Decision-Making-Lab/blue,Underwater Robots (UUVs
 Bobble-Bot,https://github.com/super-owesome/,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Hardware Drivers & Interfaces
 bonsai,https://github.com/Sollimann/bonsai,,Task-Level Planning & Reasoning,
 BotBrain,https://github.com/botbotrobotics/BotBrain,Ground Robots (UGVs legged wheeled),"Motion Planning & Navigation (global, local, path following); HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)","Visualization, Monitoring & Data Tools"
+CalibrationTools,https://github.com/tier4/CalibrationTools,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
 CARET,https://github.com/tier4/CARET,,,"Real-Time Execution & Scheduling; Analyzing, Testing, Benchmarking & Profiling"
 CARLA,https://github.com/carla-simulator/ros-bridge,"Autonomous Vehicles (cars, trucks, delivery robots)",,Simulators & Playgrounds
 cartographer,https://github.com/ros2/cartographer_ros,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
@@ -35,13 +36,17 @@ CFV2,https://github.com/cear-inacap/CFV2-testcode,,,Embedded Systems & Accelerat
 ChoiRbot,https://github.com/OPT4SMART/choirbot,,"Classical Control (PID, MPC, etc.)",Multi-Robot Systems
 Converter_PGM_to_SDF,https://github.com/Arseni1919/Converter_PGM_to_SDF?tab=readme-ov-file,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 CrazyChoir,https://github.com/OPT4SMART/crazychoir,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.); Task-Level Planning & Reasoning",Multi-Robot Systems; Simulators & Playgrounds
+crisp_controllers,https://github.com/learnsyslab/crisp_controllers,Industrial Robots,"Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics)",
 DeRO,https://github.com/hoangvietdo/dero,Ground Robots (UGVs legged wheeled),State Estimation,
 direct_visual_lidar_calibration,https://github.com/koide3/direct_visual_lidar_calibration,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 docker-for-robotics,https://github.com/2b-t/docker-for-robotics,,,Cloud/Edge Deployment & Orchestration
 docker-ros2-desktop-vnc,https://github.com/Tiryoh/docker-ros2-desktop-vnc,Robots for Education & Research,,Cloud/Edge Deployment & Orchestration
+dockerfiles,https://github.com/althack/dockerfiles,,,Cloud/Edge Deployment & Orchestration; Build & Development Tools
 dolly,https://github.com/chapulina/dolly,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Simulators & Playgrounds
 DriveEnv-NeRF,https://github.com/muyishen2040/DriveEnvNeRF,"Autonomous Vehicles (cars, trucks, delivery robots)","Sim2Real Transfer; Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+DRL-Robot-Navigation-ROS2,https://github.com/reiniscimurs/DRL-Robot-Navigation-ROS2,Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc); Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
 drl_grasping,https://github.com/AndrejOrsula/drl_grasping,Industrial Robots,"Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics); Machine Learning (RL, Adaptive, etc); Sim2Real Transfer",
+easy_handeye2,https://github.com/marcoesposito1988/easy_handeye2,Industrial Robots,State Estimation,"Analyzing, Testing, Benchmarking & Profiling"
 embeddedRTPS,https://github.com/embedded-software-laboratory/embeddedRTPS/,,,Real-Time Execution & Scheduling; Embedded Systems & Accelerators; Middleware & Communication
 ethercat_driver_ros2,https://github.com/ICube-Robotics/ethercat_driver_ros2,Industrial Robots,,Hardware Drivers & Interfaces; Real-Time Execution & Scheduling
 evo,https://github.com/MichaelGrupp/evo,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)","Analyzing, Testing, Benchmarking & Profiling"
@@ -55,10 +60,13 @@ flexible_navigation,https://github.com/FlexBE/flexible_navigation,Ground Robots 
 FlexMap_Fusion,https://github.com/TUMFTM/FlexMap_Fusion,"Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 FlightForge,https://github.com/ctu-mrs/flight_forge,Aerial Robots (UAVs),,Simulators & Playgrounds
 FogROS2,https://github.com/data-capsule/fogros2-sgc,,,Cloud/Edge Deployment & Orchestration
+FogROS2_platform,https://github.com/BerkeleyAutomation/FogROS2,,,Cloud/Edge Deployment & Orchestration
 foxglove-sdk,https://github.com/foxglove/foxglove-sdk,,,"Visualization, Monitoring & Data Tools"
 franka_ros2,https://github.com/frankarobotics/franka_ros2,Industrial Robots,,Hardware Drivers & Interfaces
 fusioncore,https://github.com/manankharwar/fusioncore,,State Estimation,
 FusionTracking,https://github.com/TUMFTM/FusionTracking,"Autonomous Vehicles (cars, trucks, delivery robots)",State Estimation,
+g1pilot,https://github.com/hucebot/g1pilot,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
+gazebo_terrain_generator,https://github.com/saiaravind19/gazebo_terrain_generator,,,Simulators & Playgrounds; Synthetic Data & Dataset Generation
 gazebo_uav_RL,https://github.com/zzzzzyh111/gazebo_uav_RL,Aerial Robots (UAVs),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 generate_parameter_library,https://github.com/PickNikRobotics/generate_parameter_library,,,Build & Development Tools
 Genesis,https://github.com/Genesis-Embodied-AI/Genesis,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
@@ -68,6 +76,7 @@ gym-gazebo-px4,https://github.com/HHM98/gym-gazebo-px4,Ground Robots (UGVs legge
 gym-gazebo2,https://github.com/AcutronicRobotics/gym-gazebo2,Industrial Robots; Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
 gym-pybullet-drones,https://github.com/utiasDSL/gym-pybullet-drones,Aerial Robots (UAVs),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 gz-sim,https://github.com/gazebosim/gz-sim,Robots for Education & Research,,Simulators & Playgrounds
+gz_ros2_control,https://github.com/ros-controls/gz_ros2_control,,"Classical Control (PID, MPC, etc.)",Simulators & Playgrounds
 HawkDrive,https://github.com/ZionGo6/HawkDrive,"Autonomous Vehicles (cars, trucks, delivery robots)",Object Detection & Semantic Understanding,"Visualization, Monitoring & Data Tools"
 horus,https://github.com/softmata/horus,,,Middleware & Communication; Real-Time Execution & Scheduling
 HRIM,https://github.com/AcutronicRobotics/HRIM,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
@@ -75,6 +84,8 @@ HuNavSim,https://github.com/robotics-upo/hunav_sim,,Intent/Behavior Forecasting,
 hutb,https://github.com/OpenHUTB/hutb,"Autonomous Vehicles (cars, trucks, delivery robots)",,Simulators & Playgrounds
 HyperDog,https://github.com/NDHANA94/hyperdog_ros2,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
 Hyperledger_Fabric,https://github.com/TIERS/ros2-fabric-integration,,,"Security, Safety & Verification; Interfacing & Interoperability (bridges, wrappers, APIs)"
+isaac_ros_common,https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common,,,Build & Development Tools; Embedded Systems & Accelerators
+isaac_ros_cumotion,https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion,Industrial Robots,"Motion Planning (global); Classical Control (PID, MPC, etc.)",Embedded Systems & Accelerators
 isaac_ros_pose_estimation,https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation,Industrial Robots,Object Detection & Semantic Understanding,Embedded Systems & Accelerators
 kalman_filter_localization_ros2,https://github.com/rsasaki0109/kalman_filter_localization_ros2,Ground Robots (UGVs legged wheeled),State Estimation,
 kinematic-icp,https://github.com/PRBonn/kinematic-icp,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
@@ -92,9 +103,11 @@ li_slam_ros2,https://github.com/rsasaki0109/li_slam_ros2,Ground Robots (UGVs leg
 libiiwa,https://github.com/Toni-SM/libiiwa,Industrial Robots,,Hardware Drivers & Interfaces
 lidar_cluster_ros2,https://github.com/jkk-research/lidar_cluster_ros2,"Autonomous Vehicles (cars, trucks, delivery robots)",Object Detection & Semantic Understanding,
 LiDAR-UAV-Autonomy,https://github.com/hku-mars/LiDAR-UAV-Autonomy?tab=readme-ov-file,Aerial Robots (UAVs),"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning (global); Reactive Planning (local , obstacle avoidance); Object Detection & Semantic Understanding; Classical Control (PID, MPC, etc.); Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics); Task-Level Planning & Reasoning; Motion Planning & Navigation (global, local, path following)",
+lidarbot,https://github.com/TheNoobInventor/lidarbot,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Embedded Systems & Accelerators
 linkforge,https://github.com/arounamounchili/linkforge,,,Build & Development Tools
 linux-realtime,https://github.com/2b-t/linux-realtime,,,Real-Time Execution & Scheduling
 LIO-SAM,https://github.com/TixiaoShan/LIO-SAM,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+llama_ros,https://github.com/mgonzs13/llama_ros,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors); Task-Level Planning & Reasoning","Interfacing & Interoperability (bridges, wrappers, APIs)"
 LPAC,https://github.com/KumarRobotics/CoverageControl,Industrial Robots,"Motion Planning (global); Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics); Motion Planning & Navigation (global, local, path following); Machine Learning (RL, Adaptive, etc)",Multi-Robot Systems; Simulators & Playgrounds
 LunarSim,https://github.com/PUTvision/LunarSim,Aerospace & Space Robotics,Object Detection & Semantic Understanding,Simulators & Playgrounds
 MAES,https://github.com/DEIS-Tools/MAES,Ground Robots (UGVs legged wheeled),"Motion Planning (global); Sim2Real Transfer; Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds; Multi-Robot Systems
@@ -103,6 +116,7 @@ mc_mros_reasoner,https://github.com/meta-control/mc_mros_reasoner,,"Classical Co
 MERLIN2,https://github.com/MERLIN2-ARCH/merlin2,Ground Robots (UGVs legged wheeled),Task-Level Planning & Reasoning,
 MeROS,https://github.com/twiniars/MeROS,,"Classical Control (PID, MPC, etc.)",Middleware & Communication
 micro-ROS,https://github.com/micro-ROS,,,"Real-Time Execution & Scheduling; Embedded Systems & Accelerators; Interfacing & Interoperability (bridges, wrappers, APIs)"
+Micro-XRCE-DDS-Agent,https://github.com/eProsima/Micro-XRCE-DDS-Agent,,,Middleware & Communication; Embedded Systems & Accelerators
 mighty,https://github.com/mit-acl/mighty,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Motion Planning (global); Motion Planning & Navigation (global, local, path following)",Multi-Robot Systems
 MINS,https://github.com/sacovo/MINS,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO); State Estimation","Visualization, Monitoring & Data Tools"
 MixNet,https://github.com/TUMFTM/MixNet,"Autonomous Vehicles (cars, trucks, delivery robots)",Motion & Trajectory Prediction,
@@ -111,6 +125,7 @@ MOCAP4ROS2,https://github.com/MOCAP4ROS2-Project,,"Sensing & Raw Data Processing
 mola,https://github.com/MOLAorg/mola,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 moveit_task_constructor,https://github.com/moveit/moveit_task_constructor,Industrial Robots,Task-Level Planning & Reasoning,
 MPSoC4Drones,https://github.com/DIII-SDU-Group/MPSoC4Drones,Aerial Robots (UAVs),,Embedded Systems & Accelerators
+mqtt_client,https://github.com/ika-rwth-aachen/mqtt_client,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
 mrpt_navigation,https://github.com/mrpt-ros-pkg/mrpt_navigation,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",
 mrs_multirotor_simulator,https://github.com/ctu-mrs/mrs_multirotor_simulator/tree/ros2,,,Simulators & Playgrounds
 mujoco_ros2,https://github.com/Woolfrey/mujoco_ros2,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
@@ -118,6 +133,7 @@ mujoco_ros2_control,https://github.com/ros-controls/mujoco_ros2_control,,"Classi
 Multi-Robot-Graph-SLAM,https://github.com/aserbremen/Multi-robot-graph-SLAM,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",Multi-Robot Systems
 MVSim,https://github.com/MRPT/mvsim,Ground Robots (UGVs legged wheeled),Sim2Real Transfer,Simulators & Playgrounds
 NanoMap,https://github.com/ViWalkerDev/NanoMap,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO); Machine Learning (RL, Adaptive, etc)",Embedded Systems & Accelerators; Simulators & Playgrounds
+nanosaur,https://github.com/rnanosaur/nanosaur,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Embedded Systems & Accelerators
 NAO,https://github.com/antbono/OAN,"Consumer, Service & Entertainment Robotics","HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",Hardware Drivers & Interfaces
 nav2_accountability_explainability,https://github.com/uleroboticsgroup/nav2_accountability_explainability,Ground Robots (UGVs legged wheeled),"HRI - Trust, Transparency & Explainability",
 Navigation2,https://github.com/ros-navigation/navigation2,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",
@@ -134,13 +150,16 @@ ORB-SLAM3,https://github.com/suchetanrs/ORB-SLAM3-ROS2-Docker,"Aerial Robots (UA
 OrbbecSDK_ROS2,https://github.com/orbbec/OrbbecSDK_ROS2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 orocos,https://github.com/orocos,,"Classical Control (PID, MPC, etc.)","Real-Time Execution & Scheduling; Interfacing & Interoperability (bridges, wrappers, APIs)"
 OtterROS,https://github.com/offroad-robotics/otter_ros,Underwater Robots (UUVs),,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+ouster-ros,https://github.com/ouster-lidar/ouster-ros,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 PAAM,https://github.com/rtenlab/reference-system-paam,"Autonomous Vehicles (cars, trucks, delivery robots)",,"Real-Time Execution & Scheduling; Embedded Systems & Accelerators; Analyzing, Testing, Benchmarking & Profiling"
 pb2025_sentry_nav,https://github.com/SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav,Ground Robots (UGVs legged wheeled),"Motion Planning & Navigation (global, local, path following); Sim2Real Transfer",
 PegasusSimulator,https://github.com/PegasusSimulator/PegasusSimulator,Aerial Robots (UAVs),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 PlanSys2,https://github.com/PlanSys2/ros2_planning_system,,Task-Level Planning & Reasoning,
+pointcloud_to_grid,https://github.com/jkk-research/pointcloud_to_grid,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 pointcloudset,https://github.com/virtual-vehicle/pointcloudset/,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
 PointIt,https://github.com/Gabry993/pointing-user-interface-hri,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors); Intent/Behavior Forecasting",
 px4-mpc,https://github.com/DISCOWER/px4-mpc,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.)",
+px4-offboard,https://github.com/Jaeyoung-Lim/px4-offboard,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs)"
 PX4-ROS2-Gazebo-YOLOv8,https://github.com/monemati/PX4-ROS2-Gazebo-YOLOv8,Aerial Robots (UAVs),Object Detection & Semantic Understanding,Simulators & Playgrounds
 PyCuVSLAM,https://github.com/NVlabs/PyCuVSLAM,"Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",Embedded Systems & Accelerators
 pymoveit2,https://github.com/AndrejOrsula/pymoveit2,Industrial Robots,Motion Planning (global),"Interfacing & Interoperability (bridges, wrappers, APIs)"
@@ -155,6 +174,7 @@ RESPLE,https://github.com/ASIG-X/RESPLE/tree/main,Aerial Robots (UAVs),State Est
 retinify,https://github.com/retinify/retinify,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Embedded Systems & Accelerators
 RGBD_OakCamera_RTABMap,https://github.com/M2219/RGBD_OakCamera_RTABMap,,Object Detection & Semantic Understanding,
 rl-tools,https://github.com/rl-tools/rl-tools,,"Machine Learning (RL, Adaptive, etc)",Build & Development Tools
+rm_vision,https://github.com/chenjunnn/rm_vision,Ground Robots (UGVs legged wheeled),Object Detection & Semantic Understanding,
 RoboFuzz,https://github.com/sslab-gatech/RoboFuzz?tab=readme-ov-file,,,"Security, Safety & Verification; Analyzing, Testing, Benchmarking & Profiling; Middleware & Communication"
 robonix,https://github.com/syswonder/robonix,,Task-Level Planning & Reasoning,Middleware & Communication
 robot_localization,https://github.com/cra-ros-pkg/robot_localization,,State Estimation,
@@ -168,14 +188,19 @@ RobotRLkit,https://github.com/FilipeAlmeidaFEUP/ros2_flatland_rl_tutorial,,"Cont
 Rolling-Bonxai,https://github.com/mukundbala/Rolling-Bonxai,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 roman_ros,https://github.com/mit-acl/roman_ros,"Aerial Robots (UAVs); Autonomous Vehicles (cars, trucks, delivery robots); Ground Robots (UGVs legged wheeled)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 ROS,https://github.com/HuangCongQing/ROS,Robots for Education & Research,,Build & Development Tools
+ros-docker-gui,https://github.com/turlucode/ros-docker-gui,,,Cloud/Edge Deployment & Orchestration; Build & Development Tools
 ros-realtime-rpi4-image,https://github.com/ros-realtime/ros-realtime-rpi4-image,,,Real-Time Execution & Scheduling; Embedded Systems & Accelerators
 ros2-depth-anything-v3-trt,https://github.com/ika-rwth-aachen/ros2-depth-anything-v3-trt,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Embedded Systems & Accelerators
+ROS2-Self-Driving-Car-AI-using-OpenCV,https://github.com/noshluk2/ROS2-Self-Driving-Car-AI-using-OpenCV,"Autonomous Vehicles (cars, trucks, delivery robots)","Object Detection & Semantic Understanding; Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+ros2_calib,https://github.com/ika-rwth-aachen/ros2_calib,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
 ros2_canopen,https://github.com/ros-industrial/ros2_canopen,Industrial Robots,,Hardware Drivers & Interfaces
 ros2_cookbook,https://github.com/mikeferguson/ros2_cookbook,Robots for Education & Research,,Build & Development Tools
 ros2_java,https://github.com/ros2-java/ros2_java,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 ROS2_learning,https://github.com/dottantgal/ROS2_learning,Robots for Education & Research,,Build & Development Tools
+ROS2_Learning_zh,https://github.com/muziing/ROS2_Learning,Robots for Education & Research,,Build & Development Tools
 ros2_medkit,https://github.com/selfpatch/ros2_medkit,,,"Analyzing, Testing, Benchmarking & Profiling; Visualization, Monitoring & Data Tools"
 ros2_RobotSimulation,https://github.com/IFRA-Cranfield/ros2_RobotSimulation,Industrial Robots,Motion Planning (global),Simulators & Playgrounds
+ros2_shm_msgs,https://github.com/ZhenshengLee/ros2_shm_msgs,,,Middleware & Communication; Real-Time Execution & Scheduling
 ros2_SimRealRobotControl,https://github.com/IFRA-Cranfield/ros2_SimRealRobotControl,Industrial Robots,Sim2Real Transfer,Simulators & Playgrounds
 ros_arm_tutorials,https://github.com/jiuyewxy/ros_arm_tutorials,Industrial Robots; Robots for Education & Research,Motion Planning (global),Build & Development Tools
 ros_gz,https://github.com/gazebosim/ros_gz,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
@@ -208,11 +233,13 @@ ROSGPT_Vision,https://github.com/bilel-bj/ROSGPT_Vision,"Autonomous Vehicles (ca
 rse_prob_robotics,https://github.com/carlos-argueta/rse_prob_robotics,Robots for Education & Research,"State Estimation; Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 rtabmap,https://github.com/introlab/rtabmap_ros/tree/ros2,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 rtabmap_standalone,https://github.com/introlab/rtabmap,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)","Visualization, Monitoring & Data Tools"
+rtui,https://github.com/eduidl/rtui,,,"Visualization, Monitoring & Data Tools"
 rust_robotics,https://github.com/rsasaki0109/rust_robotics,Robots for Education & Research,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning (global); Classical Control (PID, MPC, etc.)","Analyzing, Testing, Benchmarking & Profiling"
 rvd,https://github.com/aliasrobotics/RVD,Ground Robots (UGVs legged wheeled); Aerial Robots (UAVs),,"Security, Safety & Verification; Synthetic Data & Dataset Generation"
 SAILOR,https://github.com/MERLIN2-ARCH/sailor,,Object Detection & Semantic Understanding,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
 shodh-memory,https://github.com/varun29ankuS/shodh-memory,,Task-Level Planning & Reasoning,
 simROS2,https://github.com/CoppeliaRobotics/simROS2,,,Simulators & Playgrounds
+sjtu_drone,https://github.com/NovoG93/sjtu_drone,Aerial Robots (UAVs),,Simulators & Playgrounds
 SkiROS2,https://github.com/RobotLabLTH/SkiROS2,,Task-Level Planning & Reasoning,
 slam_toolbox,https://github.com/SteveMacenski/slam_toolbox-release,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 slicer_ros2_module,https://github.com/rosmed/slicer_ros2_module,Healthcare & Assistive Robotics,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",Hardware Drivers & Interfaces
@@ -227,12 +254,15 @@ SUAVE,https://github.com/kas-lab/suave,Underwater Robots (UUVs),"Classical Contr
 SUPER,https://github.com/hku-mars/SUPER,Aerial Robots (UAVs),"Sim2Real Transfer; Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
 Swarm-SLAM,https://github.com/MISTLab/Swarm-SLAM,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",Multi-Robot Systems
 synchronizer,https://github.com/ruoxianglee/synchronizer,,,"Real-Time Execution & Scheduling; Analyzing, Testing, Benchmarking & Profiling"
+teleop,https://github.com/SpesRobotics/teleop,Industrial Robots,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+tello-ros2,https://github.com/tentone/tello-ros2,Aerial Robots (UAVs),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",Hardware Drivers & Interfaces
 terminal_rviz,https://github.com/nathanshankar/terminal_rviz,,,"Visualization, Monitoring & Data Tools"
 The_Marathon_2,https://github.com/IntelligentRoboticsLabs/marathon_ros2,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",
 Toychain,https://github.com/teksander/toychain,,,"Security, Safety & Verification"
 uav_dataset_generation_ros,https://github.com/mzahana/uav_dataset_generation_ros,Aerial Robots (UAVs),,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
 UAV_Volcanic_Plume_Sampling,https://huggingface.co/edouard-rolland/YOLOv8-volcanic_plume-fuego_summit,Aerial Robots (UAVs),Object Detection & Semantic Understanding,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
 ultralytics_ros,https://github.com/Alpaca-zip/ultralytics_ros,,Object Detection & Semantic Understanding,
+unitree-go2-ros2,https://github.com/anujjain-dev/unitree-go2-ros2,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
 Unity-Robotics-Hub,https://github.com/Unity-Technologies/Unity-Robotics-Hub,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
 UnitySensors,https://github.com/Field-Robotics-Japan/UnitySensors,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Simulators & Playgrounds
 Universal_Robots_ROS2_Description,https://github.com/UniversalRobots/Universal_Robots_ROS2_Description,Industrial Robots,,Hardware Drivers & Interfaces
@@ -242,6 +272,7 @@ UUV_simulator,https://github.com/uuvsimulator/uuv_simulator,Underwater Robots (U
 VECTOR,https://huggingface.co/datasets/riotu-lab/Synthetic-UAV-Flight-Trajectories,Aerial Robots (UAVs),Motion & Trajectory Prediction,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
 Video_EncodingDecoding,https://github.com/STAR-Center/ros_mp4,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Visualization, Monitoring & Data Tools"
 vins-application,https://github.com/engcang/vins-application,Aerial Robots (UAVs),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",Embedded Systems & Accelerators
+vizanti,https://github.com/MoffKalast/vizanti,Ground Robots (UGVs legged wheeled),Task-Level Planning & Reasoning,"Visualization, Monitoring & Data Tools"
 Voice-Controlled-Bot-Using-ROS2,https://github.com/arynfs/Voice-Controlled-Bot-Using-ROS2,Ground Robots (UGVs legged wheeled),"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
 vox_nav,https://github.com/NMBURobotics/vox_nav,Ground Robots (UGVs legged wheeled),"Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",
 vscode_ros2_workspace,https://github.com/althack/vscode_ros2_workspace,Robots for Education & Research,,Build & Development Tools
