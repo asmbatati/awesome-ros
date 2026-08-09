@@ -24,10 +24,15 @@ jobs:
         with:
           python-version: '3.12'
 
+      # The branch is rebuilt from main on every run, so the PR only ever
+      # contains "main + whatever this run found". A window shorter than the
+      # review latency silently drops papers off the back of an unmerged PR.
+      # 365d gives a year of slack; duplicates are cheap (dedup by DOI+title).
       - name: Run scraper
         run: |
           SINCE="${{ github.event.inputs.since }}"
-          if [ -z "$SINCE" ]; then SINCE=$(date -d '45 days ago' +%Y-%m-%d); fi
+          if [ -z "$SINCE" ]; then SINCE=$(date -d '365 days ago' +%Y-%m-%d); fi
+          echo "SCRAPE_SINCE=$SINCE" >> "$GITHUB_ENV"
           echo "Scraping papers published since $SINCE"
           python scripts/scrape_papers.py --since "$SINCE"
 
@@ -44,6 +49,10 @@ jobs:
           title: '[Auto] New papers from OpenAlex'
           body: |
             Automated weekly scrape of new ROS / ROS 2 papers from OpenAlex.
+
+            **Publication window: ${{ env.SCRAPE_SINCE }} → today.** This branch is
+            rebuilt from `main` each run, so anything published before that date is
+            not in this PR even if an earlier run picked it up.
 
             Papers are deduplicated by DOI and normalized title, filtered for
             relevance, and heuristically classified into the v26 taxonomy.
