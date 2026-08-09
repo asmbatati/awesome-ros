@@ -31,6 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FRAMEWORKS_CSV = ROOT / "data" / "frameworks.csv"
 META_JSON = ROOT / "data" / "github_meta.json"
 CANDIDATES_MD = ROOT / "data" / "CANDIDATES.md"
+ROSDISTRO_SOURCES = ROOT / "data" / "rosdistro_sources.json"
 API = "https://api.github.com"
 
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
@@ -126,6 +127,7 @@ def fetch_repo(slug):
         "pushed_at": (data.get("pushed_at") or "")[:10],
         "archived": bool(data.get("archived")),
         "fork": bool(data.get("fork")),
+        "topics": (data.get("topics") or [])[:12],
     }
     # `source` is the root of the fork chain, `parent` the immediate one
     src = data.get("source") or data.get("parent")
@@ -210,6 +212,12 @@ def enrich():
     with open(FRAMEWORKS_CSV, encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
 
+    # slugs released through rosdistro are canonical even when they are forks
+    try:
+        authoritative = set(json.loads(ROSDISTRO_SOURCES.read_text()))
+    except Exception:
+        authoritative = set()
+
     meta, misses, suspect = {}, [], []
     for i, r in enumerate(rows):
         name = (r.get("file name") or "").strip()
@@ -239,6 +247,7 @@ def enrich():
                 suspect.append(f"{name}: {rec['repo']} is a bloom release repo, not source")
             src = rec.get("source")
             if (src and name not in REVIEWED_FORKS
+                    and ident.lower() not in authoritative
                     and src.get("stars", 0) > max(FORK_STAR_RATIO * rec["stars"], 50)):
                 suspect.append(
                     f"{name}: fork {rec['repo']} (*{rec['stars']}) vs upstream "

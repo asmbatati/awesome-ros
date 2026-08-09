@@ -1,209 +1,747 @@
 file name,package url,robot platforms,robot stack,infrastructure
+2D_Scan_Merger_ROS2,https://github.com/ali-pahlevani/2D_Scan_Merger_ROS2,,,
+ackermann_msgs,https://github.com/ros-drivers/ackermann_msgs,,,
+actuator_msgs,https://github.com/rudislabs/actuator_msgs,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+adaptive-bridge,https://github.com/KaushalrajPuwar/adaptive-bridge,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Real-Time Execution & Scheduling; Middleware & Communication"
+adaptive_component,https://github.com/ros-acceleration/adaptive_component,,,Hardware Drivers & Interfaces; Embedded Systems & Accelerators; Cloud/Edge Deployment & Orchestration
+ads_vendor,https://github.com/b-robotized/ads_vendor,,,
 aerial-autonomy-stack,https://github.com/JacopoPan/aerial-autonomy-stack,Aerial Robots (UAVs),Object Detection & Semantic Understanding,Multi-Robot Systems; Simulators & Playgrounds
 aerial_gym_simulator,https://github.com/ntnu-arl/aerial_gym_simulator,Aerial Robots (UAVs),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 Aerostack2,https://github.com/aerostack2/aerostack2?tab=readme-ov-file,Aerial Robots (UAVs),Task-Level Planning & Reasoning,Multi-Robot Systems
+agni_tf_tools,https://github.com/ubi-agni/agni_tf_tools,,,
+agnocast,https://github.com/autowarefoundation/agnocast,"Autonomous Vehicles (cars, trucks, delivery robots)",,Middleware & Communication
+ai_prompt_msgs,https://github.com/robosoft-ai/ai_prompt_msgs,,,
+ai_worker,https://github.com/ROBOTIS-GIT/ai_worker,Ground Robots (UGVs legged wheeled),,
 airsim_ros2,https://github.com/AlexanderRex/airsim_ros2,Aerial Robots (UAVs),,Simulators & Playgrounds
+ament_black,https://github.com/botsandus/ament_black,,,Build & Development Tools
+ament_cmake,https://github.com/ament/ament_cmake,,,Build & Development Tools
+ament_cmake_catch2,https://github.com/open-rmf/ament_cmake_catch2,,,Build & Development Tools
+ament_cmake_ros,https://github.com/ros2/ament_cmake_ros,,,Build & Development Tools
+ament_download,https://github.com/samsung-ros/ament_download,,,Build & Development Tools
+ament_hardware_acceleration,https://github.com/ros-acceleration/ament_hardware_acceleration,,,Hardware Drivers & Interfaces; Build & Development Tools
+ament_index,https://github.com/ament/ament_index,,,Build & Development Tools
+ament_lint,https://github.com/ament/ament_lint,,,"Analyzing, Testing, Benchmarking & Profiling; Build & Development Tools"
+ament_nodl,https://github.com/ros-tooling/ament_nodl,,,Build & Development Tools
+ament_package,https://github.com/ament/ament_package,,,Build & Development Tools
+ament_vitis,https://github.com/ros-acceleration/ament_vitis,,,Build & Development Tools
 anafi_autonomy,https://github.com/andriyukr/anafi_autonomy,Aerial Robots (UAVs),"Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",Hardware Drivers & Interfaces
 anafi_ros,https://github.com/andriyukr/anafi_ros/tree/ros2,Aerial Robots (UAVs),,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 andino,https://github.com/Ekumen-OS/andino,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Hardware Drivers & Interfaces
 Angler,https://github.com/Robotic-Decision-Making-Lab/angler,Underwater Robots (UUVs),Task-Level Planning & Reasoning,"Interfacing & Interoperability (bridges, wrappers, APIs); Simulators & Playgrounds"
+angles,https://github.com/ros/angles,,,
+apriltag,https://github.com/AprilRobotics/apriltag,,Object Detection & Semantic Understanding,
+apriltag_detector,https://github.com/ros-misc-utilities/apriltag_detector,,Object Detection & Semantic Understanding,
+apriltag_mit,https://github.com/ros-misc-utilities/apriltag_mit,,Object Detection & Semantic Understanding,Build & Development Tools
+apriltag_msgs,https://github.com/christianrauch/apriltag_msgs,,Object Detection & Semantic Understanding,Middleware & Communication
 apriltag_ros,https://github.com/christianrauch/apriltag_ros,,Object Detection & Semantic Understanding,
+ar4_ros_driver,https://github.com/ycheng517/ar4_ros_driver,Industrial Robots,"Classical Control (PID, MPC, etc.)",Simulators & Playgrounds; Hardware Drivers & Interfaces
+ardrone-ros2,https://github.com/vtalpaert/ardrone-ros2,Aerial Robots (UAVs),,
+aruco_markers,https://github.com/namo-robotics/aruco_markers,,Object Detection & Semantic Understanding,
+aruco_ros,https://github.com/pal-robotics/aruco_ros,,Object Detection & Semantic Understanding,"Visualization, Monitoring & Data Tools"
 astroviz,https://github.com/CDonosoK/astroviz,,,"Real-Time Execution & Scheduling; Visualization, Monitoring & Data Tools"
+astuff_sensor_msgs,https://github.com/astuff/astuff_sensor_msgs,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+async_web_server_cpp,https://github.com/fkie/async_web_server_cpp,,,
+asyncapi_gencpp,https://github.com/hatchbed/asyncapi_gencpp,,,Build & Development Tools
+at_sonde_ros_driver,https://github.com/ma-shangao/at_sonde_ros_driver,,,Hardware Drivers & Interfaces
+audio_common,https://github.com/ros-drivers/audio_common,,,
+auto-apms,https://github.com/AutoAPMS/auto-apms,,"Task-Level Planning & Reasoning; Classical Control (PID, MPC, etc.)",
 AutoCarROS2,https://github.com/winstxnhdw/AutoCarROS2,"Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
 AutoDrive,https://github.com/AutoDRIVE-Ecosystem,"Autonomous Vehicles (cars, trucks, delivery robots)",Sim2Real Transfer,Simulators & Playgrounds
+automotive_autonomy_msgs,https://github.com/astuff/automotive_autonomy_msgs,"Autonomous Vehicles (cars, trucks, delivery robots)",,
 Autoware,https://github.com/autowarefoundation/autoware,"Autonomous Vehicles (cars, trucks, delivery robots)",,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+autoware_adapi_msgs,https://github.com/autowarefoundation/autoware_adapi_msgs,"Autonomous Vehicles (cars, trucks, delivery robots)",,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+autoware_cmake,https://github.com/autowarefoundation/autoware_cmake,"Autonomous Vehicles (cars, trucks, delivery robots)",,Build & Development Tools
+autoware_core,https://github.com/autowarefoundation/autoware_core,"Autonomous Vehicles (cars, trucks, delivery robots)",,
+autoware_internal_msgs,https://github.com/autowarefoundation/autoware_internal_msgs,"Autonomous Vehicles (cars, trucks, delivery robots)",,
+autoware_lanelet2_extension,https://github.com/autowarefoundation/autoware_lanelet2_extension,"Autonomous Vehicles (cars, trucks, delivery robots)",,
+autoware_msgs,https://github.com/autowarefoundation/autoware_msgs,"Autonomous Vehicles (cars, trucks, delivery robots)",,
 autoware_universe,https://github.com/autowarefoundation/autoware_universe,"Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning & Navigation (global, local, path following); Object Detection & Semantic Understanding; Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+autoware_utils,https://github.com/autowarefoundation/autoware_utils,"Autonomous Vehicles (cars, trucks, delivery robots)",,
 auv_controllers,https://github.com/Robotic-Decision-Making-Lab/auv_controllers,Underwater Robots (UUVs),"Classical Control (PID, MPC, etc.)",
+avt_vimba_camera,https://github.com/astuff/avt_vimba_camera,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 awesome-robotic-tooling,https://github.com/Ly0n/awesome-robotic-tooling,Robots for Education & Research,,Build & Development Tools
 awesome-ros-deliberation,https://github.com/ros-wg-delib/awesome-ros-deliberation,,Task-Level Planning & Reasoning,
 aws-robomaker-hospital-world,https://github.com/aws-robotics/aws-robomaker-hospital-world,Healthcare & Assistive Robotics,Sim2Real Transfer,Simulators & Playgrounds
+aws-robomaker-small-warehouse-world,https://github.com/aws-robotics/aws-robomaker-small-warehouse-world,,,"Simulators & Playgrounds; Analyzing, Testing, Benchmarking & Profiling"
+aws_sdk_cpp_vendor,https://github.com/wep21/aws_sdk_cpp_vendor,,,
+axis_camera,https://github.com/ros-drivers/axis_camera,,"Classical Control (PID, MPC, etc.); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 Aztarna,https://github.com/aliasrobotics/aztarna,Industrial Robots,,"Security, Safety & Verification"
+azure-iot-sdk-c,https://github.com/Azure/azure-iot-sdk-c,,,Embedded Systems & Accelerators
+backward_ros,https://github.com/pal-robotics/backward_ros,,,
+bag2_to_image,https://github.com/wep21/bag2_to_image,,,
 bagel,https://github.com/Extelligence-ai/bagel,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)","Visualization, Monitoring & Data Tools"
+bcr_arm,https://github.com/blackcoffeerobotics/bcr_arm,Industrial Robots,"Classical Control (PID, MPC, etc.); Motion Planning (global)",Simulators & Playgrounds
 bcr_bot,https://github.com/blackcoffeerobotics/bcr_bot,Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
+BehaviorTree.CPP,https://github.com/BehaviorTree/BehaviorTree.CPP,,Task-Level Planning & Reasoning,
 BehaviorTree.ROS2,https://github.com/BehaviorTree/BehaviorTree.ROS2,,Task-Level Planning & Reasoning,
 beluga,https://github.com/Ekumen-OS/beluga,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 better_launch,https://github.com/dfki-ric/better_launch/tree/main,,,Build & Development Tools
 blue,https://github.com/Robotic-Decision-Making-Lab/blue,Underwater Robots (UUVs),,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+bno055,https://github.com/flynneva/bno055,,"State Estimation; Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces; Middleware & Communication
 Bobble-Bot,https://github.com/super-owesome/,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Hardware Drivers & Interfaces
+bond_core,https://github.com/ros/bond_core,,,
 bonsai,https://github.com/Sollimann/bonsai,,Task-Level Planning & Reasoning,
+boost_geometry_util,https://github.com/OUXT-Polaris/boost_geometry_util,,,
+boost_plugin_loader,https://github.com/tesseract-robotics/boost_plugin_loader,,,
+boost_sml_vendor,https://github.com/nobleo/boost_sml_vendor,,Task-Level Planning & Reasoning,
 BotBrain,https://github.com/botbotrobotics/BotBrain,Ground Robots (UGVs legged wheeled),"Motion Planning & Navigation (global, local, path following); HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)","Visualization, Monitoring & Data Tools"
 CalibrationTools,https://github.com/tier4/CalibrationTools,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
+callback_isolated_executor,https://github.com/autowarefoundation/callback_isolated_executor,,,Real-Time Execution & Scheduling; Middleware & Communication
+camera_aravis2,https://github.com/FraunhoferIOSB/camera_aravis2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+camera_ros,https://github.com/christianrauch/camera_ros,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Embedded Systems & Accelerators
+canboat_vendor,https://github.com/robotic-esp/canboat_vendor,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Build & Development Tools"
+canopen_inventus,https://github.com/clearpathrobotics/canopen_inventus,,,Hardware Drivers & Interfaces
 CARET,https://github.com/tier4/CARET,,,"Real-Time Execution & Scheduling; Analyzing, Testing, Benchmarking & Profiling"
 CARLA,https://github.com/carla-simulator/ros-bridge,"Autonomous Vehicles (cars, trucks, delivery robots)",,Simulators & Playgrounds
 cartographer,https://github.com/ros2/cartographer_ros,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+cartographer_ros2,https://github.com/ros2/cartographer,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Real-Time Execution & Scheduling
+cascade_lifecycle,https://github.com/fmrico/cascade_lifecycle,,,
+catch_ros2,https://github.com/ngmor/catch_ros2,,,"Analyzing, Testing, Benchmarking & Profiling"
 ccma,https://github.com/UniBwTAS/ccma,"Autonomous Vehicles (cars, trucks, delivery robots)",Motion Planning (global),
 CFV2,https://github.com/cear-inacap/CFV2-testcode,,,Embedded Systems & Accelerators; Hardware Drivers & Interfaces
 ChoiRbot,https://github.com/OPT4SMART/choirbot,,"Classical Control (PID, MPC, etc.)",Multi-Robot Systems
+class_loader,https://github.com/ros/class_loader,,,
+classic_bags,https://github.com/MetroRobots/classic_bags,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Synthetic Data & Dataset Generation"
+clearpath_common,https://github.com/clearpathrobotics/clearpath_common,,,
+clearpath_config,https://github.com/clearpathrobotics/clearpath_config,,,
+clearpath_desktop,https://github.com/clearpathrobotics/clearpath_desktop,,,
+clearpath_msgs,https://github.com/clearpathrobotics/clearpath_msgs,,,
+clearpath_nav2_demos,https://github.com/clearpathrobotics/clearpath_nav2_demos,,"Motion Planning & Navigation (global, local, path following)",
+clearpath_ros2_socketcan_interface,https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+clearpath_simulator,https://github.com/clearpathrobotics/clearpath_simulator,,,
+clearpath_tests,https://github.com/clearpathrobotics/clearpath_tests,,,
+clips_executive,https://github.com/carologistics/clips_executive,,,
+clips_vendor,https://github.com/carologistics/clips_vendor,,,
+cloudini,https://github.com/facontidavide/cloudini,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+cm_executors,https://github.com/cellumation/cm_executors,,,
+coal,https://github.com/coal-library/coal,,,
+cob_common,https://github.com/4am-robotics/cob_common,,,Middleware & Communication
+coin_d4_driver,https://github.com/ROBOTIS-GIT/coin_d4_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+color_names,https://github.com/OUXT-Polaris/color_names,,,
+color_util,https://github.com/MetroRobots/color_util,,,
+common_interfaces,https://github.com/ros2/common_interfaces,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+compass,https://github.com/ctu-vras/compass,,,
+console_bridge_vendor,https://github.com/ros2/console_bridge_vendor,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Build & Development Tools"
+control_box_rst,https://github.com/rst-tu-dortmund/control_box_rst,,"Classical Control (PID, MPC, etc.); Motion Planning (global)",
+control_msgs,https://github.com/ros-controls/control_msgs,,"Classical Control (PID, MPC, etc.)",
+control_toolbox,https://github.com/ros-controls/control_toolbox,,"Classical Control (PID, MPC, etc.)",
 Converter_PGM_to_SDF,https://github.com/Arseni1919/Converter_PGM_to_SDF?tab=readme-ov-file,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+cpp_polyfills,https://github.com/PickNikRobotics/cpp_polyfills,,,
+crane_plus,https://github.com/rt-net/crane_plus,,,
+cras_msgs,https://github.com/ctu-vras/cras_msgs,,,
 CrazyChoir,https://github.com/OPT4SMART/crazychoir,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.); Task-Level Planning & Reasoning",Multi-Robot Systems; Simulators & Playgrounds
+crazyswarm2,https://github.com/IMRCLab/crazyswarm2,Aerial Robots (UAVs),,Multi-Robot Systems
+create3_examples,https://github.com/iRobotEducation/create3_examples,Robots for Education & Research,,
+create3_sim,https://github.com/iRobotEducation/create3_sim,Robots for Education & Research,,
 crisp_controllers,https://github.com/learnsyslab/crisp_controllers,Industrial Robots,"Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics)",
+crocoddyl,https://github.com/loco-3d/crocoddyl,Ground Robots (UGVs legged wheeled),"Classical Control (PID, MPC, etc.); Motion Planning (global)",
+crx_kinematics,https://github.com/danielcranston/crx_kinematics,Industrial Robots,Motion Planning (global),
+cudnn_cmake_module,https://github.com/tier4/cudnn_cmake_module,,,Build & Development Tools
+cyclonedds,https://github.com/eclipse-cyclonedds/cyclonedds,,,Middleware & Communication
+daheng4ros,https://github.com/vdovetzi/daheng4ros,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+data_tamer,https://github.com/PickNikRobotics/data_tamer,,,Real-Time Execution & Scheduling
+demos,https://github.com/ros2/demos,,,
+DendROS,https://github.com/mlisi1/DendROS,,,Build & Development Tools
+depth-obstacle-detect-ros,https://github.com/analogdevicesinc/depth-obstacle-detect-ros,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+depthai-core,https://github.com/luxonis/depthai-core,,,
+depthai-ros,https://github.com/luxonis/depthai-ros,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+depthimage_to_laserscan,https://github.com/ros-perception/depthimage_to_laserscan,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 DeRO,https://github.com/hoangvietdo/dero,Ground Robots (UGVs legged wheeled),State Estimation,
+diagnostics,https://github.com/ros/diagnostics,,,
 direct_visual_lidar_calibration,https://github.com/koide3/direct_visual_lidar_calibration,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 docker-for-robotics,https://github.com/2b-t/docker-for-robotics,,,Cloud/Edge Deployment & Orchestration
 docker-ros2-desktop-vnc,https://github.com/Tiryoh/docker-ros2-desktop-vnc,Robots for Education & Research,,Cloud/Edge Deployment & Orchestration
 dockerfiles,https://github.com/althack/dockerfiles,,,Cloud/Edge Deployment & Orchestration; Build & Development Tools
 dolly,https://github.com/chapulina/dolly,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Simulators & Playgrounds
+domain_bridge,https://github.com/ros2/domain_bridge,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+doom_ros,https://github.com/gstavrinos/doom_ros,,,Hardware Drivers & Interfaces
 DriveEnv-NeRF,https://github.com/muyishen2040/DriveEnvNeRF,"Autonomous Vehicles (cars, trucks, delivery robots)","Sim2Real Transfer; Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 DRL-Robot-Navigation-ROS2,https://github.com/reiniscimurs/DRL-Robot-Navigation-ROS2,Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc); Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
 drl_grasping,https://github.com/AndrejOrsula/drl_grasping,Industrial Robots,"Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics); Machine Learning (RL, Adaptive, etc); Sim2Real Transfer",
+dual_laser_merger,https://github.com/pradyum/dual_laser_merger,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Cloud/Edge Deployment & Orchestration
+dynamixel-workbench,https://github.com/ROBOTIS-GIT/dynamixel-workbench,,,"Visualization, Monitoring & Data Tools"
+dynamixel-workbench-msgs,https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs,,,"Visualization, Monitoring & Data Tools; Middleware & Communication"
+dynamixel_hardware,https://github.com/dynamixel-community/dynamixel_hardware,,"Classical Control (PID, MPC, etc.)",Hardware Drivers & Interfaces
+dynamixel_hardware_interface,https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces"
+dynamixel_interfaces,https://github.com/ROBOTIS-GIT/dynamixel_interfaces,,,
+DynamixelSDK,https://github.com/ROBOTIS-GIT/DynamixelSDK,,,Embedded Systems & Accelerators
 easy_handeye2,https://github.com/marcoesposito1988/easy_handeye2,Industrial Robots,State Estimation,"Analyzing, Testing, Benchmarking & Profiling"
+easynav_plugins,https://github.com/EasyNavigation/easynav_plugins,,,
+EasyNavigation,https://github.com/EasyNavigation/EasyNavigation,,,
+ecal,https://github.com/eclipse-ecal/ecal,"Autonomous Vehicles (cars, trucks, delivery robots)",,Middleware & Communication
+ecl_core,https://github.com/stonier/ecl_core,,"Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+ecl_lite,https://github.com/stonier/ecl_lite,,,Embedded Systems & Accelerators
+ecl_tools,https://github.com/stonier/ecl_tools,,"Classical Control (PID, MPC, etc.)",Embedded Systems & Accelerators; Build & Development Tools
+eigen3_cmake_module,https://github.com/ros2/eigen3_cmake_module,,,Build & Development Tools
+eigen_stl_containers,https://github.com/ros/eigen_stl_containers,,,
+eigenpy,https://github.com/stack-of-tasks/eigenpy,,,
+eiquadprog,https://github.com/stack-of-tasks/eiquadprog,,,
 embeddedRTPS,https://github.com/embedded-software-laboratory/embeddedRTPS/,,,Real-Time Execution & Scheduling; Embedded Systems & Accelerators; Middleware & Communication
+embodied-agents,https://github.com/automatika-robotics/embodied-agents,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",Hardware Drivers & Interfaces
+ess_imu_driver2,https://github.com/cubicleguy/ess_imu_driver2,,State Estimation,"Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces"
 ethercat_driver_ros2,https://github.com/ICube-Robotics/ethercat_driver_ros2,Industrial Robots,,Hardware Drivers & Interfaces; Real-Time Execution & Scheduling
+etsi_its_messages,https://github.com/ika-rwth-aachen/etsi_its_messages,,,Middleware & Communication
+event_camera_codecs,https://github.com/ros-event-camera/event_camera_codecs,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+event_camera_msgs,https://github.com/ros-event-camera/event_camera_msgs,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+event_camera_py,https://github.com/ros-event-camera/event_camera_py,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+event_camera_renderer,https://github.com/ros-event-camera/event_camera_renderer,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+event_camera_tools,https://github.com/ros-event-camera/event_camera_tools,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+event_image_reconstruction_fibar,https://github.com/ros-event-camera/event_image_reconstruction_fibar,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 evo,https://github.com/MichaelGrupp/evo,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)","Analyzing, Testing, Benchmarking & Profiling"
+ewellix_lift_common,https://github.com/clearpathrobotics/ewellix_lift_common,Industrial Robots,,
+example_interfaces,https://github.com/ros2/example_interfaces,Robots for Education & Research,,
+examples,https://github.com/ros2/examples,Robots for Education & Research,,
+executive_smach,https://github.com/ros/executive_smach,,,
 F1TenthGym,https://github.com/f1tenth/f1tenth_gym,"Autonomous Vehicles (cars, trucks, delivery robots)","Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+fadecandy_ros,https://github.com/eurogroep/fadecandy_ros,,,Hardware Drivers & Interfaces
+Fast-CDR,https://github.com/eProsima/Fast-CDR,,,
 FAST_LIO_SLAM_ros2,https://github.com/rohrschacht/FAST_LIO_SLAM_ros2,Aerial Robots (UAVs),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 Fast-LIO2,https://github.com/hku-mars/FAST_LIO,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 Fast-LIVO2,https://github.com/hku-mars/FAST-LIVO2,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",Embedded Systems & Accelerators
+feetech_ros2_driver,https://github.com/ros-physical-ai/feetech_ros2_driver,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces"
+ffmpeg_encoder_decoder,https://github.com/ros-misc-utilities/ffmpeg_encoder_decoder,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+ffmpeg_image_transport,https://github.com/ros-misc-utilities/ffmpeg_image_transport,,,Middleware & Communication
+ffmpeg_image_transport_msgs,https://github.com/ros-misc-utilities/ffmpeg_image_transport_msgs,,,Middleware & Communication
+ffmpeg_image_transport_tools,https://github.com/ros-misc-utilities/ffmpeg_image_transport_tools,,,Middleware & Communication
+fibar_lib,https://github.com/ros-event-camera/fibar_lib,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Build & Development Tools
+Fields2Cover,https://github.com/Fields2Cover/Fields2Cover,,,"Analyzing, Testing, Benchmarking & Profiling"
+filters,https://github.com/ros/filters,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Build & Development Tools"
+find-object,https://github.com/introlab/find-object,,,
+fkie-multi-agent-suite,https://github.com/fkie/fkie-multi-agent-suite,,Object Detection & Semantic Understanding,Multi-Robot Systems
 flatland,https://github.com/avidbots/flatland,Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+flex_sync,https://github.com/ros-misc-utilities/flex_sync,,,Middleware & Communication
 flexbe_behavior_engine,https://github.com/FlexBE/flexbe_behavior_engine,,Task-Level Planning & Reasoning,
 flexible_navigation,https://github.com/FlexBE/flexible_navigation,Ground Robots (UGVs legged wheeled),"Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",
 FlexMap_Fusion,https://github.com/TUMFTM/FlexMap_Fusion,"Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 FlightForge,https://github.com/ctu-mrs/flight_forge,Aerial Robots (UAVs),,Simulators & Playgrounds
+flir_camera_driver,https://github.com/ros-drivers/flir_camera_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+flir_ptu,https://github.com/ros-drivers/flir_ptu,,,Hardware Drivers & Interfaces
+FluentRviz,https://github.com/ForteFibre/FluentRviz,,,"Visualization, Monitoring & Data Tools"
+fmi_adapter,https://github.com/boschresearch/fmi_adapter,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+fmilibrary_vendor,https://github.com/boschresearch/fmilibrary_vendor,,,
 FogROS2,https://github.com/data-capsule/fogros2-sgc,,,Cloud/Edge Deployment & Orchestration
 FogROS2_platform,https://github.com/BerkeleyAutomation/FogROS2,,,Cloud/Edge Deployment & Orchestration
+foonathan_memory_vendor,https://github.com/eProsima/foonathan_memory_vendor,,,Middleware & Communication
+four_wheel_steering_msgs,https://github.com/ros-drivers/four_wheel_steering_msgs,,,
 foxglove-sdk,https://github.com/foxglove/foxglove-sdk,,,"Visualization, Monitoring & Data Tools"
+foxglove_compressed_video_transport,https://github.com/ros-misc-utilities/foxglove_compressed_video_transport,,,"Visualization, Monitoring & Data Tools; Middleware & Communication"
 franka_ros2,https://github.com/frankarobotics/franka_ros2,Industrial Robots,,Hardware Drivers & Interfaces
+frequency_cam,https://github.com/ros-event-camera/frequency_cam,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+fuse,https://github.com/locusrobotics/fuse,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); State Estimation; Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 fusioncore,https://github.com/manankharwar/fusioncore,,State Estimation,
 FusionTracking,https://github.com/TUMFTM/FusionTracking,"Autonomous Vehicles (cars, trucks, delivery robots)",State Estimation,
 g1pilot,https://github.com/hucebot/g1pilot,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
+game_controller_spl,https://github.com/ros-sports/game_controller_spl,,"Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+gauges2,https://github.com/ToyotaResearchInstitute/gauges2,,,
 gazebo_terrain_generator,https://github.com/saiaravind19/gazebo_terrain_generator,,,Simulators & Playgrounds; Synthetic Data & Dataset Generation
 gazebo_uav_RL,https://github.com/zzzzzyh111/gazebo_uav_RL,Aerial Robots (UAVs),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 generate_parameter_library,https://github.com/PickNikRobotics/generate_parameter_library,,,Build & Development Tools
 Genesis,https://github.com/Genesis-Embodied-AI/genesis-world,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+geographic_info,https://github.com/ros-geographic-info/geographic_info,,,
+geometric_shapes,https://github.com/moveit/geometric_shapes,Industrial Robots,,
+geometry2,https://github.com/ros2/geometry2,,,
+geometry_tutorials,https://github.com/ros/geometry_tutorials,,,
 GLIM,https://github.com/koide3/glim,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",Embedded Systems & Accelerators
+google_benchmark_vendor,https://github.com/ament/google_benchmark_vendor,,,"Analyzing, Testing, Benchmarking & Profiling; Build & Development Tools"
+googletest,https://github.com/ament/googletest,,,"Analyzing, Testing, Benchmarking & Profiling; Build & Development Tools"
+gps_umd,https://github.com/swri-robotics/gps_umd,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+graph-monitor,https://github.com/ros-tooling/graph-monitor,,,"Visualization, Monitoring & Data Tools; Build & Development Tools"
+graph_msgs,https://github.com/PickNikRobotics/graph_msgs,,,
+grasping_msgs,https://github.com/mikeferguson/grasping_msgs,,Motion Planning (global),
+grbl_msgs,https://github.com/flynneva/grbl_msgs,,,
+grbl_ros,https://github.com/flynneva/grbl_ros,,,
+greenwave_monitor,https://github.com/NVIDIA-ISAAC-ROS/greenwave_monitor,,,"Visualization, Monitoring & Data Tools"
+grid_map,https://github.com/ANYbotics/grid_map,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",
 GRIL-Calib,https://github.com/Taeyoung96/GRIL-Calib,Ground Robots (UGVs legged wheeled),State Estimation,"Analyzing, Testing, Benchmarking & Profiling"
+gscam,https://github.com/ros-drivers/gscam,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+gstreamer_ros_babel_fish,https://github.com/StefanFabian/gstreamer_ros_babel_fish,,,
+gtsam,https://github.com/borglab/gtsam,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); State Estimation",
+gtsam2mrpt_serial,https://github.com/MRPT/gtsam2mrpt_serial,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)","Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces"
 gym-gazebo-px4,https://github.com/HHM98/gym-gazebo-px4,Ground Robots (UGVs legged wheeled); Industrial Robots,"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 gym-gazebo2,https://github.com/AcutronicRobotics/gym-gazebo2,Industrial Robots; Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
 gym-pybullet-drones,https://github.com/learnsyslab/gym-pybullet-drones,Aerial Robots (UAVs),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+gz-rviz,https://github.com/gazebosim/gz-rviz,,,"Simulators & Playgrounds; Visualization, Monitoring & Data Tools"
 gz-sim,https://github.com/gazebosim/gz-sim,Robots for Education & Research,,Simulators & Playgrounds
+gz_cmake_vendor,https://github.com/gazebo-release/gz_cmake_vendor,,,Simulators & Playgrounds; Build & Development Tools
+gz_common_vendor,https://github.com/gazebo-release/gz_common_vendor,,,Simulators & Playgrounds
+gz_dartsim_vendor,https://github.com/gazebo-release/gz_dartsim_vendor,,,Simulators & Playgrounds
+gz_fuel_tools_vendor,https://github.com/gazebo-release/gz_fuel_tools_vendor,,,Simulators & Playgrounds
+gz_gui_vendor,https://github.com/gazebo-release/gz_gui_vendor,,,"Simulators & Playgrounds; Visualization, Monitoring & Data Tools"
+gz_launch_vendor,https://github.com/gazebo-release/gz_launch_vendor,,,Simulators & Playgrounds
+gz_math_vendor,https://github.com/gazebo-release/gz_math_vendor,,,Simulators & Playgrounds
+gz_msgs_vendor,https://github.com/gazebo-release/gz_msgs_vendor,,,Simulators & Playgrounds
+gz_ogre_next_vendor,https://github.com/gazebo-release/gz_ogre_next_vendor,,,Simulators & Playgrounds
+gz_physics_vendor,https://github.com/gazebo-release/gz_physics_vendor,,,Simulators & Playgrounds
+gz_plugin_vendor,https://github.com/gazebo-release/gz_plugin_vendor,,,Simulators & Playgrounds
+gz_rendering_vendor,https://github.com/gazebo-release/gz_rendering_vendor,,,Simulators & Playgrounds
 gz_ros2_control,https://github.com/ros-controls/gz_ros2_control,,"Classical Control (PID, MPC, etc.)",Simulators & Playgrounds
+gz_sensors_vendor,https://github.com/gazebo-release/gz_sensors_vendor,,,Simulators & Playgrounds
+gz_sim_vendor,https://github.com/gazebo-release/gz_sim_vendor,,,Simulators & Playgrounds
+gz_tools_vendor,https://github.com/gazebo-release/gz_tools_vendor,,,Simulators & Playgrounds
+gz_transport_vendor,https://github.com/gazebo-release/gz_transport_vendor,,,Simulators & Playgrounds; Middleware & Communication
+gz_utils_vendor,https://github.com/gazebo-release/gz_utils_vendor,,,Simulators & Playgrounds
+hash_library_vendor,https://github.com/tier4/hash_library_vendor,,,
+hatchbed_common,https://github.com/hatchbed/hatchbed_common,,,
 HawkDrive,https://github.com/ZionGo6/HawkDrive,"Autonomous Vehicles (cars, trucks, delivery robots)",Object Detection & Semantic Understanding,"Visualization, Monitoring & Data Tools"
+heaphook,https://github.com/tier4/heaphook,,,
+hebi_cpp_api_ros,https://github.com/HebiRobotics/hebi_cpp_api_ros,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+hebi_hardware,https://github.com/HebiRobotics/hebi_hardware,,,Hardware Drivers & Interfaces
+hebi_msgs,https://github.com/HebiRobotics/hebi_msgs,,,
+hector_rviz_overlay,https://github.com/tu-darmstadt-ros-pkg/hector_rviz_overlay,,,"Visualization, Monitoring & Data Tools"
+heightmap_spawner,https://github.com/damanikjosh/heightmap_spawner,,,Simulators & Playgrounds
+hitch-estimation-apriltag-array,https://github.com/li9i/hitch-estimation-apriltag-array,,Object Detection & Semantic Understanding; State Estimation,
+hls_lfcd_lds_driver,https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 horus,https://github.com/softmata/horus,,,Middleware & Communication; Real-Time Execution & Scheduling
+hri_actions_msgs,https://github.com/ros4hri/hri_actions_msgs,,,
+hri_msgs,https://github.com/ros4hri/hri_msgs,,,Middleware & Communication
+hri_rviz,https://github.com/ros4hri/hri_rviz,,,"Visualization, Monitoring & Data Tools"
 HRIM,https://github.com/AcutronicRobotics/HRIM,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+human_description,https://github.com/ros4hri/human_description,,,
 HuNavSim,https://github.com/robotics-upo/hunav_sim,,Intent/Behavior Forecasting,Simulators & Playgrounds
+husarion_components_description,https://github.com/husarion/husarion_components_description,,,Hardware Drivers & Interfaces
+husarion_controllers,https://github.com/husarion/husarion_controllers,,,
+husarion_gz_worlds,https://github.com/husarion/husarion_gz_worlds,,,Simulators & Playgrounds
+husarion_ugv_ros,https://github.com/husarion/husarion_ugv_ros,,"Classical Control (PID, MPC, etc.)",Simulators & Playgrounds
 hutb,https://github.com/OpenHUTB/hutb,"Autonomous Vehicles (cars, trucks, delivery robots)",,Simulators & Playgrounds
 HyperDog,https://github.com/NDHANA94/hyperdog_ros2,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
 Hyperledger_Fabric,https://github.com/TIERS/ros2-fabric-integration,,,"Security, Safety & Verification; Interfacing & Interoperability (bridges, wrappers, APIs)"
+hyveos_ros,https://github.com/p2p-industries/hyveos_ros,,,
+hyveos_ros_msgs,https://github.com/p2p-industries/hyveos_ros_msgs,,,
+iio_ros2,https://github.com/analogdevicesinc/iio_ros2,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+image_common,https://github.com/ros-perception/image_common,,,
+image_pipeline,https://github.com/ros-perception/image_pipeline,,,
+image_transport_plugins,https://github.com/ros-perception/image_transport_plugins,,,Middleware & Communication
+imu_pipeline,https://github.com/ros-perception/imu_pipeline,,State Estimation,
+imu_ros2,https://github.com/analogdevicesinc/imu_ros2,,State Estimation,Hardware Drivers & Interfaces
+imu_tools,https://github.com/CCNYRoboticsLab/imu_tools,,State Estimation,
+insight_gui,https://github.com/julianmueller/insight_gui,,,"Visualization, Monitoring & Data Tools"
+interactive_marker_twist_server,https://github.com/ros-visualization/interactive_marker_twist_server,,,"Visualization, Monitoring & Data Tools"
+interactive_markers,https://github.com/ros-visualization/interactive_markers,,,"Visualization, Monitoring & Data Tools"
+inverse-dynamics-solver,https://github.com/unisa-acg/inverse-dynamics-solver,,,
+irobot_create_msgs,https://github.com/iRobotEducation/irobot_create_msgs,,,Middleware & Communication
 isaac_ros_common,https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common,,,Build & Development Tools; Embedded Systems & Accelerators
 isaac_ros_cumotion,https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion,Industrial Robots,"Motion Planning (global); Classical Control (PID, MPC, etc.)",Embedded Systems & Accelerators
 isaac_ros_pose_estimation,https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation,Industrial Robots,Object Detection & Semantic Understanding,Embedded Systems & Accelerators
+jacro,https://github.com/JafarAbdi/jacro,,,
+jig,https://github.com/nineyards-robotics/jig,,,
+joint_state_publisher,https://github.com/ros/joint_state_publisher,,,
+joy_tester,https://github.com/joshnewans/joy_tester,,,"Analyzing, Testing, Benchmarking & Profiling"
+joystick_drivers,https://github.com/ros-drivers/joystick_drivers,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
+jrl-cmakemodules,https://github.com/jrl-umi3218/jrl-cmakemodules,,,Build & Development Tools
+jsk_common_msgs,https://github.com/jsk-ros-pkg/jsk_common_msgs,,,
 kalman_filter_localization_ros2,https://github.com/rsasaki0109/kalman_filter_localization_ros2,Ground Robots (UGVs legged wheeled),State Estimation,
+kdl_parser,https://github.com/ros/kdl_parser,,,
+keyboard_handler,https://github.com/ros-tooling/keyboard_handler,,,Build & Development Tools
 kinematic-icp,https://github.com/PRBonn/kinematic-icp,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+kinematic_pose_msgs,https://github.com/qleonardolp/kinematic_pose_msgs,,Object Detection & Semantic Understanding,Middleware & Communication
+kinematics_interface,https://github.com/ros-controls/kinematics_interface,,Motion Planning (global),"Interfacing & Interoperability (bridges, wrappers, APIs)"
 kinova_isaaclab_sim2real,https://github.com/louislelay/kinova_isaaclab_sim2real,Industrial Robots,"Sim2Real Transfer; Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 KISS-ICP,https://github.com/PRBonn/kiss-icp,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 KISS-Matcher,https://github.com/MIT-SPARK/KISS-Matcher/tree/main,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 kmriiwa,https://github.com/ninamwa/kmriiwa_ws,Industrial Robots,,"Hardware Drivers & Interfaces; Interfacing & Interoperability (bridges, wrappers, APIs)"
+kobuki_core,https://github.com/kobuki-base/kobuki_core,,,
+kobuki_ros_interfaces,https://github.com/kobuki-base/kobuki_ros_interfaces,,,
+kobuki_velocity_smoother,https://github.com/kobuki-base/kobuki_velocity_smoother,,,
+kompass,https://github.com/automatika-robotics/kompass,,"Motion Planning & Navigation (global, local, path following); Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs); Embedded Systems & Accelerators; Cloud/Edge Deployment & Orchestration"
 KubeROS,https://github.com/kuberos-io/kuberos,,,Cloud/Edge Deployment & Orchestration
+kuka-external-control-sdk,https://github.com/kroshu/kuka-external-control-sdk,Industrial Robots,"Classical Control (PID, MPC, etc.)",
+kuka_drivers,https://github.com/kroshu/kuka_drivers,Industrial Robots,,
+kuka_robot_descriptions,https://github.com/kroshu/kuka_robot_descriptions,Industrial Robots,,
+Lanelet2,https://github.com/fzi-forschungszentrum-informatik/Lanelet2,,,
+laser_filters,https://github.com/ros-perception/laser_filters,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+laser_geometry,https://github.com/ros-perception/laser_geometry,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+laser_proc,https://github.com/ros-perception/laser_proc,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+laser_scan_merger,https://github.com/BruceChanJianLe/laser_scan_merger,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+laser_segmentation,https://github.com/ajtudela/laser_segmentation,,"Object Detection & Semantic Understanding; Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
 latency_analysis,https://github.com/ruoxianglee/latency_analysis,,,"Real-Time Execution & Scheduling; Analyzing, Testing, Benchmarking & Profiling"
+launch,https://github.com/ros2/launch,,,
+launch_frontend_py,https://github.com/ros-tooling/launch_frontend_py,,,Build & Development Tools
+launch_pal,https://github.com/pal-robotics/launch_pal,,,
+launch_param_builder,https://github.com/PickNikRobotics/launch_param_builder,,,
+launch_ros,https://github.com/ros2/launch_ros,,,
 LBR-Stack,https://github.com/lbr-stack/lbr_stack_doc,Industrial Robots,,Hardware Drivers & Interfaces; Real-Time Execution & Scheduling
 lbr_fri_ros2_stack,https://github.com/lbr-stack/lbr_fri_ros2_stack,Industrial Robots,,Hardware Drivers & Interfaces; Real-Time Execution & Scheduling
+ld08_driver,https://github.com/ROBOTIS-GIT/ld08_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+leo_common-ros2,https://github.com/LeoRover/leo_common-ros2,,,
+leo_desktop-ros2,https://github.com/LeoRover/leo_desktop-ros2,,,"Visualization, Monitoring & Data Tools"
+leo_examples-ros2,https://github.com/LeoRover/leo_examples-ros2,Robots for Education & Research,,
+leo_robot-ros2,https://github.com/LeoRover/leo_robot-ros2,,,
+leo_simulator-ros2,https://github.com/LeoRover/leo_simulator-ros2,,,
 lerobot-ros,https://github.com/ycheng517/lerobot-ros,Industrial Robots; Robots for Education & Research,,Hardware Drivers & Interfaces; Embedded Systems & Accelerators
+lgsvl_msgs,https://github.com/lgsvl/lgsvl_msgs,"Autonomous Vehicles (cars, trucks, delivery robots)",,
 LGSVL_Simulator,https://github.com/lgsvl/simulator,"Autonomous Vehicles (cars, trucks, delivery robots)",,Simulators & Playgrounds
 li_slam_ros2,https://github.com/rsasaki0109/li_slam_ros2,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+libaditof,https://github.com/analogdevicesinc/libaditof,,,
+libbno055-linux,https://github.com/lazytatzv/libbno055-linux,,State Estimation,Hardware Drivers & Interfaces; Embedded Systems & Accelerators
+libcaer_driver,https://github.com/ros-event-camera/libcaer_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+libcaer_vendor,https://github.com/ros-event-camera/libcaer_vendor,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+libhri,https://github.com/ros4hri/libhri,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 libiiwa,https://github.com/Toni-SM/libiiwa,Industrial Robots,,Hardware Drivers & Interfaces
+libnabo,https://github.com/norlab-ulaval/libnabo,,,
+libpointmatcher,https://github.com/norlab-ulaval/libpointmatcher,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+libqi,https://github.com/ros-naoqi/libqi,,,
+libqicore,https://github.com/ros-naoqi/libqicore,,,
+librealsense,https://github.com/realsenseai/librealsense,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces"
+libstatistics_collector,https://github.com/ros-tooling/libstatistics_collector,,,Build & Development Tools
+libyaml_vendor,https://github.com/ros2/libyaml_vendor,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Build & Development Tools"
 lidar_cluster_ros2,https://github.com/jkk-research/lidar_cluster_ros2,"Autonomous Vehicles (cars, trucks, delivery robots)",Object Detection & Semantic Understanding,
 LiDAR-UAV-Autonomy,https://github.com/hku-mars/LiDAR-UAV-Autonomy?tab=readme-ov-file,Aerial Robots (UAVs),"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning (global); Reactive Planning (local , obstacle avoidance); Object Detection & Semantic Understanding; Classical Control (PID, MPC, etc.); Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics); Task-Level Planning & Reasoning; Motion Planning & Navigation (global, local, path following)",
 lidarbot,https://github.com/TheNoobInventor/lidarbot,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Embedded Systems & Accelerators
+lightning_rrt,https://github.com/david-dorf/lightning_rrt,,"Motion Planning & Navigation (global, local, path following)",
+lightning_rrt_interfaces,https://github.com/david-dorf/lightning_rrt_interfaces,,,
+linear-feedback-controller,https://github.com/loco-3d/linear-feedback-controller,,"Classical Control (PID, MPC, etc.)",Hardware Drivers & Interfaces
+linear-feedback-controller-msgs,https://github.com/loco-3d/linear-feedback-controller-msgs,,"Classical Control (PID, MPC, etc.)",
 linkforge,https://github.com/arounamounchili/linkforge,,,Build & Development Tools
 linux-realtime,https://github.com/2b-t/linux-realtime,,,Real-Time Execution & Scheduling
+linux_isolate_process,https://github.com/adityapande-1995/linux_isolate_process,,,Hardware Drivers & Interfaces
 LIO-SAM,https://github.com/TixiaoShan/LIO-SAM,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+live555_vendor,https://github.com/fkie/live555_vendor,,,
 llama_ros,https://github.com/mgonzs13/llama_ros,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors); Task-Level Planning & Reasoning","Interfacing & Interoperability (bridges, wrappers, APIs)"
+LMS1xx,https://github.com/clearpathrobotics/LMS1xx,,,Hardware Drivers & Interfaces
+log_view,https://github.com/hatchbed/log_view,,,"Visualization, Monitoring & Data Tools"
 LPAC,https://github.com/KumarRobotics/CoverageControl,Industrial Robots,"Motion Planning (global); Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics); Motion Planning & Navigation (global, local, path following); Machine Learning (RL, Adaptive, etc)",Multi-Robot Systems; Simulators & Playgrounds
 LunarSim,https://github.com/PUTvision/LunarSim,Aerospace & Space Robotics,Object Detection & Semantic Understanding,Simulators & Playgrounds
+lvr2,https://github.com/uos/lvr2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Cloud/Edge Deployment & Orchestration
 MAES,https://github.com/DEIS-Tools/MAES,Ground Robots (UGVs legged wheeled),"Motion Planning (global); Sim2Real Transfer; Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds; Multi-Robot Systems
+magic_enum,https://github.com/Neargye/magic_enum,,,
+mapoi,https://github.com/shimz-robotics/mapoi,,,
+mapviz,https://github.com/swri-robotics/mapviz,,,
+marine_msgs,https://github.com/apl-ocean-engineering/marine_msgs,Underwater Robots (UUVs),,
+marker_msgs,https://github.com/tuw-robotics/marker_msgs,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Visualization, Monitoring & Data Tools; Middleware & Communication"
+marti_common,https://github.com/swri-robotics/marti_common,,,
+marti_messages,https://github.com/swri-robotics/marti_messages,,,
 mavros,https://github.com/mavlink/mavros,Aerial Robots (UAVs),,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 mc_mros_reasoner,https://github.com/meta-control/mc_mros_reasoner,,"Classical Control (PID, MPC, etc.)",Hardware Drivers & Interfaces
+menge_vendor,https://github.com/open-rmf/menge_vendor,,,Build & Development Tools
 MERLIN2,https://github.com/MERLIN2-ARCH/merlin2,Ground Robots (UGVs legged wheeled),Task-Level Planning & Reasoning,
 MeROS,https://github.com/twiniars/MeROS,,"Classical Control (PID, MPC, etc.)",Middleware & Communication
+mesh_tools,https://github.com/naturerobots/mesh_tools,,,"Visualization, Monitoring & Data Tools"
+message_filters,https://github.com/fkie/message_filters,,,Middleware & Communication
+message_filters_ros2,https://github.com/ros2/message_filters,,,Middleware & Communication
+message_tf_frame_transformer,https://github.com/ika-rwth-aachen/message_tf_frame_transformer,,"Machine Learning (RL, Adaptive, etc)",Middleware & Communication
+metavision_driver,https://github.com/ros-event-camera/metavision_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 micro-ROS,https://github.com/micro-ROS,,,"Real-Time Execution & Scheduling; Embedded Systems & Accelerators; Interfacing & Interoperability (bridges, wrappers, APIs)"
 Micro-XRCE-DDS-Agent,https://github.com/eProsima/Micro-XRCE-DDS-Agent,,,Middleware & Communication; Embedded Systems & Accelerators
+micro_ros_diagnostics,https://github.com/micro-ROS/micro_ros_diagnostics,,,Embedded Systems & Accelerators
+micro_ros_msgs,https://github.com/micro-ROS/micro_ros_msgs,,,Embedded Systems & Accelerators; Middleware & Communication
+microstrain_inertial,https://github.com/LORD-MicroStrain/microstrain_inertial,,"Motion Planning & Navigation (global, local, path following); State Estimation",Hardware Drivers & Interfaces
 mighty,https://github.com/mit-acl/mighty,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Motion Planning (global); Motion Planning & Navigation (global, local, path following)",Multi-Robot Systems
+mimick_vendor,https://github.com/ros2/mimick_vendor,,,
 MINS,https://github.com/rpng/MINS,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO); State Estimation","Visualization, Monitoring & Data Tools"
+mir_robot,https://github.com/DFKI-NI/mir_robot,Industrial Robots,,
 MixNet,https://github.com/TUMFTM/MixNet,"Autonomous Vehicles (cars, trucks, delivery robots)",Motion & Trajectory Prediction,
 Mobile_MoCap,https://github.com/RIVeR-Lab/mobile_mocap,Robots for Education & Research,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+mobile_robot_simulator,https://github.com/nobleo/mobile_robot_simulator,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+mocap4r2_msgs,https://github.com/MOCAP4ROS2-Project/mocap4r2_msgs,,,
 MOCAP4ROS2,https://github.com/MOCAP4ROS2-Project,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+mocap_optitrack,https://github.com/ros-drivers/mocap_optitrack,,,
 mola,https://github.com/MOLAorg/mola,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+mola_academic_datasets,https://github.com/MOLAorg/mola_academic_datasets,,,
+mola_common,https://github.com/MOLAorg/mola_common,,,Build & Development Tools
+mola_gnss_to_markers,https://github.com/MOLAorg/mola_gnss_to_markers,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+mola_imu_preintegration,https://github.com/MOLAorg/mola_imu_preintegration,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); State Estimation",
+mola_input_ouster,https://github.com/MOLAorg/mola_input_ouster,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Middleware & Communication
+mola_input_rosbag1,https://github.com/MOLAorg/mola_input_rosbag1,,,Synthetic Data & Dataset Generation
+mola_lidar_odometry,https://github.com/MOLAorg/mola_lidar_odometry,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Cloud/Edge Deployment & Orchestration
+mola_sm_loop_closure,https://github.com/MOLAorg/mola_sm_loop_closure,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+mola_state_estimation,https://github.com/MOLAorg/mola_state_estimation,,State Estimation,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+mola_test_datasets,https://github.com/MOLAorg/mola_test_datasets,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling; Synthetic Data & Dataset Generation; Cloud/Edge Deployment & Orchestration"
+motion_capture_tracking,https://github.com/IMRCLab/motion_capture_tracking,,Object Detection & Semantic Understanding,
+move_base_flex,https://github.com/naturerobots/move_base_flex,,"Motion Planning & Navigation (global, local, path following)",
+moveit2,https://github.com/moveit/moveit2,Industrial Robots,,
+moveit_msgs,https://github.com/moveit/moveit_msgs,Industrial Robots,,
+moveit_resources,https://github.com/moveit/moveit_resources,Industrial Robots,,"Analyzing, Testing, Benchmarking & Profiling"
 moveit_task_constructor,https://github.com/moveit/moveit_task_constructor,Industrial Robots,Task-Level Planning & Reasoning,
+moveit_visual_tools,https://github.com/moveit/moveit_visual_tools,Industrial Robots,,"Visualization, Monitoring & Data Tools"
+mp2p_icp,https://github.com/MOLAorg/mp2p_icp,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+mp_units_vendor,https://github.com/nobleo/mp_units_vendor,,,
 MPSoC4Drones,https://github.com/DIII-SDU-Group/MPSoC4Drones,Aerial Robots (UAVs),,Embedded Systems & Accelerators
 mqtt_client,https://github.com/ika-rwth-aachen/mqtt_client,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+mrpt,https://github.com/MRPT/mrpt,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)",State Estimation,
+mrpt_msgs,https://github.com/mrpt-ros-pkg/mrpt_msgs,,,
 mrpt_navigation,https://github.com/mrpt-ros-pkg/mrpt_navigation,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",
+mrpt_path_planning,https://github.com/MRPT/mrpt_path_planning,"Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning & Navigation (global, local, path following)",
+mrpt_ros,https://github.com/MRPT/mrpt_ros,,,
+mrpt_ros_bridge,https://github.com/MRPT/mrpt_ros_bridge,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+mrpt_sensors,https://github.com/mrpt-ros-pkg/mrpt_sensors,,,
 mrs_multirotor_simulator,https://github.com/ctu-mrs/mrs_multirotor_simulator/tree/ros2,,,Simulators & Playgrounds
+mrt_cmake_modules,https://github.com/KIT-MRT/mrt_cmake_modules,,,Build & Development Tools
 mujoco_ros2,https://github.com/Woolfrey/mujoco_ros2,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 mujoco_ros2_control,https://github.com/ros-controls/mujoco_ros2_control,,"Classical Control (PID, MPC, etc.)",Simulators & Playgrounds
+mujoco_vendor,https://github.com/pal-robotics/mujoco_vendor,,,Simulators & Playgrounds
 Multi-Robot-Graph-SLAM,https://github.com/aserbremen/Multi-robot-graph-SLAM,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",Multi-Robot Systems
+multisensor_calibration,https://github.com/FraunhoferIOSB/multisensor_calibration,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 MVSim,https://github.com/MRPT/mvsim,Ground Robots (UGVs legged wheeled),Sim2Real Transfer,Simulators & Playgrounds
+nanoeigenpy,https://github.com/Simple-Robotics/nanoeigenpy,,,
+nanoflann,https://github.com/jlblancoc/nanoflann,,,
 NanoMap,https://github.com/ViWalkerDev/NanoMap,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO); Machine Learning (RL, Adaptive, etc)",Embedded Systems & Accelerators; Simulators & Playgrounds
 nanosaur,https://github.com/rnanosaur/nanosaur,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Embedded Systems & Accelerators
 NAO,https://github.com/antbono/OAN,"Consumer, Service & Entertainment Robotics","HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",Hardware Drivers & Interfaces
+nao_button_sim,https://github.com/ijnek/nao_button_sim,,,
+nao_interfaces,https://github.com/ijnek/nao_interfaces,,,
+nao_lola,https://github.com/ros-sports/nao_lola,,,
+nao_meshes2,https://github.com/ros-naoqi/nao_meshes2,,,
+naoqi_bridge_msgs2,https://github.com/ros-naoqi/naoqi_bridge_msgs2,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
 nav2_accountability_explainability,https://github.com/uleroboticsgroup/nav2_accountability_explainability,Ground Robots (UGVs legged wheeled),"HRI - Trust, Transparency & Explainability",
+nav2_minimal_turtlebot_simulation,https://github.com/ros-navigation/nav2_minimal_turtlebot_simulation,Ground Robots (UGVs legged wheeled),"Motion Planning & Navigation (global, local, path following)",
 Navigation2,https://github.com/ros-navigation/navigation2,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",
 navigation2_tutorials,https://github.com/ros-navigation/navigation2_tutorials,Robots for Education & Research,"Motion Planning & Navigation (global, local, path following)",Build & Development Tools
+navigation_msgs,https://github.com/ros-planning/navigation_msgs,,"Motion Planning & Navigation (global, local, path following)",Middleware & Communication
+NavMap,https://github.com/EasyNavigation/NavMap,,,
+ndcurves,https://github.com/loco-3d/ndcurves,,,
+nebula,https://github.com/tier4/nebula,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+neo_nav2_bringup,https://github.com/neobotix/neo_nav2_bringup,,"Motion Planning & Navigation (global, local, path following)",
+network_bridge,https://github.com/brow1633/network_bridge,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+nicla_vision_ros2,https://github.com/ADVRHumanoids/nicla_vision_ros2,,,"Simulators & Playgrounds; Interfacing & Interoperability (bridges, wrappers, APIs); Embedded Systems & Accelerators"
+nlohmann_json_schema_validator_vendor,https://github.com/open-rmf/nlohmann_json_schema_validator_vendor,,,
+nmea_hardware_interface,https://github.com/OUXT-Polaris/nmea_hardware_interface,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces"
+nmea_msgs,https://github.com/ros-drivers/nmea_msgs,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+nmea_navsat_driver,https://github.com/ros-drivers/nmea_navsat_driver,Aerospace & Space Robotics,"Motion Planning & Navigation (global, local, path following); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+nobleo_socketcan_bridge,https://github.com/nobleo/nobleo_socketcan_bridge,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+nodl,https://github.com/ros-tooling/nodl,,,Build & Development Tools
+nodl_to_policy,https://github.com/osrf/nodl_to_policy,,,
+novatel_gps_driver,https://github.com/swri-robotics/novatel_gps_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+novatel_oem7_driver,https://github.com/novatel/novatel_oem7_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+ntpd_driver,https://github.com/vooon/ntpd_driver,,,Hardware Drivers & Interfaces; Middleware & Communication
+ntrip_client,https://github.com/LORD-MicroStrain/ntrip_client,,,
+numpy_ndarray_msgs,https://github.com/Geson-anko/numpy_ndarray_msgs,,,
 NVIDIA_Isaac_ROS,https://github.com/NVIDIA-ISAAC-ROS,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+object_recognition_msgs,https://github.com/wg-perception/object_recognition_msgs,,Object Detection & Semantic Understanding,
+octomap,https://github.com/OctoMap/octomap,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+octomap_mapping,https://github.com/OctoMap/octomap_mapping,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+octomap_msgs,https://github.com/OctoMap/octomap_msgs,,,
+octomap_ros,https://github.com/OctoMap/octomap_ros,,,
+octomap_rviz_plugins,https://github.com/OctoMap/octomap_rviz_plugins,,,"Visualization, Monitoring & Data Tools"
+odom_to_tf_ros2,https://github.com/gstavrinos/odom_to_tf_ros2,,,
+odri_master_board_sdk_release,https://github.com/stack-of-tasks/odri_master_board_sdk_release,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
 odrive_ros2_control,https://github.com/Factor-Robotics/odrive_ros2_control,Ground Robots (UGVs legged wheeled),"Classical Control (PID, MPC, etc.)",Hardware Drivers & Interfaces
+off_highway_sensor_drivers,https://github.com/bosch-engineering/off_highway_sensor_drivers,Ground Robots (UGVs legged wheeled),"State Estimation; Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+ompl,https://github.com/ompl/ompl,,Motion Planning (global),
+onnxruntime_vendor,https://github.com/ros-controls/onnxruntime_vendor,,,
 oomwoo,https://github.com/makerspet/oomwoo,"Ground Robots (UGVs legged wheeled); Consumer, Service & Entertainment Robotics","Localization and Mapping (SLAM, LIO, VIO, LIVO)",Hardware Drivers & Interfaces
 Open-RMF,https://github.com/open-rmf/rmf,Logistics & Warehousing,Task-Level Planning & Reasoning,"Multi-Robot Systems; Interfacing & Interoperability (bridges, wrappers, APIs)"
 Open-VINS,https://github.com/rpng/open_vins,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO); State Estimation",
+open_manipulator,https://github.com/ROBOTIS-GIT/open_manipulator,Ground Robots (UGVs legged wheeled); Industrial Robots,,Simulators & Playgrounds; Embedded Systems & Accelerators
+open_sound_control_ros,https://github.com/chrisib/open_sound_control_ros,,"Classical Control (PID, MPC, etc.)",
 opendr,https://github.com/opendr-eu/opendr,,"Object Detection & Semantic Understanding; Machine Learning (RL, Adaptive, etc); HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)","Embedded Systems & Accelerators; Interfacing & Interoperability (bridges, wrappers, APIs)"
+openeb_vendor,https://github.com/ros-event-camera/openeb_vendor,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
 OpenLiDARMap,https://github.com/TUMFTM/OpenLiDARMap,"Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+openni2_camera,https://github.com/ros-drivers/openni2_camera,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+opensw,https://github.com/hatchbed/opensw,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+opensw_ros,https://github.com/hatchbed/opensw_ros,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 ORB_SLAM3_ROS2,https://github.com/zang09/ORB_SLAM3_ROS2,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 ORB-SLAM3,https://github.com/suchetanrs/ORB-SLAM3-ROS2-Docker,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 OrbbecSDK_ROS2,https://github.com/orbbec/OrbbecSDK_ROS2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 orocos,https://github.com/orocos,,"Classical Control (PID, MPC, etc.)","Real-Time Execution & Scheduling; Interfacing & Interoperability (bridges, wrappers, APIs)"
+orocos_kdl_vendor,https://github.com/ros2/orocos_kdl_vendor,,,
+osqp-eigen,https://github.com/gbionics/osqp-eigen,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+osqp_vendor,https://github.com/tier4/osqp_vendor,,,
+osrf_pycommon,https://github.com/osrf/osrf_pycommon,,,
+osrf_testing_tools_cpp,https://github.com/osrf/osrf_testing_tools_cpp,,,"Analyzing, Testing, Benchmarking & Profiling"
 OtterROS,https://github.com/offroad-robotics/otter_ros,Underwater Robots (UUVs),,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 ouster-ros,https://github.com/ouster-lidar/ouster-ros,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+ouxt_common,https://github.com/OUXT-Polaris/ouxt_common,,,
 PAAM,https://github.com/rtenlab/reference-system-paam,"Autonomous Vehicles (cars, trucks, delivery robots)",,"Real-Time Execution & Scheduling; Embedded Systems & Accelerators; Analyzing, Testing, Benchmarking & Profiling"
+pal_statistics,https://github.com/pal-robotics/pal_statistics,,"Classical Control (PID, MPC, etc.)",Real-Time Execution & Scheduling
+Pangolin,https://github.com/stevenlovegrove/Pangolin,,,"Visualization, Monitoring & Data Tools"
+parameter_expression,https://github.com/ForteFibre/parameter_expression,,,
 pb2025_sentry_nav,https://github.com/SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav,Ground Robots (UGVs legged wheeled),"Motion Planning & Navigation (global, local, path following); Sim2Real Transfer",
+pcl_msgs,https://github.com/ros-perception/pcl_msgs,,,
 PegasusSimulator,https://github.com/PegasusSimulator/PegasusSimulator,Aerial Robots (UAVs),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
+pepper_meshes2,https://github.com/ros-naoqi/pepper_meshes2,,,
+perception_open3d,https://github.com/ros-perception/perception_open3d,,,
+perception_pcl,https://github.com/ros-perception/perception_pcl,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs); Cloud/Edge Deployment & Orchestration"
+performance_test_fixture,https://github.com/ros2/performance_test_fixture,,,"Analyzing, Testing, Benchmarking & Profiling; Build & Development Tools"
+pfs,https://github.com/dtrugman/pfs,,,
+phidgets_drivers,https://github.com/ros-drivers/phidgets_drivers,,,Hardware Drivers & Interfaces
+pick_ik,https://github.com/PickNikRobotics/pick_ik,Industrial Robots,Motion Planning (global),
+picknik_controllers,https://github.com/PickNikRobotics/picknik_controllers,,,
+pinocchio,https://github.com/stack-of-tasks/pinocchio,,Motion Planning (global),
 PlanSys2,https://github.com/PlanSys2/ros2_planning_system,,Task-Level Planning & Reasoning,
+play_motion2,https://github.com/pal-robotics/play_motion2,,"Motion Planning & Navigation (global, local, path following); Motion Planning (global)",Real-Time Execution & Scheduling
+play_motion_builder,https://github.com/pal-robotics/play_motion_builder,,,
+PlotJuggler,https://github.com/PlotJuggler/PlotJuggler,Aerial Robots (UAVs),,"Visualization, Monitoring & Data Tools; Synthetic Data & Dataset Generation"
+plotjuggler-ros-plugins,https://github.com/PlotJuggler/plotjuggler-ros-plugins,,,
+plotjuggler_msgs,https://github.com/PlotJuggler/plotjuggler_msgs,,,
+pluginlib,https://github.com/ros/pluginlib,,,
+point_cloud_transport,https://github.com/ros-perception/point_cloud_transport,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Middleware & Communication; Cloud/Edge Deployment & Orchestration
+point_cloud_transport_plugins,https://github.com/ros-perception/point_cloud_transport_plugins,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Middleware & Communication; Cloud/Edge Deployment & Orchestration
+point_cloud_transport_tutorial,https://github.com/ros-perception/point_cloud_transport_tutorial,Robots for Education & Research,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Middleware & Communication; Cloud/Edge Deployment & Orchestration
+pointcloud-conversions,https://github.com/li9i/pointcloud-conversions,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+pointcloud-to-ply,https://github.com/li9i/pointcloud-to-ply,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 pointcloud_to_grid,https://github.com/jkk-research/pointcloud_to_grid,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+pointcloud_to_laserscan,https://github.com/ros-perception/pointcloud_to_laserscan,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Cloud/Edge Deployment & Orchestration
 pointcloudset,https://github.com/virtual-vehicle/pointcloudset/,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
 PointIt,https://github.com/Gabry993/pointing-user-interface-hri,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors); Intent/Behavior Forecasting",
+polygon_ros,https://github.com/MetroRobots/polygon_ros,,,
+popf,https://github.com/fmrico/popf,,,
+pose_cov_ops,https://github.com/mrpt-ros-pkg/pose_cov_ops,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+potential_fields,https://github.com/argallab/potential_fields,,Motion Planning (global),
+potree_rviz_plugin,https://github.com/fkie/potree_rviz_plugin,,,"Visualization, Monitoring & Data Tools"
+proto2ros,https://github.com/rai-opensource/proto2ros,,,
+protobuf_comm,https://github.com/fawkesrobotics/protobuf_comm,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+proxsuite,https://github.com/Simple-Robotics/proxsuite,,,
+ptz_action_server,https://github.com/clearpathrobotics/ptz_action_server,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 px4-mpc,https://github.com/DISCOWER/px4-mpc,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.)",
 px4-offboard,https://github.com/Jaeyoung-Lim/px4-offboard,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs)"
 PX4-ROS2-Gazebo-YOLOv8,https://github.com/monemati/PX4-ROS2-Gazebo-YOLOv8,Aerial Robots (UAVs),Object Detection & Semantic Understanding,Simulators & Playgrounds
+px4_msgs,https://github.com/PX4/px4_msgs,Aerial Robots (UAVs),,Hardware Drivers & Interfaces
+py_binding_tools,https://github.com/moveit/py_binding_tools,Industrial Robots,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+py_trees,https://github.com/splintered-reality/py_trees,,,
+py_trees_js,https://github.com/splintered-reality/py_trees_js,Robots for Education & Research,Task-Level Planning & Reasoning,
+py_trees_ros,https://github.com/splintered-reality/py_trees_ros,,,
+py_trees_ros_interfaces,https://github.com/splintered-reality/py_trees_ros_interfaces,,,
+py_trees_ros_tutorials,https://github.com/splintered-reality/py_trees_ros_tutorials,,,
+py_trees_ros_viewer,https://github.com/splintered-reality/py_trees_ros_viewer,,,
+pybind11_json_vendor,https://github.com/open-rmf/pybind11_json_vendor,,,
+pybind11_vendor,https://github.com/ros2/pybind11_vendor,,,
 PyCuVSLAM,https://github.com/nvidia-isaac/cuVSLAM,"Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",Embedded Systems & Accelerators
 pymoveit2,https://github.com/AndrejOrsula/pymoveit2,Industrial Robots,Motion Planning (global),"Interfacing & Interoperability (bridges, wrappers, APIs)"
+python_cmake_module,https://github.com/ros2/python_cmake_module,,,Build & Development Tools
+python_mrpt_ros,https://github.com/MRPT/python_mrpt_ros,,,
+python_qt_binding,https://github.com/ros-visualization/python_qt_binding,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+qml6_ros2_plugin,https://github.com/StefanFabian/qml6_ros2_plugin,,,Middleware & Communication
 qml_ros2_plugin,https://github.com/StefanFabian/qml_ros2_plugin,,,"Build & Development Tools; Visualization, Monitoring & Data Tools"
+qpoases_vendor,https://github.com/autowarefoundation/qpoases_vendor,,,
+qt_gui_core,https://github.com/ros-visualization/qt_gui_core,,,"Visualization, Monitoring & Data Tools"
 Quadruped-PyMPC,https://github.com/iit-DLSLab/Quadruped-PyMPC,Ground Robots (UGVs legged wheeled),"Classical Control (PID, MPC, etc.)",
+quaternion_operation,https://github.com/OUXT-Polaris/quaternion_operation,,,
+r2r_spl,https://github.com/ros-sports/r2r_spl,,,
+rai_interfaces,https://github.com/RobotecAI/rai_interfaces,,,Middleware & Communication
+random_numbers,https://github.com/moveit/random_numbers,Industrial Robots,,
+raph_common,https://github.com/RaphRover/raph_common,,,
+raph_desktop,https://github.com/RaphRover/raph_desktop,,,
+raph_robot,https://github.com/RaphRover/raph_robot,,,
+raspimouse2,https://github.com/rt-net/raspimouse2,,,Embedded Systems & Accelerators
+raspimouse_description,https://github.com/rt-net/raspimouse_description,,,Embedded Systems & Accelerators
+raspimouse_ros2_examples,https://github.com/rt-net/raspimouse_ros2_examples,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors); Classical Control (PID, MPC, etc.)",Embedded Systems & Accelerators
+raspimouse_sim,https://github.com/rt-net/raspimouse_sim,,,Simulators & Playgrounds; Embedded Systems & Accelerators
+raspimouse_slam_navigation_ros2,https://github.com/rt-net/raspimouse_slam_navigation_ros2,,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",Embedded Systems & Accelerators
+rc_common_msgs_ros2,https://github.com/roboception/rc_common_msgs_ros2,,,
+rc_dynamics_api,https://github.com/roboception/rc_dynamics_api,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+rc_genicam_api,https://github.com/roboception/rc_genicam_api,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+rc_genicam_driver_ros2,https://github.com/roboception/rc_genicam_driver_ros2,,,Hardware Drivers & Interfaces
+rc_reason_clients_ros2,https://github.com/roboception/rc_reason_clients_ros2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+rcdiscover,https://github.com/roboception/rcdiscover,,,
+rcl,https://github.com/ros2/rcl,,,
+rcl_interfaces,https://github.com/ros2/rcl_interfaces,,,
+rcl_logging,https://github.com/ros2/rcl_logging,,,
+rcl_logging_rcutils,https://github.com/sloretz/rcl_logging_rcutils,,,
+rcl_logging_syslog,https://github.com/fujitatomoya/rcl_logging_syslog,,,Hardware Drivers & Interfaces
 RCLAda,https://github.com/ada-ros/ada4ros2/?tab=readme-ov-file,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+rclc,https://github.com/ros2/rclc,,,
+rclcpp,https://github.com/ros2/rclcpp,,,
 rcldart,https://github.com/rcldart/rcldart,,,Build & Development Tools
 rclnodejs,https://github.com/RobotWebTools/rclnodejs,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+rclpy,https://github.com/ros2/rclpy,,,
+rcpputils,https://github.com/ros2/rcpputils,,,
+rcss3d_agent,https://github.com/ros-sports/rcss3d_agent,,,
+rcss3d_nao,https://github.com/ros-sports/rcss3d_nao,,,
 RCTF,https://github.com/aliasrobotics/RCTF,,,"Security, Safety & Verification; Simulators & Playgrounds"
+rcutils,https://github.com/ros2/rcutils,,,
+reach,https://github.com/ros-industrial/reach,Industrial Robots,,
+reach_ros2,https://github.com/ros-industrial/reach_ros2,Industrial Robots,,
+realsense-ros,https://github.com/realsenseai/realsense-ros,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+realtime_support,https://github.com/ros2/realtime_support,,,"Real-Time Execution & Scheduling; Analyzing, Testing, Benchmarking & Profiling"
+realtime_tools,https://github.com/ros-controls/realtime_tools,,,Hardware Drivers & Interfaces; Real-Time Execution & Scheduling
 ReconROS,https://github.com/Lien182/ReconROS,,,Embedded Systems & Accelerators
+reductstore_agent,https://github.com/reductstore/reductstore_agent,,,
+replay_testing,https://github.com/polymathrobotics/replay_testing,,,"Analyzing, Testing, Benchmarking & Profiling; Build & Development Tools"
+resource_retriever,https://github.com/ros/resource_retriever,,,
 RESPLE,https://github.com/ASIG-X/RESPLE/tree/main,Aerial Robots (UAVs),State Estimation; Motion & Trajectory Prediction,"Security, Safety & Verification"
 retinify,https://github.com/retinify/retinify,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Embedded Systems & Accelerators
 RGBD_OakCamera_RTABMap,https://github.com/M2219/RGBD_OakCamera_RTABMap,,Object Detection & Semantic Understanding,
+rig_reconfigure,https://github.com/teamspatzenhirn/rig_reconfigure,,,"Visualization, Monitoring & Data Tools"
 rl-tools,https://github.com/rl-tools/rl-tools,,"Machine Learning (RL, Adaptive, etc)",Build & Development Tools
 rm_vision,https://github.com/chenjunnn/rm_vision,Ground Robots (UGVs legged wheeled),Object Detection & Semantic Understanding,
+rmf_api_msgs,https://github.com/open-rmf/rmf_api_msgs,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+rmf_battery,https://github.com/open-rmf/rmf_battery,,,
+rmf_building_map_msgs,https://github.com/open-rmf/rmf_building_map_msgs,,,
+rmf_demos,https://github.com/open-rmf/rmf_demos,,,
+rmf_internal_msgs,https://github.com/open-rmf/rmf_internal_msgs,,,
+rmf_ros2,https://github.com/open-rmf/rmf_ros2,,,
+rmf_simulation,https://github.com/open-rmf/rmf_simulation,,,
+rmf_task,https://github.com/open-rmf/rmf_task,,,
+rmf_traffic,https://github.com/open-rmf/rmf_traffic,,,
+rmf_traffic_editor,https://github.com/open-rmf/rmf_traffic_editor,,,"Visualization, Monitoring & Data Tools; Build & Development Tools"
+rmf_utils,https://github.com/open-rmf/rmf_utils,,,
+rmf_variants,https://github.com/open-rmf/rmf_variants,,,Build & Development Tools
+rmf_visualization,https://github.com/open-rmf/rmf_visualization,,,
+rmf_visualization_msgs,https://github.com/open-rmf/rmf_visualization_msgs,,,
+rmw,https://github.com/ros2/rmw,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+rmw_connextdds,https://github.com/ros2/rmw_connextdds,,,Middleware & Communication
+rmw_cyclonedds,https://github.com/ros2/rmw_cyclonedds,,,Middleware & Communication
+rmw_dds_common,https://github.com/ros2/rmw_dds_common,,,Middleware & Communication
+rmw_desert,https://github.com/signetlabdei/rmw_desert,Underwater Robots (UUVs),,Middleware & Communication
+rmw_fastrtps,https://github.com/ros2/rmw_fastrtps,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+rmw_gurumdds,https://github.com/ros2/rmw_gurumdds,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
+rmw_implementation,https://github.com/ros2/rmw_implementation,,,Middleware & Communication; Build & Development Tools
+rmw_int2dds,https://github.com/IntellectusCorp/rmw_int2dds,,,Middleware & Communication
+rmw_zenoh,https://github.com/ros2/rmw_zenoh,,,Middleware & Communication
+roadmap-explorer,https://github.com/suchetanrs/roadmap-explorer,,"Motion Planning & Navigation (global, local, path following)",
 RoboFuzz,https://github.com/sslab-gatech/RoboFuzz?tab=readme-ov-file,,,"Security, Safety & Verification; Analyzing, Testing, Benchmarking & Profiling; Middleware & Communication"
 robonix,https://github.com/syswonder/robonix,,Task-Level Planning & Reasoning,Middleware & Communication
+roboplan,https://github.com/open-planning/roboplan,,Motion Planning (global),
+roboplan-ros,https://github.com/open-planning/roboplan-ros,,Motion Planning (global),
+robosoft_openai,https://github.com/robosoft-ai/robosoft_openai,,,
 robot_localization,https://github.com/cra-ros-pkg/robot_localization,,State Estimation,
+robot_state_publisher,https://github.com/ros/robot_state_publisher,,,
+robot_upstart,https://github.com/clearpathrobotics/robot_upstart,,,
 RobotCore,https://github.com/ros-acceleration,,,Embedded Systems & Accelerators
 robotic_arm_environment,https://github.com/dvalenciar/robotic_arm_environment,Industrial Robots,"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 Robotics-and-ROS-2-Learn-by-Doing-Manipulators,https://github.com/AntoBrandi/Robotics-and-ROS-2-Learn-by-Doing-Manipulators,Industrial Robots; Robots for Education & Research,"Motion Planning (global); HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",Build & Development Tools
 robotics-skills-suite,https://github.com/jherrodthomas/robotics-skills-suite,Industrial Robots,,"Security, Safety & Verification; Build & Development Tools"
 robotics_essentials_ros2,https://github.com/henki-robotics/robotics_essentials_ros2,Robots for Education & Research,,Simulators & Playgrounds
+robotis_interfaces,https://github.com/ROBOTIS-GIT/robotis_interfaces,,,
 RobotPerf,https://github.com/robotperf/benchmarks,,,"Embedded Systems & Accelerators; Analyzing, Testing, Benchmarking & Profiling; Middleware & Communication"
+robotraconteur,https://github.com/robotraconteur/robotraconteur,,,Middleware & Communication
+robotraconteur_companion,https://github.com/robotraconteur/robotraconteur_companion,,,
 RobotRLkit,https://github.com/FilipeAlmeidaFEUP/ros2_flatland_rl_tutorial,,"Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics); Machine Learning (RL, Adaptive, etc)",
 Rolling-Bonxai,https://github.com/mukundbala/Rolling-Bonxai,,"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 roman_ros,https://github.com/mit-acl/roman_ros,"Aerial Robots (UAVs); Autonomous Vehicles (cars, trucks, delivery robots); Ground Robots (UGVs legged wheeled)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 ROS,https://github.com/HuangCongQing/ROS,Robots for Education & Research,,Build & Development Tools
 ros-docker-gui,https://github.com/turlucode/ros-docker-gui,,,Cloud/Edge Deployment & Orchestration; Build & Development Tools
 ros-realtime-rpi4-image,https://github.com/ros-realtime/ros-realtime-rpi4-image,,,Real-Time Execution & Scheduling; Embedded Systems & Accelerators
+ros-utils,https://github.com/ctu-vras/ros-utils,,,
+ros1_bridge,https://github.com/ros2/ros1_bridge,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
 ros2-depth-anything-v3-trt,https://github.com/ika-rwth-aachen/ros2-depth-anything-v3-trt,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Embedded Systems & Accelerators
+ros2-helper,https://github.com/codevilot/ros2-helper,,,
+ros2-phone-sensors,https://github.com/vtalpaert/ros2-phone-sensors,,"Classical Control (PID, MPC, etc.); State Estimation; Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces; Embedded Systems & Accelerators
 ROS2-Self-Driving-Car-AI-using-OpenCV,https://github.com/noshluk2/ROS2-Self-Driving-Car-AI-using-OpenCV,"Autonomous Vehicles (cars, trucks, delivery robots)","Object Detection & Semantic Understanding; Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 ros2_calib,https://github.com/ika-rwth-aachen/ros2_calib,"Autonomous Vehicles (cars, trucks, delivery robots)","Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
 ros2_canopen,https://github.com/ros-industrial/ros2_canopen,Industrial Robots,,Hardware Drivers & Interfaces
+ros2_cheese,https://github.com/HowardWhile/ros2_cheese,,,
+ros2_control_cmake,https://github.com/ros-controls/ros2_control_cmake,,"Classical Control (PID, MPC, etc.)",Build & Development Tools
 ros2_cookbook,https://github.com/mikeferguson/ros2_cookbook,Robots for Education & Research,,Build & Development Tools
+ros2_eventdispatch,https://github.com/cyan-at/ros2_eventdispatch,,,
+ros2_fmt_logger,https://github.com/nobleo/ros2_fmt_logger,,,
 ros2_java,https://github.com/ros2-java/ros2_java,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+ros2_kortex,https://github.com/Kinovarobotics/ros2_kortex,Industrial Robots,,Hardware Drivers & Interfaces
 ROS2_learning,https://github.com/dottantgal/ROS2_learning,Robots for Education & Research,,Build & Development Tools
 ROS2_Learning_zh,https://github.com/muziing/ROS2_Learning,Robots for Education & Research,,Build & Development Tools
 ros2_medkit,https://github.com/selfpatch/ros2_medkit,,,"Analyzing, Testing, Benchmarking & Profiling; Visualization, Monitoring & Data Tools"
+ros2_node_inspector,https://github.com/ksatyaki/ros2_node_inspector,,,"Visualization, Monitoring & Data Tools; Middleware & Communication"
+ros2_ouster_drivers,https://github.com/ros-drivers/ros2_ouster_drivers,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+ros2_persist_parameter_server,https://github.com/fujitatomoya/ros2_persist_parameter_server,,,
+ros2_robotiq_gripper,https://github.com/PickNikRobotics/ros2_robotiq_gripper,Industrial Robots,,
 ros2_RobotSimulation,https://github.com/IFRA-Cranfield/ros2_RobotSimulation,Industrial Robots,Motion Planning (global),Simulators & Playgrounds
 ros2_shm_msgs,https://github.com/ZhenshengLee/ros2_shm_msgs,,,Middleware & Communication; Real-Time Execution & Scheduling
 ros2_SimRealRobotControl,https://github.com/IFRA-Cranfield/ros2_SimRealRobotControl,Industrial Robots,Sim2Real Transfer,Simulators & Playgrounds
+ros2_snapshot,https://github.com/CNURobotics/ros2_snapshot,,,Hardware Drivers & Interfaces; Cloud/Edge Deployment & Orchestration
+ros2_socketcan,https://github.com/autowarefoundation/ros2_socketcan,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+ros2_system_webview,https://github.com/namo-robotics/ros2_system_webview,,,
+ros2acceleration,https://github.com/ros-acceleration/ros2acceleration,,,Build & Development Tools
+ros2cli,https://github.com/ros2/ros2cli,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Build & Development Tools"
+ros2cli_common_extensions,https://github.com/ros2/ros2cli_common_extensions,,,
+ros2launch_security,https://github.com/osrf/ros2launch_security,,,"Security, Safety & Verification"
 ros_arm_tutorials,https://github.com/jiuyewxy/ros_arm_tutorials,Industrial Robots; Robots for Education & Research,Motion Planning (global),Build & Development Tools
+ros_aruco_opencv,https://github.com/fictionlab/ros_aruco_opencv,,Object Detection & Semantic Understanding,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+ros_babel_fish,https://github.com/LOEWE-emergenCITY/ros_babel_fish,,,Middleware & Communication
+ros_battery_monitoring,https://github.com/ipa320/ros_battery_monitoring,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+ros_canopen,https://github.com/ros-industrial/ros_canopen,Industrial Robots,,Hardware Drivers & Interfaces
+ros_environment,https://github.com/ros/ros_environment,,,
 ros_gz,https://github.com/gazebosim/ros_gz,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
+ros_image_to_qimage,https://github.com/ros-sports/ros_image_to_qimage,,,
 ros_pybullet_interface,https://github.com/ros-pybullet/ros_pybullet_interface,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),"Machine Learning (RL, Adaptive, etc)",Simulators & Playgrounds
 ROS-Dynamic-Executor,https://github.com/RTIS-Lab/ROS-Dynamic-Executor,,,"Real-Time Execution & Scheduling; Analyzing, Testing, Benchmarking & Profiling"
 ROS-Industrial,https://github.com/ros-industrial,Industrial Robots,,Hardware Drivers & Interfaces
@@ -226,67 +764,272 @@ ros2ai,https://github.com/fujitatomoya/ros2ai,,"HRI - Human–Robot Interfaces (
 ROS2BDI,https://github.com/ElDivinCodino/ROS2BDI,,Task-Level Planning & Reasoning,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 ros2learn,https://github.com/AcutronicRobotics/ros2learn,Industrial Robots,"Machine Learning (RL, Adaptive, etc)",
 ROS2SWARM,https://github.com/ROS2swarm/ROS2swarm,,Task-Level Planning & Reasoning,Multi-Robot Systems
+ros_snapd_interfaces,https://github.com/canonical/ros_snapd_interfaces,,,
+ros_system_fingerprint,https://github.com/MetroRobots/ros_system_fingerprint,,,
+ros_testing,https://github.com/ros2/ros_testing,,,"Analyzing, Testing, Benchmarking & Profiling"
+ros_tutorials,https://github.com/ros/ros_tutorials,,,
+ros_workspace,https://github.com/ros2/ros_workspace,,,
 ROSA,https://github.com/nasa-jpl/rosa,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Task-Level Planning & Reasoning; HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
+rosbag2,https://github.com/ros2/rosbag2,,,
+rosbag2_bag_v2,https://github.com/ros2/rosbag2_bag_v2,,,Synthetic Data & Dataset Generation
+rosbag2_broll,https://github.com/ros-tooling/rosbag2_broll,,,Build & Development Tools
+rosbag2_to_video,https://github.com/fictionlab/rosbag2_to_video,,,Synthetic Data & Dataset Generation
+rosbag_timing_inspector,https://github.com/MOLAorg/rosbag_timing_inspector,,,"Visualization, Monitoring & Data Tools; Middleware & Communication; Synthetic Data & Dataset Generation"
+rosbot-firmware,https://github.com/husarion/rosbot-firmware,,,Hardware Drivers & Interfaces; Embedded Systems & Accelerators
+rosbot_ros,https://github.com/husarion/rosbot_ros,,,
+rosbridge_suite,https://github.com/RobotWebTools/rosbridge_suite,,,
 ROScribe,https://github.com/RoboCoachTechnologies/ROScribe,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",Build & Development Tools
 ROSGPT,https://github.com/aniskoubaa/rosgpt,,"Task-Level Planning & Reasoning; HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
 ROSGPT_Vision,https://github.com/bilel-bj/ROSGPT_Vision,"Autonomous Vehicles (cars, trucks, delivery robots)","Object Detection & Semantic Understanding; Task-Level Planning & Reasoning; HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
+rosidl,https://github.com/ros2/rosidl,,,
+rosidl_core,https://github.com/ros2/rosidl_core,,,
+rosidl_dds,https://github.com/ros2/rosidl_dds,,,Middleware & Communication
+rosidl_defaults,https://github.com/ros2/rosidl_defaults,,,
+rosidl_dynamic_typesupport,https://github.com/ros2/rosidl_dynamic_typesupport,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+rosidl_dynamic_typesupport_fastrtps,https://github.com/ros2/rosidl_dynamic_typesupport_fastrtps,,,
+rosidl_python,https://github.com/ros2/rosidl_python,,,
+rosidl_runtime_py,https://github.com/ros2/rosidl_runtime_py,,,
+rosidl_rust,https://github.com/ros2-rust/rosidl_rust,,,
+rosidl_typesupport,https://github.com/ros2/rosidl_typesupport,,,
+rosidl_typesupport_fastrtps,https://github.com/ros2/rosidl_typesupport_fastrtps,,,
+rosidlcpp,https://github.com/TonyWelte/rosidlcpp,,,
+rospy_message_converter,https://github.com/DFKI-NI/rospy_message_converter,,,Middleware & Communication
+rosx_introspection,https://github.com/facontidavide/rosx_introspection,,,Middleware & Communication
+rot_conv_lib,https://github.com/AIS-Bonn/rot_conv_lib,,,
+rplidar_driver,https://github.com/frozenreboot/rplidar_driver,Industrial Robots,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Hardware Drivers & Interfaces; Security, Safety & Verification"
+rplidar_ros,https://github.com/Slamtec/rplidar_ros,,,
+rpyutils,https://github.com/ros2/rpyutils,,,
+rqml,https://github.com/StefanFabian/rqml,,"Classical Control (PID, MPC, etc.)",
+rqt,https://github.com/ros-visualization/rqt,,,"Visualization, Monitoring & Data Tools"
+rqt_action,https://github.com/ros-visualization/rqt_action,,,"Visualization, Monitoring & Data Tools"
+rqt_bag,https://github.com/ros-visualization/rqt_bag,,,"Visualization, Monitoring & Data Tools; Synthetic Data & Dataset Generation"
+rqt_common_plugins,https://github.com/ros-visualization/rqt_common_plugins,,,"Visualization, Monitoring & Data Tools"
+rqt_console,https://github.com/ros-visualization/rqt_console,,,"Visualization, Monitoring & Data Tools"
+rqt_dotgraph,https://github.com/niwcpac/rqt_dotgraph,,,"Visualization, Monitoring & Data Tools"
+rqt_frame_editor_plugin,https://github.com/ipa320/rqt_frame_editor_plugin,,,"Visualization, Monitoring & Data Tools"
+rqt_graph,https://github.com/ros-visualization/rqt_graph,,,"Visualization, Monitoring & Data Tools"
+rqt_image_overlay,https://github.com/ros-sports/rqt_image_overlay,,,"Visualization, Monitoring & Data Tools"
+rqt_image_view,https://github.com/ros-visualization/rqt_image_view,,,"Visualization, Monitoring & Data Tools"
+rqt_lifecycle_manager,https://github.com/ajtudela/rqt_lifecycle_manager,,"Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs); Visualization, Monitoring & Data Tools"
+rqt_moveit,https://github.com/ros-visualization/rqt_moveit,Industrial Robots,,"Visualization, Monitoring & Data Tools"
+rqt_msg,https://github.com/ros-visualization/rqt_msg,,,"Visualization, Monitoring & Data Tools"
+rqt_plot,https://github.com/ros-visualization/rqt_plot,,,"Visualization, Monitoring & Data Tools"
+rqt_publisher,https://github.com/ros-visualization/rqt_publisher,,,"Visualization, Monitoring & Data Tools"
+rqt_py_console,https://github.com/ros-visualization/rqt_py_console,,,"Visualization, Monitoring & Data Tools"
+rqt_reconfigure,https://github.com/ros-visualization/rqt_reconfigure,,,"Visualization, Monitoring & Data Tools"
+rqt_robot_dashboard,https://github.com/ros-visualization/rqt_robot_dashboard,,,"Visualization, Monitoring & Data Tools"
+rqt_robot_monitor,https://github.com/ros-visualization/rqt_robot_monitor,,,"Visualization, Monitoring & Data Tools"
+rqt_robot_steering,https://github.com/ros-visualization/rqt_robot_steering,,,"Visualization, Monitoring & Data Tools"
+rqt_runtime_monitor,https://github.com/ros-visualization/rqt_runtime_monitor,,,"Visualization, Monitoring & Data Tools"
+rqt_service_caller,https://github.com/ros-visualization/rqt_service_caller,,,"Visualization, Monitoring & Data Tools"
+rqt_shell,https://github.com/ros-visualization/rqt_shell,,,"Visualization, Monitoring & Data Tools"
+rqt_srv,https://github.com/ros-visualization/rqt_srv,,,"Visualization, Monitoring & Data Tools"
+rqt_tf_tree,https://github.com/ros-visualization/rqt_tf_tree,,,"Visualization, Monitoring & Data Tools"
+rqt_topic,https://github.com/ros-visualization/rqt_topic,,,"Visualization, Monitoring & Data Tools"
 rse_prob_robotics,https://github.com/carlos-argueta/rse_prob_robotics,Robots for Education & Research,"State Estimation; Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+RSL,https://github.com/PickNikRobotics/RSL,,,
+rslidar_msg,https://github.com/RoboSense-LiDAR/rslidar_msg,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Middleware & Communication
+rslidar_sdk,https://github.com/RoboSense-LiDAR/rslidar_sdk,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+rt_manipulators_cpp,https://github.com/rt-net/rt_manipulators_cpp,,,
+rt_usb_9axisimu_driver,https://github.com/rt-net/rt_usb_9axisimu_driver,,State Estimation,Hardware Drivers & Interfaces
 rtabmap,https://github.com/introlab/rtabmap_ros/tree/ros2,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
 rtabmap_standalone,https://github.com/introlab/rtabmap,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)","Visualization, Monitoring & Data Tools"
+rtcm_msgs,https://github.com/tilk/rtcm_msgs,,,
+rtest,https://github.com/Beam-and-Spyrosoft/rtest,,,
+rtsp_image_transport,https://github.com/fkie/rtsp_image_transport,,,Middleware & Communication
 rtui,https://github.com/eduidl/rtui,,,"Visualization, Monitoring & Data Tools"
+ruckig,https://github.com/pantor/ruckig,Industrial Robots,"Classical Control (PID, MPC, etc.); Motion Planning (global)",Real-Time Execution & Scheduling
 rust_robotics,https://github.com/rsasaki0109/rust_robotics,Robots for Education & Research,"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning (global); Classical Control (PID, MPC, etc.)","Analyzing, Testing, Benchmarking & Profiling"
 rvd,https://github.com/aliasrobotics/RVD,Ground Robots (UGVs legged wheeled); Aerial Robots (UAVs),,"Security, Safety & Verification; Synthetic Data & Dataset Generation"
+rviz,https://github.com/ros2/rviz,,,"Visualization, Monitoring & Data Tools"
+rviz_2d_overlay_plugins,https://github.com/teamspatzenhirn/rviz_2d_overlay_plugins,,,"Visualization, Monitoring & Data Tools"
+rviz_satellite,https://github.com/nobleo/rviz_satellite,Aerospace & Space Robotics,,"Visualization, Monitoring & Data Tools"
+rviz_visual_tools,https://github.com/PickNikRobotics/rviz_visual_tools,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Visualization, Monitoring & Data Tools"
+RVizSplat,https://github.com/splat-ros/RVizSplat,,,
 SAILOR,https://github.com/MERLIN2-ARCH/sailor,,Object Detection & Semantic Understanding,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
+sbg_ros2_driver,https://github.com/SBG-Systems/sbg_ros2_driver,,State Estimation,Hardware Drivers & Interfaces
+scan_detection_fusion,https://github.com/HexboxRC/scan_detection_fusion,,"Object Detection & Semantic Understanding; Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+scenario-execution,https://github.com/cps-test-lab/scenario-execution,,,"Analyzing, Testing, Benchmarking & Profiling"
+sdformat_urdf,https://github.com/ros/sdformat_urdf,,,
+sdformat_vendor,https://github.com/gazebo-release/sdformat_vendor,,,Simulators & Playgrounds
+septentrio_gnss_driver,https://github.com/septentrio-gnss/septentrio_gnss_driver,,"Motion Planning & Navigation (global, local, path following); Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 shodh-memory,https://github.com/varun29ankuS/shodh-memory,,Task-Level Planning & Reasoning,
+sick_safetyscanners2,https://github.com/SICKAG/sick_safetyscanners2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces; Security, Safety & Verification"
+sick_safetyscanners2_interfaces,https://github.com/SICKAG/sick_safetyscanners2_interfaces,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces; Security, Safety & Verification"
+sick_safetyscanners_base,https://github.com/SICKAG/sick_safetyscanners_base,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Hardware Drivers & Interfaces; Security, Safety & Verification"
+sick_safevisionary_base,https://github.com/SICKAG/sick_safevisionary_base,,,Hardware Drivers & Interfaces
+sick_safevisionary_ros2,https://github.com/SICKAG/sick_safevisionary_ros2,,,Hardware Drivers & Interfaces
+sick_scan_xd,https://github.com/SICKAG/sick_scan_xd,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+sicks300_ros2,https://github.com/ajtudela/sicks300_ros2,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces; Security, Safety & Verification"
+simple-term-menu,https://github.com/clearpathrobotics/simple-term-menu,,,Build & Development Tools
+simple_actions,https://github.com/DLu/simple_actions,,,
+simple_grasping,https://github.com/mikeferguson/simple_grasping,,,
+simple_launch,https://github.com/oKermorgant/simple_launch,,,
 simROS2,https://github.com/CoppeliaRobotics/simROS2,,,Simulators & Playgrounds
+simulation_interfaces,https://github.com/ros-simulation/simulation_interfaces,,,
 sjtu_drone,https://github.com/NovoG93/sjtu_drone,Aerial Robots (UAVs),,Simulators & Playgrounds
 SkiROS2,https://github.com/RobotLabLTH/SkiROS2,,Task-Level Planning & Reasoning,
 slam_toolbox,https://github.com/SteveMacenski/slam_toolbox,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+slg_msgs,https://github.com/ajtudela/slg_msgs,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
 slicer_ros2_module,https://github.com/rosmed/slicer_ros2_module,Healthcare & Assistive Robotics,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",Hardware Drivers & Interfaces
+slider_publisher,https://github.com/oKermorgant/slider_publisher,,,"Visualization, Monitoring & Data Tools; Middleware & Communication"
 SMACC2,https://github.com/robosoft-ai/SMACC2,,Task-Level Planning & Reasoning,
 SMART-TRACK,https://github.com/mzahana/smart_track,Aerial Robots (UAVs),"Sensing & Raw Data Processing (camera, lidar, sonar, radar); State Estimation",
 SMARTmBOT,https://github.com/SMARTlab-Purdue/SMARTmBOT,Ground Robots (UGVs legged wheeled); Robots for Education & Research,,Hardware Drivers & Interfaces
+snowbot_operating_system,https://github.com/PickNikRobotics/snowbot_operating_system,,,
+snowbot_release,https://github.com/ros2-gbp/snowbot_release,,,
+SO-100-arm,https://github.com/brukg/SO-100-arm,,,
+so_arm_100_hardware,https://github.com/brukg/so_arm_100_hardware,Industrial Robots,"Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces; Middleware & Communication"
+soar_ros,https://github.com/THA-Embedded-Systems-Lab/soar_ros,,,Embedded Systems & Accelerators
+soccer_interfaces,https://github.com/ros-sports/soccer_interfaces,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+soccer_vision_3d_rviz_markers,https://github.com/ros-sports/soccer_vision_3d_rviz_markers,,,"Visualization, Monitoring & Data Tools"
+socketcan_adapter,https://github.com/polymathrobotics/socketcan_adapter,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces"
+sol_vendor,https://github.com/OUXT-Polaris/sol_vendor,,,
+sophus,https://github.com/clalancette/sophus,,,
 Space_ROS,https://github.com/space-ros,Aerospace & Space Robotics,,"Real-Time Execution & Scheduling; Security, Safety & Verification; Simulators & Playgrounds"
 spark-fast-lio,https://github.com/MIT-SPARK/spark-fast-lio/tree/main?tab=readme-ov-file,"Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO)",
+spatio_temporal_voxel_layer,https://github.com/SteveMacenski/spatio_temporal_voxel_layer,,"Motion Planning & Navigation (global, local, path following)",
+spdlog_vendor,https://github.com/ros2/spdlog_vendor,,,
+srdfdom,https://github.com/moveit/srdfdom,Industrial Robots,Object Detection & Semantic Understanding,
 SROS2,https://github.com/ros2/sros2,,,"Security, Safety & Verification; Interfacing & Interoperability (bridges, wrappers, APIs)"
+steering_functions,https://github.com/hbanzhaf/steering_functions,,,
 StereoSA,https://github.com/M2219/StereoSA,"Autonomous Vehicles (cars, trucks, delivery robots); Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled)",Object Detection & Semantic Understanding,
+stomp,https://github.com/ros-industrial/stomp,Industrial Robots,Motion Planning (global),
 SUAVE,https://github.com/kas-lab/suave,Underwater Robots (UUVs),"Classical Control (PID, MPC, etc.); Control - Adaptive & Learning-Based Control (RL, imitation, adaptive dynamics)",
+sugarcoat,https://github.com/automatika-robotics/sugarcoat,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 SUPER,https://github.com/hku-mars/SUPER,Aerial Robots (UAVs),"Sim2Real Transfer; Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
 Swarm-SLAM,https://github.com/MISTLab/Swarm-SLAM,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",Multi-Robot Systems
+swri_console,https://github.com/swri-robotics/swri_console,,,
+synapticon_ros2_control,https://github.com/synapticon/synapticon_ros2_control,,"Classical Control (PID, MPC, etc.)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+sync_tooling_msgs,https://github.com/tier4/sync_tooling_msgs,,,Middleware & Communication; Build & Development Tools
 synchronizer,https://github.com/ruoxianglee/synchronizer,,,"Real-Time Execution & Scheduling; Analyzing, Testing, Benchmarking & Profiling"
+synchros2,https://github.com/rai-opensource/synchros2,,,
+system_modes,https://github.com/micro-ROS/system_modes,,,Embedded Systems & Accelerators
+system_tests,https://github.com/ros2/system_tests,,,
+tango_icons_vendor,https://github.com/ros-visualization/tango_icons_vendor,,,
+tecgihan_driver,https://github.com/tecgihan/tecgihan_driver,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 teleop,https://github.com/SpesRobotics/teleop,Industrial Robots,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+teleop_tools,https://github.com/ros-teleop/teleop_tools,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
+teleop_twist_joy,https://github.com/ros2/teleop_twist_joy,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
+teleop_twist_keyboard,https://github.com/ros2/teleop_twist_keyboard,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
 tello-ros2,https://github.com/tentone/tello-ros2,Aerial Robots (UAVs),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",Hardware Drivers & Interfaces
+tensorrt_cmake_module,https://github.com/tier4/tensorrt_cmake_module,,,Embedded Systems & Accelerators; Build & Development Tools
 terminal_rviz,https://github.com/nathanshankar/terminal_rviz,,,"Visualization, Monitoring & Data Tools"
+test_interface_files,https://github.com/ros2/test_interface_files,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Analyzing, Testing, Benchmarking & Profiling"
+tf2_2d,https://github.com/locusrobotics/tf2_2d,,,
+tf2_web_republisher,https://github.com/RobotWebTools/tf2_web_republisher,,,
+tf_namespace_bridge,https://github.com/husarion/tf_namespace_bridge,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Multi-Robot Systems"
+tf_transformations,https://github.com/DLu/tf_transformations,,,
+tf_transformations_release,https://github.com/ros2-gbp/tf_transformations_release,,,
+tf_tree_terminal,https://github.com/Tanneguydv/tf_tree_terminal,,,
 The_Marathon_2,https://github.com/IntelligentRoboticsLabs/marathon_ros2,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",
+tinyspline_vendor,https://github.com/wep21/tinyspline_vendor,,,
+tinyxml2_vendor,https://github.com/ros2/tinyxml2_vendor,,,
+tinyxml_vendor,https://github.com/ros2/tinyxml_vendor,,,Build & Development Tools
+tlsf,https://github.com/ros2/tlsf,,,
+topic_based_hardware_interfaces,https://github.com/ros-controls/topic_based_hardware_interfaces,,,Hardware Drivers & Interfaces
+topic_tools,https://github.com/ros-tooling/topic_tools,,,Build & Development Tools
+toppra,https://github.com/hungpham2511/toppra,,Motion Planning (global),
 Toychain,https://github.com/teksander/toychain,,,"Security, Safety & Verification"
+trac_ik,https://github.com/traclabs/trac_ik,,,
+tracetools_acceleration,https://github.com/ros-acceleration/tracetools_acceleration,,,"Interfacing & Interoperability (bridges, wrappers, APIs); Hardware Drivers & Interfaces; Embedded Systems & Accelerators"
+tracetools_analysis,https://github.com/ros-tracing/tracetools_analysis,,,"Analyzing, Testing, Benchmarking & Profiling"
+trackdlo_perception,https://github.com/HayatoShimada/trackdlo_perception,,"Object Detection & Semantic Understanding; Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Cloud/Edge Deployment & Orchestration
+transport_drivers,https://github.com/ros-drivers/transport_drivers,,,Middleware & Communication
+trimble_driver_ros,https://github.com/trimble-oss/trimble_driver_ros,,,Hardware Drivers & Interfaces
+tsid,https://github.com/stack-of-tasks/tsid,Aerospace & Space Robotics,"Classical Control (PID, MPC, etc.)",
+turbojpeg_compressed_image_transport,https://github.com/wep21/turbojpeg_compressed_image_transport,,,Middleware & Communication
+turtle_nest,https://github.com/Jannkar/turtle_nest,,,
+turtlebot3,https://github.com/ROBOTIS-GIT/turtlebot3,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
+turtlebot3_applications,https://github.com/ROBOTIS-GIT/turtlebot3_applications,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
+turtlebot3_applications_msgs,https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs,Ground Robots (UGVs legged wheeled),,
+turtlebot3_autorace,https://github.com/ROBOTIS-GIT/turtlebot3_autorace,"Ground Robots (UGVs legged wheeled); Autonomous Vehicles (cars, trucks, delivery robots)","Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
+turtlebot3_home_service_challenge,https://github.com/ROBOTIS-GIT/turtlebot3_home_service_challenge,,,
+turtlebot3_machine_learning,https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning,,,
+turtlebot3_manipulation,https://github.com/ROBOTIS-GIT/turtlebot3_manipulation,Ground Robots (UGVs legged wheeled); Industrial Robots,,Simulators & Playgrounds; Embedded Systems & Accelerators
+turtlebot3_msgs,https://github.com/ROBOTIS-GIT/turtlebot3_msgs,Ground Robots (UGVs legged wheeled),,
+turtlebot3_simulations,https://github.com/ROBOTIS-GIT/turtlebot3_simulations,Ground Robots (UGVs legged wheeled),"Localization and Mapping (SLAM, LIO, VIO, LIVO); Motion Planning & Navigation (global, local, path following)",Simulators & Playgrounds
+turtlebot4,https://github.com/turtlebot/turtlebot4,Ground Robots (UGVs legged wheeled),,
+turtlebot4_desktop,https://github.com/turtlebot/turtlebot4_desktop,Ground Robots (UGVs legged wheeled),,
+turtlebot4_robot,https://github.com/turtlebot/turtlebot4_robot,Ground Robots (UGVs legged wheeled),,
+turtlebot4_setup,https://github.com/turtlebot/turtlebot4_setup,Ground Robots (UGVs legged wheeled),,
+turtlebot4_simulator,https://github.com/turtlebot/turtlebot4_simulator,Ground Robots (UGVs legged wheeled),,
+tuw_geometry,https://github.com/tuw-robotics/tuw_geometry,,,"Visualization, Monitoring & Data Tools"
+tuw_msgs,https://github.com/tuw-robotics/tuw_msgs,,,
+tuw_robotics,https://github.com/tuw-robotics/tuw_robotics,,,
+tvm_vendor,https://github.com/autowarefoundation/tvm_vendor,,,
+twist_mux,https://github.com/ros-teleop/twist_mux,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
+twist_mux_msgs,https://github.com/ros-teleop/twist_mux_msgs,,"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
+twist_stamper,https://github.com/joshnewans/twist_stamper,,,
 uav_dataset_generation_ros,https://github.com/mzahana/uav_dataset_generation_ros,Aerial Robots (UAVs),,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
 UAV_Volcanic_Plume_Sampling,https://huggingface.co/edouard-rolland/YOLOv8-volcanic_plume-fuego_summit,Aerial Robots (UAVs),Object Detection & Semantic Understanding,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
+ublox,https://github.com/KumarRobotics/ublox,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+ublox_dgnss,https://github.com/aussierobots/ublox_dgnss,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
+udp_msgs,https://github.com/flynneva/udp_msgs,,,
 ultralytics_ros,https://github.com/Alpaca-zip/ultralytics_ros,,Object Detection & Semantic Understanding,
+uncrustify_vendor,https://github.com/ament/uncrustify_vendor,,,Build & Development Tools
+unique_identifier_msgs,https://github.com/ros2/unique_identifier_msgs,,,
 unitree-go2-ros2,https://github.com/anujjain-dev/unitree-go2-ros2,Ground Robots (UGVs legged wheeled),,Hardware Drivers & Interfaces
 Unity-Robotics-Hub,https://github.com/Unity-Technologies/Unity-Robotics-Hub,Aerial Robots (UAVs); Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
 UnitySensors,https://github.com/Field-Robotics-Japan/UnitySensors,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Simulators & Playgrounds
+Universal_Robots_Client_Library,https://github.com/UniversalRobots/Universal_Robots_Client_Library,,,
 Universal_Robots_ROS2_Description,https://github.com/UniversalRobots/Universal_Robots_ROS2_Description,Industrial Robots,,Hardware Drivers & Interfaces
+Universal_Robots_ROS2_GZ_Simulation,https://github.com/UniversalRobots/Universal_Robots_ROS2_GZ_Simulation,,,
 UP4ROS2,https://github.com/aiplan4eu/UP4ROS2,,Task-Level Planning & Reasoning,
+ur_msgs,https://github.com/ros-industrial/ur_msgs,Industrial Robots,,
 urban_road_filter,https://github.com/jkk-research/urban_road_filter,"Autonomous Vehicles (cars, trucks, delivery robots)","Object Detection & Semantic Understanding; Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+urdf,https://github.com/ros2/urdf,,,
+urdf_launch,https://github.com/ros/urdf_launch,,,
+urdf_parser_py,https://github.com/ros/urdf_parser_py,,,
+urdf_test,https://github.com/pal-robotics/urdf_test,,,"Analyzing, Testing, Benchmarking & Profiling"
+urdf_tutorial,https://github.com/ros/urdf_tutorial,Robots for Education & Research,,
+urdfdom,https://github.com/ros/urdfdom,,,
+urdfdom_headers,https://github.com/ros/urdfdom_headers,,,
+urg_c,https://github.com/ros-drivers/urg_c,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+urg_node,https://github.com/ros-drivers/urg_node,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Interfacing & Interoperability (bridges, wrappers, APIs)"
+urg_node_msgs,https://github.com/ros-drivers/urg_node_msgs,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",
+urinterfaces,https://github.com/UniversalRobots/urinterfaces,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+usb_cam,https://github.com/ros-drivers/usb_cam,,,Hardware Drivers & Interfaces
 UUV_simulator,https://github.com/uuvsimulator/uuv_simulator,Underwater Robots (UUVs),,Simulators & Playgrounds
+variants,https://github.com/ros2/variants,,,Build & Development Tools
 VECTOR,https://huggingface.co/datasets/riotu-lab/Synthetic-UAV-Flight-Trajectories,Aerial Robots (UAVs),Motion & Trajectory Prediction,"Synthetic Data & Dataset Generation; Visualization, Monitoring & Data Tools"
+vector_pursuit_controller,https://github.com/blackcoffeerobotics/vector_pursuit_controller,Ground Robots (UGVs legged wheeled),"Motion Planning & Navigation (global, local, path following); Classical Control (PID, MPC, etc.)",
+velodyne,https://github.com/ros-drivers/velodyne,,,
 Video_EncodingDecoding,https://github.com/STAR-Center/ros_mp4,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Visualization, Monitoring & Data Tools"
+video_to_image_msg_publisher,https://github.com/gstavrinos/video_to_image_msg_publisher,,,
 vins-application,https://github.com/engcang/vins-application,Aerial Robots (UAVs),"Localization and Mapping (SLAM, LIO, VIO, LIVO)",Embedded Systems & Accelerators
+vision_msgs,https://github.com/ros-perception/vision_msgs,,,Middleware & Communication
+vision_msgs_layers,https://github.com/ros-sports/vision_msgs_layers,,,
+vision_opencv,https://github.com/ros-perception/vision_opencv,,,
+visp,https://github.com/lagadic/visp,,,
+vitis_common,https://github.com/ros-acceleration/vitis_common,,,Hardware Drivers & Interfaces; Embedded Systems & Accelerators
 vizanti,https://github.com/MoffKalast/vizanti,Ground Robots (UGVs legged wheeled),Task-Level Planning & Reasoning,"Visualization, Monitoring & Data Tools"
 Voice-Controlled-Bot-Using-ROS2,https://github.com/arynfs/Voice-Controlled-Bot-Using-ROS2,Ground Robots (UGVs legged wheeled),"HRI - Human–Robot Interfaces (speech, vision-language, wearable sensors)",
 vox_nav,https://github.com/NMBURobotics/vox_nav,Ground Robots (UGVs legged wheeled),"Motion Planning (global); Reactive Planning (local , obstacle avoidance); Motion Planning & Navigation (global, local, path following)",
+vrpn,https://github.com/vrpn/vrpn,,,
+vrpn_mocap,https://github.com/alvinsunyixiao/vrpn_mocap,,,
 vscode_ros2_workspace,https://github.com/althack/vscode_ros2_workspace,Robots for Education & Research,,Build & Development Tools
+warehouse_ros,https://github.com/moveit/warehouse_ros,Industrial Robots,,
+warehouse_ros_sqlite,https://github.com/moveit/warehouse_ros_sqlite,Industrial Robots,,
+web_video_server,https://github.com/RobotWebTools/web_video_server,,,
 webots,https://github.com/cyberbotics/webots,Robots for Education & Research,,Simulators & Playgrounds
 webots_ros2,https://github.com/cyberbotics/webots_ros2,Ground Robots (UGVs legged wheeled),,Simulators & Playgrounds
+wireless,https://github.com/clearpathrobotics/wireless,,,
 world-creator,https://github.com/AlexKaravaev/world-creator,,,Synthetic Data & Dataset Generation; Simulators & Playgrounds
 Wrapyfi,https://github.com/modular-ml/wrapyfi,,,"Cloud/Edge Deployment & Orchestration; Interfacing & Interoperability (bridges, wrappers, APIs); Middleware & Communication"
 X-CAR,https://github.com/usdot-fhwa-stol/carma-platform,"Autonomous Vehicles (cars, trucks, delivery robots)","Motion Planning (global); Motion Planning & Navigation (global, local, path following)","Cloud/Edge Deployment & Orchestration; Interfacing & Interoperability (bridges, wrappers, APIs)"
+xacro,https://github.com/ros/xacro,,,Hardware Drivers & Interfaces
 xarm_ros2,https://github.com/xArm-Developer/xarm_ros2,Industrial Robots,,Hardware Drivers & Interfaces
 XTENTH-CAR,https://github.com/Shathushan-Sivashangaran/XTENTH-CAR,"Autonomous Vehicles (cars, trucks, delivery robots); Robots for Education & Research",,Hardware Drivers & Interfaces
+yaets,https://github.com/fmrico/yaets,,,
+yaml_cpp_vendor,https://github.com/ros2/yaml_cpp_vendor,,,Build & Development Tools
 YASMIN,https://github.com/uleroboticsgroup/yasmin,,Task-Level Planning & Reasoning,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 YOLOX,https://github.com/Megvii-BaseDetection/YOLOX,,Object Detection & Semantic Understanding,"Embedded Systems & Accelerators; Interfacing & Interoperability (bridges, wrappers, APIs)"
 PX4-Autopilot,https://github.com/PX4/PX4-Autopilot,Aerial Robots (UAVs),"Classical Control (PID, MPC, etc.)","Hardware Drivers & Interfaces; Interfacing & Interoperability (bridges, wrappers, APIs)"
 YOLOX-ROS,https://github.com/Ar-Ray-code/YOLOX-ROS,,Object Detection & Semantic Understanding,
+zbar_ros,https://github.com/ros-drivers/zbar_ros,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
+zed-ros2-description,https://github.com/stereolabs/zed-ros2-description,,,
+zed-ros2-interfaces,https://github.com/stereolabs/zed-ros2-interfaces,,,"Interfacing & Interoperability (bridges, wrappers, APIs)"
 zed-ros2-wrapper,https://github.com/stereolabs/zed-ros2-wrapper,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)",Hardware Drivers & Interfaces
 zenoh,https://github.com/eclipse-zenoh/zenoh,,,Middleware & Communication
 Fast-DDS,https://github.com/eProsima/Fast-DDS,,,Middleware & Communication
@@ -315,3 +1058,4 @@ lidar_localization_ros2,https://github.com/rsasaki0109/lidar_localization_ros2,G
 robot_calibration,https://github.com/mikeferguson/robot_calibration,,"Sensing & Raw Data Processing (camera, lidar, sonar, radar)","Analyzing, Testing, Benchmarking & Profiling"
 zenoh-plugin-dds,https://github.com/eclipse-zenoh/zenoh-plugin-dds,,,Middleware & Communication
 zenoh-plugin-ros2dds,https://github.com/eclipse-zenoh/zenoh-plugin-ros2dds,,,Middleware & Communication
+zmqpp_vendor,https://github.com/autowarefoundation/zmqpp_vendor,,,
