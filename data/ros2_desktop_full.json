@@ -1,0 +1,481 @@
+{
+ "distro": "rolling",
+ "generated_from": "ros2/variants + ros/rosdistro",
+ "packages": [
+  {
+   "package": "action_tutorials_cpp",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "action_tutorials_py",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "ament_cmake",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_cmake"
+  },
+  {
+   "package": "ament_cmake_auto",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_cmake"
+  },
+  {
+   "package": "ament_cmake_gmock",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_cmake"
+  },
+  {
+   "package": "ament_cmake_gtest",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_cmake"
+  },
+  {
+   "package": "ament_cmake_pytest",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_cmake"
+  },
+  {
+   "package": "ament_cmake_ros",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/ament_cmake_ros"
+  },
+  {
+   "package": "ament_index_cpp",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_index"
+  },
+  {
+   "package": "ament_index_python",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_index"
+  },
+  {
+   "package": "ament_lint_auto",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_lint"
+  },
+  {
+   "package": "ament_lint_common",
+   "layer": "ros_core",
+   "repo": "https://github.com/ament/ament_lint"
+  },
+  {
+   "package": "angles",
+   "layer": "desktop",
+   "repo": "https://github.com/ros/angles"
+  },
+  {
+   "package": "class_loader",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros/class_loader"
+  },
+  {
+   "package": "common_interfaces",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/common_interfaces"
+  },
+  {
+   "package": "composition",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "demo_nodes_cpp",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "demo_nodes_cpp_native",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "demo_nodes_py",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "depthimage_to_laserscan",
+   "layer": "desktop",
+   "repo": "https://github.com/ros-perception/depthimage_to_laserscan"
+  },
+  {
+   "package": "dummy_map_server",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "dummy_robot_bringup",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "dummy_sensors",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "examples_rclcpp_minimal_action_client",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_minimal_action_server",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_minimal_client",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_minimal_composition",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_minimal_publisher",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_minimal_service",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_minimal_subscriber",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_minimal_timer",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclcpp_multithreaded_executor",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclpy_executors",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclpy_minimal_action_client",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclpy_minimal_action_server",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclpy_minimal_client",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclpy_minimal_publisher",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclpy_minimal_service",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "examples_rclpy_minimal_subscriber",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/examples"
+  },
+  {
+   "package": "geometry2",
+   "layer": "ros_base",
+   "repo": "https://github.com/ros2/geometry2"
+  },
+  {
+   "package": "image_common",
+   "layer": "perception",
+   "repo": "https://github.com/ros-perception/image_common"
+  },
+  {
+   "package": "image_pipeline",
+   "layer": "perception",
+   "repo": "https://github.com/ros-perception/image_pipeline"
+  },
+  {
+   "package": "image_tools",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "image_transport_plugins",
+   "layer": "perception",
+   "repo": "https://github.com/ros-perception/image_transport_plugins"
+  },
+  {
+   "package": "intra_process_demo",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "joy",
+   "layer": "desktop",
+   "repo": "https://github.com/ros-drivers/joystick_drivers"
+  },
+  {
+   "package": "kdl_parser",
+   "layer": "ros_base",
+   "repo": "https://github.com/ros/kdl_parser"
+  },
+  {
+   "package": "laser_filters",
+   "layer": "perception",
+   "repo": "https://github.com/ros-perception/laser_filters"
+  },
+  {
+   "package": "laser_geometry",
+   "layer": "perception",
+   "repo": "https://github.com/ros-perception/laser_geometry"
+  },
+  {
+   "package": "launch",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch"
+  },
+  {
+   "package": "launch_ros",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch_ros"
+  },
+  {
+   "package": "launch_testing",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch"
+  },
+  {
+   "package": "launch_testing_ament_cmake",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch"
+  },
+  {
+   "package": "launch_testing_ros",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch_ros"
+  },
+  {
+   "package": "launch_xml",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch"
+  },
+  {
+   "package": "launch_yaml",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch"
+  },
+  {
+   "package": "lifecycle",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "logging_demo",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "pcl_conversions",
+   "layer": "desktop",
+   "repo": "https://github.com/ros-perception/perception_pcl"
+  },
+  {
+   "package": "pendulum_control",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "pendulum_msgs",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "perception_pcl",
+   "layer": "perception",
+   "repo": "https://github.com/ros-perception/perception_pcl"
+  },
+  {
+   "package": "pluginlib",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros/pluginlib"
+  },
+  {
+   "package": "quality_of_service_demo_cpp",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "quality_of_service_demo_py",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "rcl_lifecycle",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/rcl"
+  },
+  {
+   "package": "rclcpp",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/rclcpp"
+  },
+  {
+   "package": "rclcpp_action",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/rclcpp"
+  },
+  {
+   "package": "rclcpp_lifecycle",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/rclcpp"
+  },
+  {
+   "package": "rclpy",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/rclpy"
+  },
+  {
+   "package": "robot_state_publisher",
+   "layer": "ros_base",
+   "repo": "https://github.com/ros/robot_state_publisher"
+  },
+  {
+   "package": "ros2cli_common_extensions",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/ros2cli_common_extensions"
+  },
+  {
+   "package": "ros2launch",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/launch_ros"
+  },
+  {
+   "package": "ros_environment",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros/ros_environment"
+  },
+  {
+   "package": "ros_gz_bridge",
+   "layer": "simulation",
+   "repo": "https://github.com/gazebosim/ros_gz"
+  },
+  {
+   "package": "ros_gz_image",
+   "layer": "simulation",
+   "repo": "https://github.com/gazebosim/ros_gz"
+  },
+  {
+   "package": "ros_gz_interfaces",
+   "layer": "simulation",
+   "repo": "https://github.com/gazebosim/ros_gz"
+  },
+  {
+   "package": "ros_gz_sim",
+   "layer": "simulation",
+   "repo": "https://github.com/gazebosim/ros_gz"
+  },
+  {
+   "package": "ros_gz_sim_demos",
+   "layer": "desktop_full",
+   "repo": "https://github.com/gazebosim/ros_gz"
+  },
+  {
+   "package": "rosbag2",
+   "layer": "ros_base",
+   "repo": "https://github.com/ros2/rosbag2"
+  },
+  {
+   "package": "rosidl_default_generators",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/rosidl_defaults"
+  },
+  {
+   "package": "rosidl_default_runtime",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/rosidl_defaults"
+  },
+  {
+   "package": "rqt_common_plugins",
+   "layer": "desktop",
+   "repo": "https://github.com/ros-visualization/rqt_common_plugins"
+  },
+  {
+   "package": "rviz2",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/rviz"
+  },
+  {
+   "package": "rviz_default_plugins",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/rviz"
+  },
+  {
+   "package": "sros2",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/sros2"
+  },
+  {
+   "package": "sros2_cmake",
+   "layer": "ros_core",
+   "repo": "https://github.com/ros2/sros2"
+  },
+  {
+   "package": "teleop_twist_joy",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/teleop_twist_joy"
+  },
+  {
+   "package": "teleop_twist_keyboard",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/teleop_twist_keyboard"
+  },
+  {
+   "package": "tlsf",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/tlsf"
+  },
+  {
+   "package": "tlsf_cpp",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/realtime_support"
+  },
+  {
+   "package": "topic_monitor",
+   "layer": "desktop",
+   "repo": "https://github.com/ros2/demos"
+  },
+  {
+   "package": "turtlesim",
+   "layer": "desktop",
+   "repo": "https://github.com/ros/ros_tutorials"
+  },
+  {
+   "package": "urdf",
+   "layer": "ros_base",
+   "repo": "https://github.com/ros2/urdf"
+  },
+  {
+   "package": "vision_opencv",
+   "layer": "perception",
+   "repo": "https://github.com/ros-perception/vision_opencv"
+  }
+ ]
+}

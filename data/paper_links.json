@@ -1,0 +1,954 @@
+{
+ "Nav2": [
+  {
+   "doi": "10.1109/iros45743.2020.9341207",
+   "title": "The Marathon 2: A Navigation System",
+   "year": "2020",
+   "via": "curated"
+  },
+  {
+   "doi": "10.1016/j.robot.2023.104493",
+   "title": "From the Desks of ROS Maintainers: A Survey of Modern & Capable Mobile Robotics Algorithms in the Robot Operating System 2",
+   "year": "2023",
+   "via": "curated"
+  }
+ ],
+ "navigation2": [
+  {
+   "doi": "10.1109/iros45743.2020.9341207",
+   "title": "The Marathon 2: A Navigation System",
+   "year": "2020",
+   "via": "curated"
+  }
+ ],
+ "BehaviorTree.CPP": [
+  {
+   "doi": "10.1109/etfa52439.2022.9921683",
+   "title": "Behavior Trees based Flexible Task Planner Built on ROS2 Framework",
+   "year": "2022",
+   "via": "curated"
+  }
+ ],
+ "PlanSys2": [
+  {
+   "doi": "10.1109/iros51168.2021.9636544",
+   "title": "PlanSys2: A Planning System Framework for ROS2",
+   "year": "2021",
+   "via": "curated"
+  }
+ ],
+ "SkiROS2": [
+  {
+   "doi": "10.1109/iros55552.2023.10342216",
+   "title": "SkiROS2: A Skill-Based Robot Control Platform for ROS",
+   "year": "2023",
+   "via": "curated"
+  }
+ ],
+ "SpaceROS": [
+  {
+   "doi": "10.2514/6.2023-2709",
+   "title": "Space ros: An open-source framework for space robotics and flight software",
+   "year": "2023",
+   "via": "curated"
+  }
+ ],
+ "UUV Simulator": [
+  {
+   "doi": "10.1109/oceans.2016.7761080",
+   "title": "UUV simulator: A gazebo-based package for underwater intervention and multi-robot simulation",
+   "year": "2016",
+   "via": "curated"
+  }
+ ],
+ "UUV_simulator": [
+  {
+   "doi": "10.1109/oceans.2016.7761080",
+   "title": "UUV simulator: A gazebo-based package for underwater intervention and multi-robot simulation",
+   "year": "2016",
+   "via": "curated"
+  }
+ ],
+ "HuNavSim": [
+  {
+   "doi": "10.1109/lra.2023.3316072",
+   "title": "HuNavSim: A ROS 2 Human Navigation Simulator for Benchmarking Human-Aware Robot Navigation",
+   "year": "2023",
+   "via": "curated"
+  },
+  {
+   "doi": "10.48550/arxiv.2507.17317",
+   "title": "HuNavSim 2.0: An Enhanced Human Navigation Simulator for Human-Aware Robot Navigation",
+   "year": "2025",
+   "via": "title"
+  },
+  {
+   "doi": "10.5281/zenodo.18195486",
+   "title": "HuNavSim 2.0 - A Human Navigation Simulator for benchmarking human-aware robot navigation",
+   "year": "2026",
+   "via": "title"
+  }
+ ],
+ "LunarSim": [
+  {
+   "doi": "10.3390/app132212401",
+   "title": "LunarSim: Lunar Rover Simulator Focused on High Visual Fidelity and ROS 2 Integration for Advanced Computer Vision Algorithm Development",
+   "year": "2023",
+   "via": "curated"
+  }
+ ],
+ "MVSim": [
+  {
+   "doi": "10.1016/j.softx.2023.101443",
+   "title": "MultiVehicle Simulator (MVSim): lightweight dynamics simulator for multiagents and mobile robotics research",
+   "year": "2023",
+   "via": "curated"
+  }
+ ],
+ "MAES": [
+  {
+   "doi": "10.1007/s10015-023-00895-7",
+   "title": "MAES: a ROS 2-compatible simulation tool for exploration and coverage algorithms",
+   "year": "2023",
+   "via": "curated"
+  }
+ ],
+ "VECTOR": [
+  {
+   "doi": "10.3390/drones9010008",
+   "title": "VECTOR: Velocity-Enhanced GRU Neural Network for Real-Time 3D UAV Trajectory Prediction",
+   "year": "2024",
+   "via": "curated"
+  }
+ ],
+ "ROS 2": [
+  {
+   "doi": "10.1126/scirobotics.abm6074",
+   "title": "Robot Operating System 2: Design, architecture, and uses in the wild",
+   "year": "2022",
+   "via": "curated"
+  }
+ ],
+ "ros2-forest": [
+  {
+   "doi": "10.1109/icfpt51103.2020.00052",
+   "title": "Automated Integration of High-Level Synthesis FPGA Modules with ROS2 Systems",
+   "year": "2020",
+   "via": "repo"
+  },
+  {
+   "doi": "10.1109/candarw51189.2020.00031",
+   "title": "FPGA Acceleration of ROS2-Based Reinforcement Learning Agents",
+   "year": "2020",
+   "via": "repo"
+  }
+ ],
+ "slicer_ros2_module": [
+  {
+   "doi": "10.3390/s22145336",
+   "title": "Bridging 3D Slicer and ROS2 for Image-Guided Robotic Interventions",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "CARET": [
+  {
+   "doi": "10.1109/euc57774.2022.00010",
+   "title": "CARET: Chain-Aware ROS 2 Evaluation Tool",
+   "year": "2022",
+   "via": "repo"
+  },
+  {
+   "doi": "10.1109/hpcc-dss-smartcity-dependsys57074.2022.00302",
+   "title": "Scheduling Performance Evaluation Framework for ROS 2 Applications",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "ChoiRbot": [
+  {
+   "doi": "10.1109/lra.2021.3061366",
+   "title": "ChoiRbot: A ROS 2 Toolbox for Cooperative Robotics",
+   "year": "2021",
+   "via": "repo"
+  }
+ ],
+ "kmriiwa": [
+  {
+   "doi": "10.1109/sims49386.2020.9121554",
+   "title": "Configuration and Control of KMR iiwa Mobile Robots using ROS2",
+   "year": "2020",
+   "via": "repo"
+  }
+ ],
+ "CrazyChoir": [
+  {
+   "doi": "10.1109/lra.2023.3286814",
+   "title": "CrazyChoir: Flying Swarms of Crazyflie Quadrotors in ROS 2",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "ros2-performance": [
+  {
+   "doi": "10.1145/2968478.2968502",
+   "title": "Exploring the performance of ROS2",
+   "year": "2016",
+   "via": "repo"
+  }
+ ],
+ "FogROS2_platform": [
+  {
+   "doi": "10.1109/icra48891.2023.10161307",
+   "title": "FogROS 2: An Adaptive and Extensible Platform for Cloud and Fog Robotics Using ROS 2",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "HyperDog": [
+  {
+   "doi": "10.1109/smc53654.2022.9945526",
+   "title": "HyperDog: An Open-Source Quadruped Robot Platform Based on ROS2 and micro-ROS",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "Hyperledger_Fabric": [
+  {
+   "doi": "10.1109/sii55687.2023.10039326",
+   "title": "Hyperledger Fabric Blockchain and ROS 2 Integration for Autonomous Mobile Robots",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "MERLIN2": [
+  {
+   "doi": "10.3390/app10175989",
+   "title": "MERLIN a Cognitive Architecture for Service Robots",
+   "year": "2020",
+   "via": "repo"
+  },
+  {
+   "doi": "10.1016/j.simpa.2023.100477",
+   "title": "MERLIN2: MachinEd Ros 2 pLanINg",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "MeROS": [
+  {
+   "doi": "10.1109/access.2023.3301727",
+   "title": "MeROS: SysML-based Metamodel for ROS-based Systems",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "ros2-message-flow-analysis": [
+  {
+   "doi": "10.1016/j.robot.2022.104361",
+   "title": "Message Flow Analysis with Complex Causal Links for Distributed ROS 2 Systems",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "Mobile_MoCap": [
+  {
+   "doi": "10.1109/case56687.2023.10260562",
+   "title": "Mobile MoCap: Retroreflector Localization On-The-Go",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "MPSoC4Drones": [
+  {
+   "doi": "10.1109/icuas54217.2022.9836055",
+   "title": "MPSoC4Drones: An Open Framework for ROS2, PX4, and FPGA Integration",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "ros_babel_fish": [
+  {
+   "doi": "10.1109/ecmr50962.2021.9568801",
+   "title": "Open-Source Tools for Efficient ROS and ROS2-based 2D Human-Robot Interface Development",
+   "year": "2021",
+   "via": "repo"
+  }
+ ],
+ "PointIt": [
+  {
+   "doi": "10.1109/hri53351.2022.9889486",
+   "title": "PointIt: A ROS Toolkit for Interacting with Co-located Robots using Pointing Gestures",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "ReconROS": [
+  {
+   "doi": "10.1109/icfpt51103.2020.00046",
+   "title": "ReconROS: Flexible Hardware Acceleration for ROS2 Applications",
+   "year": "2020",
+   "via": "repo"
+  },
+  {
+   "doi": "10.1145/3494571",
+   "title": "Design of Distributed Reconfigurable Robotics Systems with ReconROS",
+   "year": "2022",
+   "via": "repo"
+  },
+  {
+   "doi": "10.1109/dsd57027.2022.00088",
+   "title": "ReconROS Executor: Event-Driven Programming of FPGA-accelerated ROS 2 Applications",
+   "year": "2022",
+   "via": "title"
+  }
+ ],
+ "flexible_navigation": [
+  {
+   "doi": "10.1109/southeastcon48659.2022.9764047",
+   "title": "ROS 2-Based Flexible Behavior Engine for Flexible Navigation",
+   "year": "2022",
+   "via": "repo"
+  },
+  {
+   "doi": "10.1109/secon.2017.7925266",
+   "title": "Flexible Navigation: Finite state machine-based integrated navigation and control for ROS enabled robots",
+   "year": "2017",
+   "via": "title"
+  }
+ ],
+ "ros2_tracing": [
+  {
+   "doi": "10.1109/lra.2022.3174346",
+   "title": "ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "ROSGPT": [
+  {
+   "doi": "10.1002/spe.3377",
+   "title": "Next-generation human-robot interaction with ChatGPT and robot operating system",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "SAILOR": [
+  {
+   "doi": "10.1038/s41598-024-84071-2",
+   "title": "SAILOR: Perceptual Anchoring For Robotic Cognitive Architectures",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "SROS2": [
+  {
+   "doi": "10.1109/iros47612.2022.9982129",
+   "title": "SROS2: Usable Cyber Security Tools for ROS 2",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "Swarm-SLAM": [
+  {
+   "doi": "10.1109/lra.2023.3333742",
+   "title": "Swarm-SLAM : Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "XTENTH-CAR": [
+  {
+   "doi": "10.1115/imece2023-110448",
+   "title": "XTENTH-CAR: A Proportionally Scaled Experimental Vehicle Platform for Connected Autonomy and All-Terrain Research",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "mola": [
+  {
+   "doi": "10.1177/02783649251316881",
+   "title": "A flexible framework for accurate LiDAR odometry, map manipulation, and localization",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "embeddedRTPS": [
+  {
+   "doi": "10.1109/itsc.2019.8916835",
+   "title": "A Portable Implementation of the Real-Time Publish-Subscribe Protocol for Microcontrollers in Distributed Robotic Applications",
+   "year": "2019",
+   "via": "repo"
+  }
+ ],
+ "libiiwa": [
+  {
+   "doi": "10.1109/sii55687.2023.10039308",
+   "title": "A Scalable and Unified Multi-Control Framework for KUKA LBR iiwa Collaborative Robots",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "nav2_accountability_explainability": [
+  {
+   "doi": "10.1007/978-3-031-42519-6_1",
+   "title": "Accountability and Explainability in Robotics: A Proof of Concept for ROS 2-And Nav2-Based Mobile Robots",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "CFV2": [
+  {
+   "doi": "10.1109/chilecon60335.2023.10418618",
+   "title": "CFV2: an Open-Source Robot Controller Board for Education and Research",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "DeRO": [
+  {
+   "doi": "10.1109/iros58592.2024.10801645",
+   "title": "DeRO: Dead Reckoning Based on Radar Odometry With Accelerometers Aided for Robot Localization",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "direct_visual_lidar_calibration": [
+  {
+   "doi": "10.1109/icra48891.2023.10160691",
+   "title": "General, Single-shot, Target-less, and Automatic LiDAR-Camera Extrinsic Calibration Toolbox",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "HawkDrive": [
+  {
+   "doi": "10.1109/iv55156.2024.10588447",
+   "title": "HawkDrive: A Transformer-driven Visual Perception System for Autonomous Driving in Night Scene",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "Video_EncodingDecoding": [
+  {
+   "doi": "10.1109/robio64047.2024.10907468",
+   "title": "High-Quality, ROS Compatible Video Encoding and Decoding for High-Definition Datasets",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "KubeROS": [
+  {
+   "doi": "10.1109/icra48891.2023.10160632",
+   "title": "KubeROS: A Unified Platform for Automated and Scalable Deployment of ROS2-based Multi-Robot Applications",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "lbr_fri_ros2_stack": [
+  {
+   "doi": "10.21105/joss.06138",
+   "title": "LBR-Stack: ROS 2 and Python Integration of KUKA FRI for Med and IIWA Robots",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "Multi-Robot-Graph-SLAM": [
+  {
+   "doi": "10.1109/icara60736.2024.10553070",
+   "title": "Multi-Robot Graph SLAM Using LIDAR",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "NanoMap": [
+  {
+   "doi": "10.3390/rs14215463",
+   "title": "NanoMap: A GPU-Accelerated OpenVDB-Based Mapping and Simulation Package for Robotic Agents",
+   "year": "2022",
+   "via": "repo"
+  }
+ ],
+ "NAO": [
+  {
+   "doi": "10.1109/ro-man60168.2024.10731252",
+   "title": "Open Access NAO (OAN): a ROS2-based software framework for HRI applications with the NAO robot",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "PAAM": [
+  {
+   "doi": "10.1109/rtas61025.2024.00015",
+   "title": "PAAM: A Framework for Coordinated and Priority-Driven Accelerator Management in ROS 2",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "RobotPerf": [
+  {
+   "doi": "10.1109/icra57147.2024.10610841",
+   "title": "RobotPerf: An Open-Source, Vendor-Agnostic, Benchmarking Suite for Evaluating Robotics Computing System Performance",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "SUAVE": [
+  {
+   "doi": "10.1109/seams59076.2023.00031",
+   "title": "SUAVE: An Exemplar for Self-Adaptive Underwater Vehicles",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "ros2-3gppSA6-mapper": [
+  {
+   "doi": "10.1109/access.2023.3289922",
+   "title": "Toward the Automatic Network Resource Management of Robot Operating System in Programmable Mobile Networks",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "lidar_cluster_ros2": [
+  {
+   "doi": "10.1109/most60774.2024.00031",
+   "title": "Towards Robust LIDAR Lane Clustering for Autonomous Vehicle Perception in ROS 2",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "Wrapyfi": [
+  {
+   "doi": "10.1145/3610977.3637471",
+   "title": "Wrapyfi: A Python Wrapper for Integrating Robots, Sensors, and Applications across Multiple Middleware",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "YASMIN": [
+  {
+   "doi": "10.1007/978-3-031-21062-4_43",
+   "title": "YASMIN: Yet Another State MachINe",
+   "year": "2023",
+   "via": "repo"
+  }
+ ],
+ "ROS-Dynamic-Executor": [
+  {
+   "doi": "10.1109/tcad.2024.3445259",
+   "title": "Dynamic Priority Scheduling of Multithreaded ROS 2 Executor With Shared Resources",
+   "year": "2024",
+   "via": "repo"
+  }
+ ],
+ "adaptive_component": [
+  {
+   "doi": "10.1007/978-3-642-23147-6_2",
+   "title": "An Adaptive Component Model for Autonomous Mobile Robots",
+   "year": "2011",
+   "via": "title"
+  }
+ ],
+ "aerial-autonomy-stack": [
+  {
+   "doi": "10.48550/arxiv.2602.07264",
+   "title": "aerial-autonomy-stack -- a Faster-than-real-time, Autopilot-agnostic, ROS2 Framework to Simulate and Deploy Perception-based Drones",
+   "year": "2026",
+   "via": "title"
+  }
+ ],
+ "agnocast": [
+  {
+   "doi": "10.48550/arxiv.2506.16882",
+   "title": "ROS 2 Agnocast: Supporting Unsized Message Types for True Zero-Copy Publish/Subscribe IPC",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "anafi_ros": [
+  {
+   "doi": "10.1109/icuas57906.2023.10155881",
+   "title": "anafi_ros: from Off-the-Shelf Drones to Research Platforms",
+   "year": "2023",
+   "via": "title"
+  }
+ ],
+ "Autoware": [
+  {
+   "doi": "10.1109/iccps.2018.00035",
+   "title": "Autoware on board: Enabling autonomous vehicles with embedded systems",
+   "year": "2018",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/isorc.2019.00023",
+   "title": "Autoware Toolbox: MATLAB/Simulink Benchmark Suite for ROS-based Self-driving Software Platform",
+   "year": "2019",
+   "via": "title"
+  },
+  {
+   "doi": "10.3233/faia250532",
+   "title": "Autoware Toolbox 2: Model-Based Benchmark Suite of ROS 2 Nodes for Autonomous Driving System",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "better_launch": [
+  {
+   "doi": "10.21105/joss.08958",
+   "title": "better_launch: A better replacement for the ROS2 launch system",
+   "year": "2026",
+   "via": "title"
+  }
+ ],
+ "Bobble-Bot": [
+  {
+   "doi": "10.1109/ismcr47492.2019.8955713",
+   "title": "Bobble-Bot: An educational platform for real-time control with ROS",
+   "year": "2019",
+   "via": "title"
+  }
+ ],
+ "CARLA": [
+  {
+   "doi": "10.1109/icspis67605.2025.11318365",
+   "title": "Simulating an Autonomous System in CARLA using ROS 2",
+   "year": "2025",
+   "via": "title"
+  },
+  {
+   "doi": "10.1016/j.trpro.2025.03.055",
+   "title": "ROS-Enabled Autonomous Vehicle Architecture within CARLA: A Comprehensive Overview",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "cartographer": [
+  {
+   "doi": "10.1049/icp.2022.3248",
+   "title": "Research on slam improvement method based on cartographer",
+   "year": "2022",
+   "via": "title"
+  }
+ ],
+ "cascade_lifecycle": [
+  {
+   "doi": "10.1109/robot61475.2024.10796947",
+   "title": "Cascade LifeCycle: A Convenient Building Block for Efficient Robot Software Architectures",
+   "year": "2024",
+   "via": "title"
+  }
+ ],
+ "diagnostics": [
+  {
+   "doi": "10.1109/icai67591.2025.11324886",
+   "title": "Diagnostics of industrial robot applied in flexible manufacturing system",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "embodied-agents": [
+  {
+   "doi": "10.1109/biorob.2012.6290714",
+   "title": "Simulation versus embodied agents: Does either induce better human adherence to physical therapy exercise?",
+   "year": "2012",
+   "via": "title"
+  }
+ ],
+ "examples": [
+  {
+   "doi": "10.1109/icasid.2015.7405668",
+   "title": "Examples of Quadrocopter control on ROS",
+   "year": "2015",
+   "via": "title"
+  }
+ ],
+ "Fields2Cover": [
+  {
+   "doi": "10.1109/lra.2023.3248439",
+   "title": "Fields2Cover: An Open-Source Coverage Path Planning Library for Unmanned Agricultural Vehicles",
+   "year": "2023",
+   "via": "title"
+  }
+ ],
+ "fusioncore": [
+  {
+   "doi": "10.5281/zenodo.20299746",
+   "title": "FusionCore: ROS 2 UKF Sensor Fusion",
+   "year": "2026",
+   "via": "title"
+  }
+ ],
+ "grid_map": [
+  {
+   "doi": "10.1007/978-3-319-26054-9_5",
+   "title": "A universal grid map library: Implementation and use case for rough terrain navigation",
+   "year": "2016",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/iccre65455.2025.11093550",
+   "title": "Dual-Robot Occupancy Grid Map Merging: A Study on Warehouse Simulation",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "latency_analysis": [
+  {
+   "doi": "10.1109/mfi52462.2021.9591166",
+   "title": "Latency Analysis of ROS2 Multi-Node Systems",
+   "year": "2021",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/raai67517.2025.11423038",
+   "title": "Latency Analysis in Internal Layers of Shared Memory Communication in ROS2",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "LBR-Stack": [
+  {
+   "doi": "10.21105/joss.06138",
+   "title": "LBR-Stack: ROS 2 and Python Integration of KUKA FRI for Med and IIWA Robots",
+   "year": "2023",
+   "via": "title"
+  }
+ ],
+ "micro-ROS": [
+  {
+   "doi": "10.1007/978-3-031-03502-9_27",
+   "title": "Smart Warehouse as an Example of Micro-ROS Application",
+   "year": "2022",
+   "via": "title"
+  },
+  {
+   "doi": "10.1088/1742-6596/2402/1/012030",
+   "title": "2D Mapping of mobile robot based on micro-ROS",
+   "year": "2022",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/access.2026.3691059",
+   "title": "Micro-ROS Multi-Board Control for a Robotic Leg",
+   "year": "2026",
+   "via": "title"
+  }
+ ],
+ "MOCAP4ROS2": [
+  {
+   "doi": "10.1145/3555051.3555076",
+   "title": "MOCAP4ROS2: An Open Source Framework for Motion Capture Systems in Robotics",
+   "year": "2022",
+   "via": "title"
+  }
+ ],
+ "move_base_flex": [
+  {
+   "doi": "10.1109/iros.2018.8593829",
+   "title": "Move base flex a highly flexible navigation framework for mobile robots",
+   "year": "2018",
+   "via": "title"
+  }
+ ],
+ "mujoco_ros2_control": [
+  {
+   "doi": "10.21105/joss.09140",
+   "title": "MujocoROS2Control: Seamless MuJoCo Integration with ROS 2 for Robot Simulation and Control",
+   "year": "2025",
+   "via": "title"
+  },
+  {
+   "doi": "10.5281/zenodo.17879731",
+   "title": "dfki-ric/mujoco_ros2_control: JOSS Paper",
+   "year": "2025",
+   "via": "title"
+  },
+  {
+   "doi": "10.5281/zenodo.17879945",
+   "title": "dfki-ric/mujoco_ros2_control: 1.0.0",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "RCLAda": [
+  {
+   "doi": "10.1145/3394514.3394518",
+   "title": "RCLAda, or Bringing Ada to the Robot Operating System",
+   "year": "2019",
+   "via": "title"
+  }
+ ],
+ "RoboFuzz": [
+  {
+   "doi": "10.1145/3540250.3549164",
+   "title": "RoboFuzz: fuzzing robotic systems over robot operating system (ROS) for finding correctness bugs",
+   "year": "2022",
+   "via": "title"
+  }
+ ],
+ "robot_localization": [
+  {
+   "doi": "10.1109/isma.2015.7373469",
+   "title": "A Kinect-based indoor mobile robot localization",
+   "year": "2015",
+   "via": "title"
+  },
+  {
+   "doi": "10.23919/ecc64448.2024.10591277",
+   "title": "Mobile Robot Localization: a Modular, Odometry-Improving Approach",
+   "year": "2024",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/iros.2015.7353546",
+   "title": "Stereo parallel tracking and mapping for robot localization",
+   "year": "2015",
+   "via": "title"
+  }
+ ],
+ "RobotCore": [
+  {
+   "doi": "10.1109/iros47612.2022.9982082",
+   "title": "RobotCore: An Open Architecture for Hardware Acceleration in ROS 2",
+   "year": "2022",
+   "via": "title"
+  }
+ ],
+ "ros_environment": [
+  {
+   "doi": "10.1007/978-3-031-32439-0_42",
+   "title": "Robot Motion Planning in ROS Environment",
+   "year": "2023",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/isas66241.2025.11101968",
+   "title": "Development of Seam Tracking Sensor in ROS Environment",
+   "year": "2025",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/iccrtee64519.2025.11053000",
+   "title": "Smart In-House Logistics Via ROS Environment",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "ROS-Industrial": [
+  {
+   "doi": "10.7210/jrsj.35.307",
+   "title": "ROS-Industrial: Expanding Industrial Application Capabilities",
+   "year": "2017",
+   "via": "title"
+  }
+ ],
+ "ROS2SWARM": [
+  {
+   "doi": "10.1109/icra46639.2022.9812417",
+   "title": "ROS2SWARM - A ROS 2 Package for Swarm Robot Behaviors",
+   "year": "2022",
+   "via": "title"
+  }
+ ],
+ "Space_ROS": [
+  {
+   "doi": "10.2514/6.2023-2709",
+   "title": "Space ros: An open-source framework for space robotics and flight software",
+   "year": "2023",
+   "via": "title"
+  }
+ ],
+ "stomp": [
+  {
+   "doi": "10.1109/icra.2011.5980280",
+   "title": "STOMP: Stochastic trajectory optimization for motion planning",
+   "year": "2011",
+   "via": "title"
+  }
+ ],
+ "The_Marathon_2": [
+  {
+   "doi": "10.1109/iros45743.2020.9341207",
+   "title": "The Marathon 2: A Navigation System",
+   "year": "2020",
+   "via": "title"
+  }
+ ],
+ "turtlebot3": [
+  {
+   "doi": "10.1109/spices62143.2024.10779949",
+   "title": "Enhancing Mobile Robot Navigation in TurtleBot3 Burger: A ROS-Enabled Approach Focusing on Obstacle Avoidance in Real-World Scenario",
+   "year": "2024",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/spices62143.2024.10779642",
+   "title": "ROS2 - Powered Autonomous Navigation for TurtleBot3: Integrating Nav2 Stack in Gazebo, RViz and Real-World Environments",
+   "year": "2024",
+   "via": "title"
+  },
+  {
+   "doi": "10.5281/zenodo.21704189",
+   "title": "Satoorn TurtleBot3 Sign-Following Demonstration: BrookAuto",
+   "year": "2026",
+   "via": "title"
+  }
+ ],
+ "wireless": [
+  {
+   "doi": "10.1109/meditcom58224.2023.10266626",
+   "title": "A Distributed Testbed for Wireless Embedded Devices",
+   "year": "2023",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/inocon57975.2023.10100975",
+   "title": "ROS Based Wireless Teleoperation System for Robots",
+   "year": "2023",
+   "via": "title"
+  },
+  {
+   "doi": "10.1145/3265997.3265999",
+   "title": "Wireless characteristics study for indoor multi-robot communication system",
+   "year": "2018",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/ccnc51664.2024.10454745",
+   "title": "Wireless Point Cloud Streaming Experiment Using IEEE 802.11 ax",
+   "year": "2024",
+   "via": "title"
+  },
+  {
+   "doi": "10.1109/wfcs63373.2025.11077612",
+   "title": "Wireless Robotic Motion Controller: System Architecture and Latency Assessment",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "xacro": [
+  {
+   "doi": "10.1109/icra46639.2022.9812349",
+   "title": "Understanding Xacro Misunderstandings",
+   "year": "2022",
+   "via": "title"
+  }
+ ],
+ "zenoh": [
+  {
+   "doi": "10.7210/jrsj.43.481",
+   "title": "A Communication Middleware “Zenoh'' and Support for ROS 2",
+   "year": "2025",
+   "via": "title"
+  }
+ ],
+ "robot_calibration": [
+  {
+   "doi": "10.1109/icinfa.2015.7279333",
+   "title": "Robot calibration of sensor poses and region based odometry using offline optimisation of map information",
+   "year": "2015",
+   "via": "title"
+  }
+ ]
+}
