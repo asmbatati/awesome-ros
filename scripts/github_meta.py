@@ -58,35 +58,212 @@ def repo_slug(url):
     return f"{m.group(1)}/{m.group(2).removesuffix('.git')}"
 
 
+HF_RE = re.compile(r"huggingface\.co/(datasets|models|spaces)?/?([\w.\-]+/[\w.\-]+)", re.I)
+GH_OWNER_RE = re.compile(r"github\.com/([\w.\-]+)/?(?:[?#].*)?$", re.I)
+
+# Forks we have reviewed and deliberately kept. A warning that fires every
+# week on known-good rows is a warning nobody reads, so record the reason.
+REVIEWED_FORKS = {
+    # upstream is more starred but last shipped 2024-03; the ros2 fork is the
+    # maintained ROS 2 port, which is what this dataset is about
+    "cartographer",
+    # fork chain roots at hku-mars/FAST_LIO, a different package; this row is
+    # specifically the ROS 2 port of FAST_LIO_SLAM
+    "FAST_LIO_SLAM_ros2",
+}
+
+ORG_REPO_PAGES = 3      # cap aggregation at 300 repos per org
+FORK_STAR_RATIO = 3     # upstream this many x more popular => probably wrong target
+
+
+def http_json(url):
+    """GET arbitrary JSON. Used for huggingface.co, which is not the GitHub API."""
+    req = urllib.request.Request(url, headers={
+        "Accept": "application/json",
+        "User-Agent": "awesome-ros-meta",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode("utf-8")), None
+    except urllib.error.HTTPError as e:
+        return None, e.code
+    except Exception as e:
+        return None, str(e)
+
+
+def classify_url(url):
+    """Return (kind, identifier).
+
+    Not every catalogued artefact is a single repository. Mega-projects are
+    published as whole GitHub organizations (micro-ROS, ros-industrial,
+    space-ros) and datasets/models live on HuggingFace. Treating those as
+    repos meant repo_slug() returned None and the row silently got no
+    metadata at all -- no stars, no description, no date, forever.
+    """
+    url = (url or "").strip()
+    slug = repo_slug(url)
+    if slug:
+        return "repo", slug
+    m = HF_RE.search(url)
+    if m:
+        section = (m.group(1) or "models").lower()
+        return ("hf-dataset" if section == "datasets" else "hf-model"), m.group(2)
+    m = GH_OWNER_RE.search(url)
+    if m:
+        return "org", m.group(1)
+    return "other", url
+
+
+def fetch_repo(slug):
+    data, err = api_get(f"/repos/{urllib.parse.quote(slug)}")
+    if err:
+        return None, err
+    rec = {
+        "kind": "repo",
+        "repo": data.get("full_name", slug),
+        "stars": data.get("stargazers_count", 0),
+        "description": (data.get("description") or "")[:220],
+        "pushed_at": (data.get("pushed_at") or "")[:10],
+        "archived": bool(data.get("archived")),
+        "fork": bool(data.get("fork")),
+    }
+    # `source` is the root of the fork chain, `parent` the immediate one
+    src = data.get("source") or data.get("parent")
+    if src:
+        rec["source"] = {
+            "repo": src.get("full_name"),
+            "stars": src.get("stargazers_count", 0),
+        }
+    return rec, None
+
+
+def fetch_org(owner):
+    """Aggregate a whole GitHub org/user: total stars, repo count, flagship repo."""
+    info, err = api_get(f"/orgs/{urllib.parse.quote(owner)}")
+    scope = "orgs"
+    if err:
+        info, err = api_get(f"/users/{urllib.parse.quote(owner)}")
+        scope = "users"
+        if err:
+            return None, err
+
+    repos = []
+    for page in range(1, ORG_REPO_PAGES + 1):
+        batch, err = api_get(
+            f"/{scope}/{urllib.parse.quote(owner)}/repos?per_page=100&page={page}")
+        if err or not batch:
+            break
+        repos.extend(r for r in batch if not r.get("private"))
+        if len(batch) < 100:
+            break
+        time.sleep(0.15)
+
+    live = [r for r in repos if not r.get("archived")]
+    top = max(repos, key=lambda r: r.get("stargazers_count", 0), default=None)
+    return {
+        "kind": "org",
+        "org": info.get("login", owner),
+        "repo": top.get("full_name") if top else None,
+        "stars": sum(r.get("stargazers_count", 0) for r in repos),
+        "top_stars": top.get("stargazers_count", 0) if top else 0,
+        "repos": len(repos),
+        "description": (info.get("description")
+                        or (top or {}).get("description") or "")[:220],
+        "pushed_at": max((r.get("pushed_at") or "" for r in repos), default="")[:10],
+        "archived": bool(repos) and not live,
+    }, None
+
+
+def fetch_hf(kind, hf_id):
+    section = "datasets" if kind == "hf-dataset" else "models"
+    data, err = http_json(
+        f"https://huggingface.co/api/{section}/{urllib.parse.quote(hf_id)}")
+    if err:
+        return None, err
+    card = data.get("cardData") or {}
+    # Prefer the model/dataset card text; fall back to curated tags. Never the
+    # license -- "mit" is not a description.
+    desc = " ".join((data.get("description") or "").split())
+    if not desc:
+        pretty = str(card.get("pretty_name") or "")
+        desc = pretty if len(pretty) > 3 else ""
+    if not desc:
+        desc = ", ".join(str(t) for t in (card.get("tags") or [])[:6])
+    if not desc:
+        # bare topical tags only; the API prefixes the machine-readable ones
+        skip = ("license:", "region:", "format:", "library:", "modality:",
+                "size_categories:", "language:", "doi:", "dataset:", "arxiv:")
+        desc = ", ".join(t for t in data.get("tags", [])
+                         if not t.startswith(skip))[:220]
+    return {
+        "kind": kind,
+        "repo": data.get("id", hf_id),
+        "stars": data.get("likes", 0),          # HF "likes" is the star analogue
+        "downloads": data.get("downloads", 0),
+        "description": str(desc)[:220],
+        "pushed_at": (data.get("lastModified") or "")[:10],
+        "archived": bool(data.get("disabled")),
+    }, None
+
+
 def enrich():
     with open(FRAMEWORKS_CSV, encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
 
-    meta, misses = {}, []
+    meta, misses, suspect = {}, [], []
     for i, r in enumerate(rows):
         name = (r.get("file name") or "").strip()
-        slug = repo_slug(r.get("package url"))
-        if not slug:
+        url = r.get("package url")
+        kind, ident = classify_url(url)
+
+        if kind == "repo":
+            rec, err = fetch_repo(ident)
+        elif kind == "org":
+            rec, err = fetch_org(ident)
+        elif kind in ("hf-dataset", "hf-model"):
+            rec, err = fetch_hf(kind, ident)
+        else:
+            misses.append(f"{name}: unrecognised URL {url!r}")
             continue
-        data, err = api_get(f"/repos/{urllib.parse.quote(slug)}")
+
         if err:
-            misses.append(f"{name} ({slug}): {err}")
+            misses.append(f"{name} ({ident}): {err}")
             continue
-        meta[name] = {
-            "repo": data.get("full_name", slug),
-            "stars": data.get("stargazers_count", 0),
-            "description": (data.get("description") or "")[:220],
-            "pushed_at": (data.get("pushed_at") or "")[:10],
-            "archived": bool(data.get("archived")),
-        }
+
+        # Flag rows that resolve to something other than the canonical project.
+        # Without this a fork or a bloom release repo is indistinguishable from
+        # an unpopular project -- which is how slam_toolbox sat on a 4-star
+        # release repo while the real one had 2.6k.
+        if kind == "repo":
+            if rec["repo"].endswith("-release"):
+                suspect.append(f"{name}: {rec['repo']} is a bloom release repo, not source")
+            src = rec.get("source")
+            if (src and name not in REVIEWED_FORKS
+                    and src.get("stars", 0) > max(FORK_STAR_RATIO * rec["stars"], 50)):
+                suspect.append(
+                    f"{name}: fork {rec['repo']} (*{rec['stars']}) vs upstream "
+                    f"{src['repo']} (*{src['stars']})")
+            if rec["repo"].lower() != ident.lower():
+                suspect.append(f"{name}: {ident} redirects to {rec['repo']}")
+
+        meta[name] = rec
         if (i + 1) % 25 == 0:
-            print(f"  {i + 1}/{len(rows)} packages…")
+            print(f"  {i + 1}/{len(rows)} packages...")
         time.sleep(0.15)
 
     META_JSON.write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n")
-    print(f"Wrote {META_JSON.name}: {len(meta)} repos enriched, {len(misses)} missed")
+    kinds = {}
+    for v in meta.values():
+        kinds[v["kind"]] = kinds.get(v["kind"], 0) + 1
+    print(f"Wrote {META_JSON.name}: {len(meta)} entries "
+          f"({', '.join(f'{v} {k}' for k, v in sorted(kinds.items()))}), "
+          f"{len(misses)} missed")
     for m in misses[:15]:
         print("  miss:", m)
+    if suspect:
+        print(f"\n  {len(suspect)} row(s) may point at the wrong target:")
+        for sline in suspect:
+            print("    !", sline)
 
 
 SEARCH_QUERIES = ("topic:ros2", "topic:ros2 topic:robotics")
