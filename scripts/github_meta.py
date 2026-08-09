@@ -89,7 +89,46 @@ def enrich():
         print("  miss:", m)
 
 
-def discover(limit=40):
+SEARCH_QUERIES = ("topic:ros2", "topic:ros2 topic:robotics")
+STAR_FLOOR = 200
+PER_PAGE = 100
+MAX_PAGES = 10  # GitHub caps search results at 1000 per query (10 x 100)
+
+
+def search_repos(query):
+    """Return (repos, total_count) for one search, following pagination.
+
+    The single-page version of this silently lost everything past the first
+    100 hits: `topic:ros2` alone reports ~165 matches above the star floor, so
+    the tail could never appear in CANDIDATES.md no matter how many candidates
+    were absorbed into frameworks.csv -- the exclusion happens after the fetch.
+    """
+    repos, total = [], None
+    q = urllib.parse.quote(f"{query} stars:>{STAR_FLOOR} archived:false")
+    for page in range(1, MAX_PAGES + 1):
+        data, err = api_get(
+            f"/search/repositories?q={q}&sort=stars&order=desc"
+            f"&per_page={PER_PAGE}&page={page}"
+        )
+        if err:
+            print(f"  search error ({query!r} page {page}):", err)
+            break
+        if total is None:
+            total = data.get("total_count", 0)
+        items = data.get("items", [])
+        repos.extend(items)
+        if len(items) < PER_PAGE or len(repos) >= total:
+            break
+        time.sleep(1)  # search API allows 30 req/min authenticated
+    total = total or 0
+    if total > MAX_PAGES * PER_PAGE:
+        print(f"  NOTE: {query!r} has {total} matches; API caps retrieval at "
+              f"{MAX_PAGES * PER_PAGE}")
+    print(f"  {query!r}: fetched {len(repos)} of {total}")
+    return repos, total
+
+
+def discover(limit=60):
     existing = set()
     with open(FRAMEWORKS_CSV, encoding="utf-8", newline="") as f:
         for r in csv.DictReader(f):
@@ -97,40 +136,50 @@ def discover(limit=40):
             if slug:
                 existing.add(slug.lower())
 
-    candidates = []
-    for query in ("topic:ros2", "topic:ros2 topic:robotics"):
-        q = urllib.parse.quote(f"{query} stars:>200 archived:false")
-        data, err = api_get(f"/search/repositories?q={q}&sort=stars&order=desc&per_page=100")
-        if err:
-            print("search error:", err)
-            continue
-        for repo in data.get("items", []):
-            slug = repo["full_name"].lower()
-            if slug in existing or any(c["full_name"].lower() == slug for c in candidates):
-                continue
-            candidates.append({
-                "full_name": repo["full_name"],
-                "html_url": repo["html_url"],
-                "stars": repo["stargazers_count"],
-                "description": (repo.get("description") or "")[:160],
-            })
+    pool, candidates = {}, []
+    for query in SEARCH_QUERIES:
+        repos, _ = search_repos(query)
+        for repo in repos:
+            pool.setdefault(repo["full_name"].lower(), repo)
         time.sleep(1)
 
+    for slug, repo in pool.items():
+        if slug in existing:
+            continue
+        candidates.append({
+            "full_name": repo["full_name"],
+            "html_url": repo["html_url"],
+            "stars": repo["stargazers_count"],
+            "description": (repo.get("description") or "")[:160],
+        })
+
     candidates.sort(key=lambda c: -c["stars"])
-    candidates = candidates[:limit]
+    n_found = len(candidates)
+    shown = candidates[:limit]
     lines = [
         "# Candidate packages discovered on GitHub",
         "",
-        "Popular `ros2`-topic repositories not yet in `frameworks.csv`.",
+        f"`ros2`-topic repositories with >{STAR_FLOOR} stars, not archived, and "
+        "not yet in `frameworks.csv`.",
         "Review and add the relevant ones (this file is informational, not data).",
+        "",
+        f"Searched {len(pool)} unique repositories; {len(pool) - n_found} are "
+        f"already in the dataset, leaving **{n_found}** candidates.",
+    ]
+    # never let a cap look like an empty backlog
+    if n_found > len(shown):
+        lines.append(f"Showing the top {len(shown)} by stars — "
+                     f"{n_found - len(shown)} more are not listed here.")
+    lines += [
         "",
         "| Stars | Repository | Description |",
         "|------:|------------|-------------|",
     ]
-    for c in candidates:
+    for c in shown:
         lines.append(f"| {c['stars']:,} | [{c['full_name']}]({c['html_url']}) | {c['description']} |")
     CANDIDATES_MD.write_text("\n".join(lines) + "\n")
-    print(f"Wrote {CANDIDATES_MD.name}: {len(candidates)} candidates")
+    print(f"Wrote {CANDIDATES_MD.name}: {len(shown)} shown of {n_found} candidates "
+          f"({len(pool)} unique repos searched)")
 
 
 if __name__ == "__main__":
