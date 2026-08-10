@@ -23,28 +23,31 @@ OUT = ROOT / "data" / "paper_links.json"
 # Extracted from the survey's own prose, where it cites the canonical paper for
 # a named tool. These are the cases where no string match could work --
 # "The Marathon 2" contains no occurrence of "Nav2".
+# Keys are the canonical frameworks.csv package names, so a link built from
+# this file lands on a real entry. Aliases ("Nav2") would search for nothing.
 CURATED = {
-    "Nav2": ["2020_Marathon2_macenskia", "2023_DesksROS_macenski", "2025_OpenSourceCostAware_macenski"],
-    "navigation2": ["2020_Marathon2_macenskia"],
-    "MoveIt 2": ["2023_ExtendingMotion_malvidofresnillo"],
+    "Navigation2": ["2020_Marathon2_macenskia", "2023_DesksROS_macenski",
+                    "2025_OpenSourceCostAware_macenski"],
     "moveit2": ["2023_ExtendingMotion_malvidofresnillo"],
     "micro-ROS": ["2023_MicroROS_belsare"],
     "BehaviorTree.CPP": ["2022_BehaviorTrees_ribeaud"],
     "PlanSys2": ["2021_PlanSys2Planning_martin"],
     "SkiROS2": ["2023_SkiROS2SkillBased_mayr"],
-    "SpaceROS": ["2023_SpaceROS_probe"],
-    "UUV Simulator": ["2016_UUVSimulator_manhaes"],
+    "Space_ROS": ["2023_SpaceROS_probe"],
     "UUV_simulator": ["2016_UUVSimulator_manhaes"],
     "HuNavSim": ["2023_HuNavSimROS_perez-higueras"],
     "LunarSim": ["2023_LunarSimLunar_pieczynski"],
     "MVSim": ["2023_MultiVehicleSimulator_blanco-claraco"],
     "F1TenthGym": ["2020_F1TENTHOpensource_okelly", "2025_AdvancingAutonomous_charles"],
-    "LGSVL Simulator": ["2020_LGSVLSimulator_rong"],
+    "LGSVL_Simulator": ["2020_LGSVLSimulator_rong"],
     "MAES": ["2023_MAESROS_andreasen"],
     "CARLA": ["2017_CARLAOpen_dosovitskiy"],
     "VECTOR": ["2025_VECTORVelocityEnhanced_nacar"],
-    "ROS 2": ["2022_RobotOperating_macenskia"],
 }
+
+# A repo named after the paper that introduced a *different* package is a
+# coincidence, not a contribution link.
+TITLE_BLOCKLIST = {"The_Marathon_2"}
 
 GENERIC = {"control","navigation","perception","simulation","robot","vision","planning",
            "launch","urdf","demo","test","core","base","tools","teleop","image","camera",
@@ -110,7 +113,7 @@ def main():
     # 3. package name in title
     for r in fw:
         n=r["file name"]
-        if len(n)<5 or n.lower() in GENERIC: continue
+        if len(n)<5 or n.lower() in GENERIC or n in TITLE_BLOCKLIST: continue
         # underscores/hyphens are often spaces or absent in prose titles
         variants={n, n.replace("_"," "), n.replace("_",""), n.replace("-"," ")}
         pat=re.compile("|".join(rf"(?<![\w-]){re.escape(v)}(?![\w-])" for v in variants),re.I)

@@ -1,5 +1,5 @@
 {
- "Nav2": [
+ "Navigation2": [
   {
    "doi": "10.1109/iros45743.2020.9341207",
    "title": "The Marathon 2: A Navigation System",
@@ -10,14 +10,6 @@
    "doi": "10.1016/j.robot.2023.104493",
    "title": "From the Desks of ROS Maintainers: A Survey of Modern & Capable Mobile Robotics Algorithms in the Robot Operating System 2",
    "year": "2023",
-   "via": "curated"
-  }
- ],
- "navigation2": [
-  {
-   "doi": "10.1109/iros45743.2020.9341207",
-   "title": "The Marathon 2: A Navigation System",
-   "year": "2020",
    "via": "curated"
   }
  ],
@@ -45,19 +37,11 @@
    "via": "curated"
   }
  ],
- "SpaceROS": [
+ "Space_ROS": [
   {
    "doi": "10.2514/6.2023-2709",
    "title": "Space ros: An open-source framework for space robotics and flight software",
    "year": "2023",
-   "via": "curated"
-  }
- ],
- "UUV Simulator": [
-  {
-   "doi": "10.1109/oceans.2016.7761080",
-   "title": "UUV simulator: A gazebo-based package for underwater intervention and multi-robot simulation",
-   "year": "2016",
    "via": "curated"
   }
  ],
@@ -118,14 +102,6 @@
    "doi": "10.3390/drones9010008",
    "title": "VECTOR: Velocity-Enhanced GRU Neural Network for Real-Time 3D UAV Trajectory Prediction",
    "year": "2024",
-   "via": "curated"
-  }
- ],
- "ROS 2": [
-  {
-   "doi": "10.1126/scirobotics.abm6074",
-   "title": "Robot Operating System 2: Design, architecture, and uses in the wild",
-   "year": "2022",
    "via": "curated"
   }
  ],
@@ -851,27 +827,11 @@
    "via": "title"
   }
  ],
- "Space_ROS": [
-  {
-   "doi": "10.2514/6.2023-2709",
-   "title": "Space ros: An open-source framework for space robotics and flight software",
-   "year": "2023",
-   "via": "title"
-  }
- ],
  "stomp": [
   {
    "doi": "10.1109/icra.2011.5980280",
    "title": "STOMP: Stochastic trajectory optimization for motion planning",
    "year": "2011",
-   "via": "title"
-  }
- ],
- "The_Marathon_2": [
-  {
-   "doi": "10.1109/iros45743.2020.9341207",
-   "title": "The Marathon 2: A Navigation System",
-   "year": "2020",
    "via": "title"
   }
  ],
