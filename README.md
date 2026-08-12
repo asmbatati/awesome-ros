@@ -144,7 +144,7 @@ This dataset is licensed under [Creative Commons Attribution 4.0 International (
 
 ## Links
 
-- [Project Page](https://asmbatati.github.io/awesome-ros/) — Paper overview and visualizations
-- [ROS Database](https://ric.psu.edu.sa/riotu/ros/) — Interactive database browser
+- [Project Page](https://asmbatati.github.io/ros2_survey/) — Paper overview and visualizations
+- [ROS Database](https://ros-database.vercel.app/) — Interactive database browser
 - [Preprint](https://www.preprints.org/manuscript/202410.1204) — Full paper
 - [RIOTU Lab](https://ric.psu.edu.sa/riotu/) — Robotics & Internet of Things Lab, Prince Sultan University
