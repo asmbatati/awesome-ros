@@ -109,11 +109,16 @@ jobs:
               print("\nNo new papers to append")
           PYEOF
 
+      - name: Validate result
+        run: python scripts/validate_data.py
+
+      # Same token as scrape.yml: a PR opened by github-actions[bot] has its
+      # checks held for maintainer approval; one opened with the PAT doesn't.
       - name: Create Pull Request
         if: success()
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SCRAPE_PR_TOKEN || secrets.GITHUB_TOKEN }}
           commit-message: "data: enrich papers via CrossRef"
           title: "[Auto] Enriched papers from CrossRef"
           body: |

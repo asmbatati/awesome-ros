@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       since:
-        description: 'Scrape papers published after this date (YYYY-MM-DD). Default: 45 days ago.'
+        description: 'Scrape papers published after this date (YYYY-MM-DD). Default: 365 days ago.'
         required: false
         type: string
 
