@@ -49,6 +49,16 @@ jobs:
       # validate workflow runs on it straight away. With the GITHUB_TOKEN
       # fallback the PR comes from github-actions[bot], whose checks sit in
       # "awaiting approval from a maintainer" until approved by hand.
+      - name: Check PR token
+        env:
+          T: ${{ secrets.SCRAPE_PR_TOKEN }}
+        run: |
+          if [ -z "$T" ]; then
+            echo "::warning::SCRAPE_PR_TOKEN is unset or empty; PR will be opened by github-actions[bot] and its checks will await manual approval."
+          else
+            echo "SCRAPE_PR_TOKEN present (${#T} chars)"
+          fi
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
