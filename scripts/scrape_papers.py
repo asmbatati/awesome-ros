@@ -2,8 +2,9 @@
 """
 Scrape new ROS / ROS 2 papers from OpenAlex and append them to data/papers.csv.
 
-Queries OpenAlex (no API key needed) for works mentioning the Robot Operating
-System, filters out false positives (e.g. reactive oxygen species), dedupes
+Queries OpenAlex for works mentioning the Robot Operating System (set
+OPENALEX_API_KEY to use a keyed budget instead of the per-IP anonymous one —
+on shared CI runners the anonymous budget is often already spent), filters out false positives (e.g. reactive oxygen species), dedupes
 against existing DOIs/titles, heuristically classifies each paper into the
 v26 taxonomy (ROS version, contribution type, research domain/subdomain,
 application field/platform, Label_* flags), and appends the new rows.
@@ -16,9 +17,11 @@ Stdlib only — safe to run in CI.
 import argparse
 import csv
 import json
+import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -28,6 +31,7 @@ PAPERS_CSV = ROOT / "data" / "papers.csv"
 STATS_JSON = ROOT / "data" / "stats.json"
 MAILTO = "aalbatati@psu.edu.sa"
 OPENALEX = "https://api.openalex.org/works"
+OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "").strip()
 
 SEARCH_QUERIES = [
     '"robot operating system"',
@@ -202,13 +206,34 @@ ROBOTICS_CONTEXT = [
 ]
 
 
-def http_get_json(url, retries=3):
+class RateLimitExhausted(Exception):
+    """OpenAlex budget is spent and won't reset soon enough to wait for."""
+
+
+def http_get_json(url, retries=4):
     req = urllib.request.Request(url, headers={"User-Agent": f"awesome-ros-scraper (mailto:{MAILTO})"})
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.loads(resp.read().decode("utf-8"))
-        except Exception as e:
+        except urllib.error.HTTPError as e:
+            if e.code != 429:
+                if attempt == retries - 1:
+                    raise
+                time.sleep(2 * (attempt + 1))
+                continue
+            # OpenAlex bills search requests against a daily credit budget.
+            # A short Retry-After is a burst limit worth waiting out; a long
+            # one means the day's budget is gone.
+            wait = int(e.headers.get("Retry-After") or 0) or 5 * (attempt + 1)
+            remaining = e.headers.get("X-RateLimit-Remaining")
+            if wait > 120 or attempt == retries - 1:
+                raise RateLimitExhausted(
+                    f"OpenAlex 429: remaining={remaining}, retry-after={wait}s"
+                    + ("" if OPENALEX_API_KEY else " (no OPENALEX_API_KEY set; anonymous per-IP budget)")
+                ) from e
+            time.sleep(wait)
+        except Exception:
             if attempt == retries - 1:
                 raise
             time.sleep(2 * (attempt + 1))
@@ -356,6 +381,8 @@ def scrape(since, max_results):
                 "cursor": cursor,
                 "mailto": MAILTO,
             }
+            if OPENALEX_API_KEY:
+                params["api_key"] = OPENALEX_API_KEY
             url = f"{OPENALEX}?{urllib.parse.urlencode(params)}"
             data = http_get_json(url)
             for w in data.get("results", []):
@@ -394,7 +421,14 @@ def main():
     label_cols = [h for h in headers if h.startswith("Label_")]
 
     print(f"Existing: {n_existing} papers. Scraping OpenAlex since {args.since}...")
-    works = scrape(args.since, args.max)
+    try:
+        works = scrape(args.since, args.max)
+    except RateLimitExhausted as e:
+        # Fail rather than continue with a partial set: the PR branch is
+        # rebuilt from main each run, so a short run would drop papers that
+        # an earlier, still-unmerged PR had found.
+        print(f"::error::{e}")
+        sys.exit(1)
     print(f"Collected {len(works)} unique works. Filtering & classifying...")
 
     new_rows, skipped_dup, skipped_irrelevant = [], 0, 0

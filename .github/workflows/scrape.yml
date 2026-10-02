@@ -29,6 +29,10 @@ jobs:
       # review latency silently drops papers off the back of an unmerged PR.
       # 365d gives a year of slack; duplicates are cheap (dedup by DOI+title).
       - name: Run scraper
+        env:
+          # Optional. Without it OpenAlex bills the runner IP's shared
+          # anonymous budget, which other Actions users routinely exhaust (429).
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           SINCE="${{ github.event.inputs.since }}"
           if [ -z "$SINCE" ]; then SINCE=$(date -d '365 days ago' +%Y-%m-%d); fi
