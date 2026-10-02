@@ -40,15 +40,19 @@ jobs:
           echo "Scraping papers published since $SINCE"
           python scripts/scrape_papers.py --since "$SINCE"
 
-      # PRs opened with GITHUB_TOKEN do not trigger the validate workflow,
-      # so validate here before opening the PR.
+      # Validate here too, so a bad scrape never reaches a PR at all.
       - name: Validate result
         run: python scripts/validate_data.py
 
+      # SCRAPE_PR_TOKEN (fine-grained PAT, this repo only: Contents +
+      # Pull requests read/write) makes the PR authored by the owner, so the
+      # validate workflow runs on it straight away. With the GITHUB_TOKEN
+      # fallback the PR comes from github-actions[bot], whose checks sit in
+      # "awaiting approval from a maintainer" until approved by hand.
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SCRAPE_PR_TOKEN || secrets.GITHUB_TOKEN }}
           commit-message: 'data: weekly paper scrape from OpenAlex'
           title: '[Auto] New papers from OpenAlex'
           body: |
