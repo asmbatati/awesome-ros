@@ -217,6 +217,14 @@ def http_get_json(url, retries=4):
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
+            if e.code == 401:
+                # OpenAlex needs a key to page past the first cursor page;
+                # retrying can't fix that, so say what's wrong and stop.
+                raise SystemExit(
+                    "::error::OpenAlex 401: "
+                    + ("OPENALEX_API_KEY was rejected (invalid or revoked?)" if OPENALEX_API_KEY
+                       else "no OPENALEX_API_KEY set; cursor paging requires one")
+                ) from e
             if e.code != 429:
                 if attempt == retries - 1:
                     raise
@@ -421,6 +429,7 @@ def main():
     label_cols = [h for h in headers if h.startswith("Label_")]
 
     print(f"Existing: {n_existing} papers. Scraping OpenAlex since {args.since}...")
+    print(f"OPENALEX_API_KEY: {'present (%d chars)' % len(OPENALEX_API_KEY) if OPENALEX_API_KEY else 'NOT SET'}")
     try:
         works = scrape(args.since, args.max)
     except RateLimitExhausted as e:
